@@ -6,8 +6,10 @@
 	padding: 50px 0;
 	text-align: center;
 	margin-top: 3rem;
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 	border-top: 1px solid rgba(226,232,240,1);
+	background-color: $color-main;
+	color: #ffffff;
 	&__inner{
 		@include flex-jbetween;
 		align-items: center;
@@ -15,32 +17,13 @@
 		margin: 0 auto;
 		border-bottom: 1px solid rgba(226,232,240,1);
 		padding-bottom: 3rem;
-		
+
 	}
-	&__logo{
-		width: 179px;
-		height: 40px;
-	}
-	&__menu{
-		@include flex;
-		justify-content: flex-end;
-		
-		li{
-			padding: 0 15px;
-			a{
-				text-decoration: none;
-				font-size: 1.5rem;
-				color: var(--sub-color);
-				font-weight: bold;
-			}
-			@include sp{
-				padding: 0 5px;
-				a{
-					font-size: 1.3rem;
-					font-weight: 500;
-				}
-			}
-		}
+	&_ttl{
+		font-size: 2rem;
+		font-weight: 700;
+		color:#F5ECB5;
+		line-height: 1.35;
 	}
 	&__bottom{
 		max-width: 1440px;
@@ -54,21 +37,5 @@
 		@include sp{
 			margin-bottom: 1rem;
 		}
-	}
-	&__info{
-		text-align: left;
-		line-height: 1.5;
-		color: var(--sub-color);
-		@include sp{
-			width: 100%;
-		}
-	}
-	&__name{
-		color: var(--sub-color);
-		@include sp{
-			margin-top: 2rem;
-			text-align: left;
-		}
-
 	}
 }
