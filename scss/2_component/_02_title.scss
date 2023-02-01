@@ -4,8 +4,16 @@
   font-weight: 600;
   color: $color-main;
   position: relative;
-  &::after{
-    position: absolute;
-
+  @include flex-center;
+  &.is-white{
+    color: white;
+  }
+  &.bottom_line{
+    margin-bottom: 2.5rem;
+    &::after{
+      position: absolute;
+      content: url("/assets/images/decor.svg");
+      bottom: -2.5rem;
+    }
   }
 }
