@@ -1,0 +1,101 @@
+/*------------------------------------------------------------
+	Header
+------------------------------------------------------------*/
+.c-header {
+	width: 100%;
+	padding: 20px 0 15px ;
+	background-color: $color-main;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	@include sp{
+		padding: 15px 0;
+	}
+	&_logo{
+		img{
+			width: 62.91px;
+			width: 280px;
+		}
+		@include sp{
+			img{
+				height: 40px;
+				width: fit-content;
+			}
+		}
+	}
+	&_nav{
+		a{
+			color: white;
+		}
+		@include sp{
+			visibility: hidden;
+			opacity: 0;
+			transform: translateX(-100%);
+			display: none;
+		}
+	}
+	&_top{
+		gap: 30px;
+		input{
+			max-width: 400px;
+			width: 100%;
+		}
+		a{
+			@include flex;
+			gap: 15px;
+    	align-items: center;
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+	}
+	&_bottom{
+		margin-top: 15px;
+		li{
+			font-weight: 700;
+			font-size: 1.5rem;
+			margin-left: 20px;
+			&:first-of-type{
+				margin: 0;
+			}
+		}
+		.dropdown{
+			position: relative;
+			margin-right: 30px;
+			> a{
+				position: relative;
+				&:after{
+					content: url(../../assets/images/ico_dropdown.svg);
+					position: absolute;
+					right: -20px;
+					transition: all 0.3s;
+				}
+			}
+			&_sub{
+				visibility: hidden;
+				opacity: 0;
+				left: 0;
+				right: 0;
+				position: absolute;
+				background-color: $color-main;
+				padding: 10px 15px;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				width: 150px;
+				justify-content: flex-start;
+				transition: opacity 0.3s;
+			}
+			&:hover{
+				> a{
+					&:after{
+						transform: rotate(270deg);
+					}
+				}
+				.dropdown_sub{
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

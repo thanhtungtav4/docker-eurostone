@@ -1,0 +1,92 @@
+/*------------------------------------------------------------
+	Layout
+------------------------------------------------------------*/
+.l-main {
+	// width: 100%;
+	// color: $color1;
+	// min-height: 50vh;
+	// max-width: 1440px;
+	// margin: 20px auto;
+	// max-width: 1200px;
+	// padding-top: 101px;
+	// @include sp{
+	// 	padding-top: 60px;
+	// }
+}
+.row{
+	@include flex;
+	margin: 20px 0;
+	justify-content: space-between;
+	.col{
+		&-3{
+			width: 30%;
+		}
+		&-4{
+			width: 40%;
+		}
+		&-6{
+			width: calc(100% - 40%);
+		}
+		&-9{
+			width: calc(100% - 33%);
+		}
+		&-3, &-4, &-6 ,&-9{
+			@include sp{
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.w-100{
+	width: 100%;
+}
+.l-container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.only-pc{
+	display: block;
+	@include sp{
+		display: none !important;
+	}
+}
+.only-sp{
+	display: none;
+	@include sp{
+		display: block;
+	}
+}
+@media (max-width: 576px) {
+	.l-container {
+		width: 100%;
+	}
+}
+@media (min-width: 576px) {
+	.l-container {
+		width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.l-container {
+		width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.l-container {
+		width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.l-container {
+		width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.l-container {
+		width: 1320px;
+	}
+}

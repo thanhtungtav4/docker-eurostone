@@ -1,0 +1,11 @@
+.m-title{
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: $color-main;
+  position: relative;
+  &::after{
+    position: absolute;
+
+  }
+}
