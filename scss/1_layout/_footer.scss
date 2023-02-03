@@ -2,14 +2,32 @@
 	Footer
 ------------------------------------------------------------*/
 .c-footer {
-	width: 100%;
-	padding: 50px 0;
-	text-align: center;
-	margin-top: 3rem;
-  padding: 2rem 1rem;
-	border-top: 1px solid rgba(226,232,240,1);
 	background-color: $color-main;
-	color: #ffffff;
+  color: white;
+  position: relative;
+  padding: 150px 0px;
+  margin-top: 150px;
+	z-index: 1;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  &::before{
+		background-image: url('/assets/images/bg_wave_top.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px;
+		top: 0;
+		z-index: 0;
+  }
+  &::after{
+		background-color: white;
+    top: 0px;
+    height: 125px;
+  }
 	&__inner{
 		@include flex-jbetween;
 		align-items: center;
