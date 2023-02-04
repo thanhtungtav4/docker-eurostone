@@ -10,7 +10,7 @@ function addClass(A){document.documentElement.classList.add(A)}var avif=new Imag
 //    navicon.classList.toggle('is_active');
 // };
 // navicon.addEventListener("click", toggleMenu, false);
-$( document ).ready(function() {
+$(function() {
   $('.m-carousel').not('.slick-initialized').slick({
     dots: true,
     speed: 300,
@@ -23,4 +23,5 @@ $( document ).ready(function() {
   setTimeout(function() {
     $('.m-carousel').slick({});
   }, 2500)
-});
+})
+// Load only home page && module slider.pug (pug\_modules\slider.pug)
