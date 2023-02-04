@@ -2,7 +2,9 @@ version: '3'
 services:
   web:
     build: .
+    command: npm start
     ports:
       - "4000:4000"
     volumes:
       - .:/app
+      - /app/node_modules

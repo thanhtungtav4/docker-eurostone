@@ -37,13 +37,16 @@
 	&_top{
 		gap: 30px;
 		input{
-			max-width: 400px;
+			max-width: 300px;
 			width: 100%;
+			@include tb{
+				max-width: 200px
+			}
 		}
 		a{
 			@include flex;
-			gap: 15px;
-    	align-items: center;
+			gap: 5px;
+    		align-items: center;
 			font-size: 1.4rem;
 			font-weight: 600;
 		}

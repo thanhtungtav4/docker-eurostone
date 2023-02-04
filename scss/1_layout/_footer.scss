@@ -2,12 +2,15 @@
 	Footer
 ------------------------------------------------------------*/
 .c-footer {
-	background-color: $color-main;
+  background-color: $color-main;
   color: white;
   position: relative;
-  padding: 150px 0px;
+  padding: 150px 0;
   margin-top: 150px;
-	z-index: 1;
+  z-index: 1;
+  @include sp{
+	padding: 50px 0;
+  }
   &::before,
   &::after{
     content: '';
@@ -16,17 +19,20 @@
     z-index: -1;
   }
   &::before{
-		background-image: url('/assets/images/bg_wave_top.svg');
+	background-image: url('/assets/images/bg_wave_top.svg');
     background-repeat: no-repeat;
     background-size: auto;
     height: 300px;
-		top: 0;
-		z-index: 0;
+	top: 3px;
+	z-index: 0;
   }
   &::after{
-		background-color: white;
-    top: 0px;
-    height: 125px;
+	background-color: white;
+    top: -1px;
+    height: 90px;
+	@include sp{
+		height: 30px;
+	}
   }
 	&__inner{
 		@include flex-jbetween;
