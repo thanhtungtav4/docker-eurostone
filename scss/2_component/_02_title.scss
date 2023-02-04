@@ -16,4 +16,21 @@
       bottom: -2.5rem;
     }
   }
+  &.m-detection{
+    justify-content: flex-start;
+    padding-bottom: 1.5rem;
+    &::after{
+      position: absolute;
+      background-image: url(/assets/images/ico_line.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 330px;
+      height: 8px;
+      content: '';
+      display: inline-block;
+      bottom: 0.4rem;
+      margin-left: -50px;
+    }
+  }
 }
