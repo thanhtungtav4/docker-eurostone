@@ -5,11 +5,11 @@
   background-color: $color-main;
   color: white;
   position: relative;
-  padding: 150px 0;
+  padding: 150px 0 0;
   margin-top: 150px;
   z-index: 1;
   @include sp{
-	padding: 50px 0;
+	padding: 50px 0 0;
   }
   &::before,
   &::after{
@@ -22,7 +22,7 @@
 	background-image: url('/assets/images/bg_wave_top.svg');
     background-repeat: no-repeat;
     background-size: auto;
-    height: 300px;
+    height: 150px;
 	top: 3px;
 	z-index: 0;
   }
@@ -41,7 +41,6 @@
 		margin: 0 auto;
 		border-bottom: 1px solid rgba(226,232,240,1);
 		padding-bottom: 3rem;
-
 	}
 	&_ttl{
 		font-size: 2rem;
@@ -49,17 +48,13 @@
 		color:#F5ECB5;
 		line-height: 1.35;
 	}
-	&__bottom{
+	&_bottom{
 		max-width: 1440px;
-		margin: 3rem auto;
+		margin: 2rem auto 0;
 		align-items: center;
-		color:#666;
-		align-items: flex-end;
-		@include pc{
-			@include flex-jbetween;
-		}
-		@include sp{
-			margin-bottom: 1rem;
-		}
+		height: 50px;
+		background-color: #0779F1;
+		color: white;
+		font-size: 1.8rem;
 	}
 }

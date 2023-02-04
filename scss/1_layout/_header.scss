@@ -36,11 +36,15 @@
 	}
 	&_top{
 		gap: 30px;
-		input{
+		form{
+			@include flex-jbetween;
 			max-width: 300px;
 			width: 100%;
 			@include tb{
 				max-width: 200px
+			}
+			input{
+			
 			}
 		}
 		a{
