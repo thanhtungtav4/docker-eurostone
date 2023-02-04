@@ -21,7 +21,7 @@ footer.c-footer
                 a(href="#")
                   img(src='assets/images/ico_messeger.svg', alt='messeger', width="30", height="30", loading="lazy")
         .col-md-1-3.mb-25
-            a(href="#").c-footer_ttl VỀ EUROSTONE
+            p.c-footer_ttl VỀ EUROSTONE
             p.m-title_name
              img(src='assets/images/ico_location.svg', alt='Showroom', width="12", height="17", loading="lazy")
              | <b>Showroom</b>
@@ -44,7 +44,7 @@ footer.c-footer
                 b Email:
               a(mailto:info@eurostone.vn) info@eurostone.vn
         .col-md-1-3
-            a(href="#").c-footer_ttl CHÍNH SÁCH CHUNG
+            p.c-footer_ttl CHÍNH SÁCH CHUNG
             ol.mb-25
               li
                 a(href="#") Chính sách vận chuyển
@@ -55,9 +55,9 @@ footer.c-footer
             p
              b Đăng ký Email ngay để nhận ưu đãi mới nhất!
 
-            form(class="frow" action='/' method='get')
-            input#search(type='text' name='s' value='' placeholder="Tìm kiếm...")
-            button(type="submit") 
-              img(src='assets/images/ico_arrow.svg', alt='xem thêm', loading="lazy", decoding="async", width="30", height="15")
+            form(class="m-form mt-15" action='/' method='get')
+              input#search(type='text' name='email' value='' placeholder="Nhập Email")
+              button(type="submit") 
+                img(src='assets/images/ico_arrow.svg', alt='xem thêm', loading="lazy", decoding="async", width="30", height="15")
     .c-footer_bottom.frow.frow-container
        p @2016 EuroStone All Rights Reserved.
