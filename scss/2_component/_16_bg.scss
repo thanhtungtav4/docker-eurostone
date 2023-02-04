@@ -1,0 +1,50 @@
+.bg{
+    &_top, &_bottom{
+        position: relative;
+        &::before,
+        &::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          z-index: 0;
+        }
+    }
+    &_top{
+        padding: 60px 0;
+        z-index: 1;
+        &::before{
+            background-image: url('/assets/images/bg_wave_top.svg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 100px;
+            top: 3px;
+            z-index: 1;
+          }
+          &::after{
+            background-color: white;
+            top: -5px;
+            height: 100px;
+            @include sp{
+                height: 30px;
+            }
+          }
+    }
+    &_bottom{
+        padding: 10px 0px;
+        &::before{
+            background-color: white;
+            height: 100px;
+            @include sp{
+                height: 30px;
+            }
+        }
+        &::after{
+            background-image: url('/assets/images/bg_main.svg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top;
+            height: 200px;
+        }
+    }
+
+}
