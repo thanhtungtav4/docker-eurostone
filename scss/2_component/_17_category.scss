@@ -1,0 +1,29 @@
+.m-category{
+    padding: 15rem 0;
+    &_item{
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    &_content{
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &_img{
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        img{
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}

@@ -16,14 +16,14 @@
             background-image: url('/assets/images/bg_wave_top.svg');
             background-repeat: no-repeat;
             background-size: auto;
-            height: 100px;
-            top: 3px;
+            height: 96px;
+            top: 1px;
             z-index: 1;
           }
           &::after{
             background-color: white;
             top: -5px;
-            height: 100px;
+            height: 96px;
             @include sp{
                 height: 30px;
             }
@@ -33,7 +33,7 @@
         padding: 10px 0px;
         &::before{
             background-color: white;
-            height: 100px;
+            height: 150px;
             @include sp{
                 height: 30px;
             }
@@ -43,7 +43,7 @@
             background-repeat: no-repeat;
             background-size: auto;
             background-position: top;
-            height: 200px;
+            height: 260px;
         }
     }
 

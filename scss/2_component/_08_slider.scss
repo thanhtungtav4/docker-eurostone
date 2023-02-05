@@ -3,8 +3,11 @@
   background-color: #000936;
   color: white;
   position: relative;
-  padding: 130px 0px;
-  margin-bottom: 90px;
+  padding: 13rem 0px;
+  margin-bottom: 8rem;
+  @include min(1440px){
+    margin-top: 8rem;
+  }
   &::before,
   &::after{
     content: '';
