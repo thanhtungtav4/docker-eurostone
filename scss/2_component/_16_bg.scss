@@ -6,7 +6,7 @@
           content: '';
           position: absolute;
           width: 100%;
-          z-index: 0;
+          z-index: -1;
         }
     }
     &_top{
@@ -16,18 +16,22 @@
             background-image: url('/assets/images/bg_wave_top.svg');
             background-repeat: no-repeat;
             background-size: auto;
-            height: 96px;
-            top: 1px;
-            z-index: 1;
-          }
-          &::after{
-            background-color: white;
-            top: -5px;
-            height: 96px;
+            height: 150px;
+            top: 3px;
+            z-index: 0;
+            background-position: bottom;
             @include sp{
-                height: 30px;
+                height: 70px;
             }
-          }
+        }
+        &::after{
+            background-color: white;
+            top: 0px;
+            height: 150px;
+            @include sp{
+                height: 70px;
+            }
+        }
     }
     &_bottom{
         padding: 10px 0px;
