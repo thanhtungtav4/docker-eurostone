@@ -2,6 +2,7 @@
   &_container{
     @include flex-jbetween;
     gap: 0 5rem;
+    margin-top: 2rem;
   }
   &_item{
     display: flex;
@@ -19,6 +20,8 @@
       &:nth-last-child(-n+1){
         border-bottom: 1px solid #BBBBBB;
       }
+      gap: 1rem;
+      padding: 2rem 0;
     }
   }
   &_img{
@@ -38,6 +41,13 @@
       line-height: 1.375;
       font-weight: 700;
       color: black;
+      @include chunk-txt;
+      margin-bottom: .9rem;
+    }
+    .description{
+      @include chunk-txt;
+      font-size: 1.6rem;
+      line-height: 1.625;
     }
   }
 }
