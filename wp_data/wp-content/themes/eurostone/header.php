@@ -1,293 +1,228 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="charset" content="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:url" content="<?php echo home_url( $_SERVER['REQUEST_URI'] ); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="<?php echo get_bloginfo( 'name' ) ?? '株式会社カインズ 企業サイト' ?>">
-    <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="<?php echo home_url( $_SERVER['REQUEST_URI'] ); ?>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trang chủ</title>
+    <link rel="preload" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/slick.css">
+    </noscript>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="icon" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/favicon.ico">
-    <link rel="icon" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/style.css">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WVB45Z6');</script>
-<!-- End Google Tag Manager -->
-    <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link as="image" rel="preload" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" fetchpriority="high">
+    <!-- Primary Meta Tags-->
+    <meta name="title" content="Trang chủ test">
+    <meta name="description" content="Trang chủ - Spiderum trang tin tức">
+    <!-- Open Graph / Facebook-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Trang chủ test">
+    <meta property="og:description" content="Trang chủ - Spiderum trang tin tức">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629927506216-fcdf656d74de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80">
+    <!-- Twitter-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Trang chủ test">
+    <meta property="twitter:description" content="Trang chủ - Spiderum trang tin tức">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1629927506216-fcdf656d74de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80"> <?php wp_head(); ?>
   </head>
   <body <?php echo bodyClass(); ?>>
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVB45Z6"
-    width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    <!-- noscript, no-cookie-->
-    <noscript>
-      <div class="m-boxAtt">
-        <p class="m-boxAtt_ttl m-taC">JavaScriptが無効になっています。</p>
-        <p class="m-textS m-taC-pc">すべての機能を利用するためには、有効に設定してください。<br class="g-inline-pc">設定方法はお使いのブラウザのヘルプをご確認ください。</p>
-      </div>
-    </noscript>
     <header class="m-header">
-      <div class="m-header__top">
-        <div class="m-header__top-inner">
-          <nav class="m-header__top-menu">
-                <ul>
-                  <li><a href="https://www.cainz.com/" target="_blank">オンラインショップ</a>
-                  </li>
-                  <li><a href="https://reform.cainz.com/" target="_blank">リフォーム</a>
-                  </li>
-                  <li><a href="https://petsone.cainz.com/" target="_blank">ペッツワン</a>
-                  </li>
-                  <li><a href="https://reserve.cainz.com/" target="_blank">Reserve</a>
-                  </li>
-                  <li><a href="https://diy-style.cainz.com/" target="_blank">DIY STYLE</a>
-                  </li>
-                  <li><a href="https://style-factory.cainz.com/" target="_blank">Style Factory</a>
-                  </li>
-                  <li><a href="https://www.cainz.co.jp/" target="_blank">企業サイト</a>
-                  </li>
-                </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="m-header__bottom">
-        <div class="m-header__bottom-inner">
-          <?php if(is_front_page()) : ?>
-            <h1 class="m-header__logo">
-              <a href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/logo_header.svg" alt="CAINZ"></a>
-            </h1>
-          <?php else : ?>
-            <div class="m-header__logo">
-              <a href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/logo_header.svg" alt="CAINZ"></a>
+      <div class="inner">
+        <div class="m-header__top">
+          <div class="m-header__logo">
+            <a href="/">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt="EuroStrone" width="280" height="62">
+            </a>
+          </div>
+          <div class="m-header__boxright">
+            <div class="m-header__search">
+              <input type="text" placeholder="tìm kiếm">
+              <p class="btn_search"></p>
             </div>
-          <?php endif; ?>
-          <nav class="m-header__bottom-menu">
-            <ul>
-              <li><a href="/corporate/">企業情報</a>
-                <div class="m-header__subMenu">
-                  <div class="m-header__boxMenu">
-                    <div class="m-header__thumbMenu">
-                      <div class="m-header__thumbMenu-img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/img_header_company.png" alt="企業情報"></div>
-                      <div class="m-header__thumbMenu-wrap">
-                        <div class="m-header__thumbMenu-japanese">企業情報</div>
-                        <div class="m-header__thumbMenu-english">COMPANY INFO</div>
-                      </div>
-                    </div>
-                    <div class="m-header__navMenu">
-                          <ul>
-                            <li><a href="/corporate/top_message/">トップメッセージ</a>
-                            </li>
-                            <li><a href="/corporate/philosophy/">企業理念</a>
-                            </li>
-                            <li><a href="/corporate/policy/">行動方針</a>
-                            </li>
-                            <li><a href="/corporate/overview/">会社概要</a>
-                            </li>
-                            <li><a href="/corporate/access/">アクセス</a>
-                            </li>
-                            <li><a href="/corporate/management/">役員一覧・組織図</a>
-                            </li>
-                            <li><a href="/corporate/history/">沿革</a>
-                            </li>
-                            <li><a href="/corporate/group/">ベイシアグループについて</a>
-                            </li>
-                          </ul>
-                    </div>
-                    <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/corporate/">企業情報トップ</a></div>
-                  </div>
-                </div>
-              </li>
-              <li><a href="/news/">ニュースリリース</a></li>
-              <li><a href="/contents/">コンテンツ</a></li>
-              <li><a href="/about/">カインズについて</a>
-                <div class="m-header__subMenu">
-                  <div class="m-header__boxMenu">
-                    <div class="m-header__thumbMenu">
-                      <div class="m-header__thumbMenu-img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/img_header_aboutus.png" alt="カインズについて"></div>
-                      <div class="m-header__thumbMenu-wrap">
-                        <div class="m-header__thumbMenu-japanese">カインズについて</div>
-                        <div class="m-header__thumbMenu-english">ABOUT CAINZ</div>
-                      </div>
-                    </div>
-                    <div class="m-header__navMenu">
-                          <ul>
-                            <li><a href="/about/products/">商品開発（SBU戦略）</a>
-                            </li>
-                            <li><a href="/about/store/">店舗について</a>
-                            </li>
-                            <li><a href="/about/logistics/">ロジティクス</a>
-                            </li>
-                            <li><a href="/about/quality/">品質管理</a>
-                            </li>
-                            <li><a href="/about/digital/">デジタル戦略</a>
-                            </li>
-                            <li><a href="/about/hr/">人事戦略（DIY HR）</a>
-                            </li>
-                            <li><a href="/about/kumimachi/">くみまち構想</a>
-                            </li>
-                          </ul>
-                    </div>
-                    <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/about/">カインズについてトップ</a></div>
-                  </div>
-                </div>
-              </li>
-              <li><a href="/partner/">ビジネスパートナー募集</a>
-                <div class="m-header__subMenu">
-                  <div class="m-header__boxMenu">
-                    <div class="m-header__thumbMenu">
-                      <div class="m-header__thumbMenu-img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/img_header_partner.png" alt="ビジネスパートナー募集"></div>
-                      <div class="m-header__thumbMenu-wrap">
-                        <div class="m-header__thumbMenu-japanese">ビジネスパートナー募集</div>
-                        <div class="m-header__thumbMenu-english">Looking for business</div>
-                      </div>
-                    </div>
-                    <div class="m-header__navMenu">
-                          <ul>
-                            <li><a href="/partner/franchise/">フランチャイズ募集</a>
-                            </li>
-                            <li><a href="/partner/event/">催事募集</a>
-                            </li>
-                            <li><a href="/partner/site/">出店用地募集</a>
-                            </li>
-                            <li><a href="/partner/construction/">施工業者募集</a>
-                            </li>
-                            <li><a href="/partner/products_partner/">商品関連お取引業者募集</a>
-                            </li>
-                            <li><a href="/partner/tenant/">テナント募集</a>
-                            </li>
-                          </ul>
-                    </div>
-                    <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/partner/">ビジネスパートナー募集トップ</a></div>
-                  </div>
-                </div>
-              </li>
-              <li><a href="https://recruit.cainz.com/" target="_blank">採用情報</a></li>
-              <li><a href="https://translate.google.com/translate?hl=&amp;sl=ja&amp;tl=en&amp;u=https://www.cainz.co.jp/" target="_blank">EN</a></li>
-            </ul>
-          </nav>
-          <div class="m-menuToggle">
-            <div class="m-menuToggle__hamburger">
-              <input class="m-menuToggle__hamburger-button js-humburger-btn" type="checkbox">
-              <div class="m-menuToggle__hamburger-line"><span>1</span><span>2</span><span>3</span></div>
+            <div class="m-header__phone">
+              <a href="tel:0903930126">
+                <span>0903 930 126</span>
+              </a>
             </div>
-            <div class="m-menuToggle__content js-menu-content">
-              <nav class="m-menuToggle__content-item">
-                <h2 class="m-menuToggle__content-item--title">最新情報</h2>
-                <ul class="m-menuToggle__content-item--list">
-                  <li><a href="/news/">ニュースリリース</a></li>
-                  <li><a href="/contents/">コンテンツ</a></li>
-                </ul>
-              </nav>
-              <nav class="m-menuToggle__content-item">
-                <h2 class="m-menuToggle__content-item--title">総合情報</h2>
-                <ul class="m-menuToggle__content-item--list">
-                  <li>
-                    <div class="m-menuToggle__according">
-                      <input type="checkbox"><a class="m-menuToggle__according-text" href="/corporate/">企業情報</a>
-                      <div class="m-menuToggle__according-content">
-                            <ul>
-                              <li><a href="/corporate/top_message/">トップメッセージ</a>
-                              </li>
-                              <li><a href="/corporate/philosophy/">企業理念</a>
-                              </li>
-                              <li><a href="/corporate/policy/">行動方針</a>
-                              </li>
-                              <li><a href="/corporate/overview/">会社概要</a>
-                              </li>
-                              <li><a href="/corporate/access/">アクセス</a>
-                              </li>
-                              <li><a href="/corporate/management/">役員一覧・組織図</a>
-                              </li>
-                              <li><a href="/corporate/history/">沿革</a>
-                              </li>
-                              <li><a href="/corporate/group/">ベイシアグループについて</a>
-                              </li>
-                            </ul>
-                        <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/corporate/">企業情報トップ</a></div>
-                      </div>
-                      <div class="m-menuToggle__according-icon"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="m-menuToggle__according">
-                      <input type="checkbox"><a class="m-menuToggle__according-text" href="/about/">カインズについて</a>
-                      <div class="m-menuToggle__according-content">
-                            <ul>
-                              <li><a href="/about/products/">商品開発（SBU戦略）</a>
-                              </li>
-                              <li><a href="/about/store/">店舗について</a>
-                              </li>
-                              <li><a href="/about/logistics/">ロジティクス</a>
-                              </li>
-                              <li><a href="/about/quality/">品質管理</a>
-                              </li>
-                              <li><a href="/about/digital/">デジタル戦略</a>
-                              </li>
-                              <li><a href="/about/hr/">人事戦略（DIY HR）</a>
-                              </li>
-                              <li><a href="/about/kumimachi/">くみまち構想</a>
-                              </li>
-                            </ul>
-                        <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/about/">カインズについてトップ</a></div>
-                      </div>
-                      <div class="m-menuToggle__according-icon"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="m-menuToggle__according">
-                      <input type="checkbox"><a class="m-menuToggle__according-text" href="/partner/">ビジネスパートナー募集</a>
-                      <div class="m-menuToggle__according-content">
-                            <ul>
-                              <li><a href="/partner/franchise/">フランチャイズ募集</a>
-                              </li>
-                              <li><a href="/partner/event/">催事募集</a>
-                              </li>
-                              <li><a href="/partner/site/">出店用地募集</a>
-                              </li>
-                              <li><a href="/partner/construction/">施工業者募集</a>
-                              </li>
-                              <li><a href="/partner/products_partner/">商品関連お取引業者募集</a>
-                              </li>
-                              <li><a href="/partner/tenant/">テナント募集</a>
-                              </li>
-                            </ul>
-                        <div class="m-header__btnLink"><a class="m-header__btnLink-text" href="/partner/">ビジネスパートナー募集トップ</a></div>
-                      </div>
-                      <div class="m-menuToggle__according-icon"></div>
-                    </div>
-                  </li>
-                  <li><a href="https://recruit.cainz.com/" target="_blank">採用情報</a></li>
-                </ul>
-              </nav>
-              <nav class="m-menuToggle__globalMenu">
-                <ul class="m-menuToggle__globalMenu-list">
-                  <li><a href="https://www.cainz.com/" target="_blank">オンラインショップ</a></li>
-                  <li><a href="https://reform.cainz.com/" target="_blank">リフォーム</a></li>
-                  <li><a href="https://reserve.cainz.com/" target="_blank">Reserve</a></li>
-                  <li><a href="https://petsone.cainz.com/" target="_blank">ペッツワン</a></li>
-                  <li><a href="https://diy-style.cainz.com/" target="_blank">DIY STYLE</a></li>
-                  <li><a href="https://style-factory.cainz.com/" target="_blank">Style Factory</a></li>
-                  <li><a href="https://translate.google.com/translate?hl=&amp;sl=ja&amp;tl=en&amp;u=https://www.cainz.co.jp/" target="_blank">EN</a></li>
-                </ul>
-              </nav>
+            <div class="m-header__mail">
+              <a href="mailto:info@eurostone.vn">
+                <span>info@eurostone.vn</span>
+              </a>
             </div>
           </div>
         </div>
+        <div class="m-header__bottom">
+          <ul class="m-header__bottom--menu">
+            <li>
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#">Màu Sắc</a>
+            </li>
+            <li>
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#">Brands</a>
+            </li>
+            <li class="sub">
+              <span>Hạng Mục Ốp Đá</span>
+              <div class="m-header__submenu">
+                <div class="inner">
+                  <ul class="menu-slider">
+                    <li class="items">
+                      <a href="#">
+                        <figure>
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
+                          <figcaption>Phòng bếp test test test test test</figcaption>
+                        </figure>
+                        <p>text text text text test test test test test</p>
+                      </a>
+                    </li>
+                    <li class="items">
+                      <a href="#">
+                        <figure>
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img02.jpg" alt="Phòng bếp">
+                          <figcaption>Phòng bếp</figcaption>
+                        </figure>
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="items">
+                      <a href="#">
+                        <figure>
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img03.jpg" alt="Phòng bếp">
+                          <figcaption>Phòng bếp</figcaption>
+                        </figure>
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="items">
+                      <a href="#">
+                        <figure>
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
+                          <figcaption>Phòng bếp</figcaption>
+                        </figure>
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="items">
+                      <a href="#">
+                        <figure>
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
+                          <figcaption>Phòng bếp</figcaption>
+                        </figure>
+                        <p></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="sub">
+              <span>Giả Lập Không Gian</span>
+              <div class="m-header__submenu">
+                <ul class="submenu submenu--01">
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img05.jpg" alt="Hình dung trực tuyến test test">
+                        <figcaption>Hình dung trực tuyến test test</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img06.jpg" alt="Nhà bếp 3D">
+                        <figcaption>Nhà bếp 3D</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img07.jpg" alt="Bảng thiết kế">
+                        <figcaption>Bảng thiết kế</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sub">
+              <span>Tin Tức</span>
+              <div class="m-header__submenu">
+                <ul class="submenu submenu--02">
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img08.jpg" alt="Blog &amp; Sự kiện">
+                        <figcaption>Blog &amp; Sự kiện</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img09.jpg" alt="Mẫu nhà đẹp">
+                        <figcaption>Mẫu nhà đẹp</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img10.jpg" alt="Bảng thiết kế">
+                        <figcaption>Bảng thiết kế</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img12.jpg" alt="Bảng thiết kế">
+                        <figcaption>Bảng thiết kế</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img11.jpg" alt="Bảng thiết kế">
+                        <figcaption>Bảng thiết kế</figcaption>
+                      </figure>
+                      <p></p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Cosentino City</a>
+            </li>
+            <li>
+              <a href="#">Professionals</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
-    <main class="main">
+    <main class="l-main">

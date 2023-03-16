@@ -11,132 +11,685 @@
  * @package storefront
  */
 
-get_header(); ?>
-    <?php
-      require( get_stylesheet_directory() . '/module/sliderTop.php' );
-      require( get_stylesheet_directory() . '/module/pickupTop.php' );
-      require( get_stylesheet_directory() . '/module/newsTop.php' );
-      require( get_stylesheet_directory() . '/module/contentTop.php' );
-    ?>
-      <section class="aboutUs">
-        <div class="m-headline t-aboutUs">
-          <div class="g-inner">
-            <h2 class="m-headline__text">カインズについて</h2>
+  get_header();
+  require( get_stylesheet_directory() . '/module/main-slider.php' );
+  require( get_stylesheet_directory() . '/module/main-intro.php' );
+?>
+  <section id="idx_system">
+    <div class="bg-wave"></div>
+    <div class="inner">
+      <div class="system__cont">
+        <h3 class="c-title02">Hệ Thống Showroom</h3>
+        <ul class="list-2cols">
+          <li class="system__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/showroom_img01.jpg" alt="Showroom Gò Vấp">
+              </figure>
+              <div class="system__card--sec">
+                <h4>Showroom Gò Vấp</h4>
+                <p>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp </p>
+              </div>
+            </a>
+          </li>
+          <li class="system__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/showroom_img02.jpg" alt="Showroom Gò Vấp">
+              </figure>
+              <div class="system__card--sec">
+                <h4>Showroom Gò Vấp</h4>
+                <p>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <figure class="illust illust01">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust01.svg" alt="">
+    </figure>
+    <figure class="illust illust02">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust02.svg" alt="">
+    </figure>
+  </section>
+  <section id="box_tile">
+    <div class="inner">
+      <h3 class="c-title03">Hạng Mục Ốp Lát</h3>
+      <ul class="list-4cols">
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
+            </figure>
+            <p>ĐÁ ỐP MẶT TIỀN</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="box_stone">
+    <div class="inner">
+      <div class="block block--01">
+        <div class="box-ttl">
+          <h3 class="c-title03">Đá Hoa Cương</h3>
+          <ul class="list-cate">
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="viewall-link">
+          <a href="#">Xem tất cả </a>
+        </div>
+        <ul class="c-slider01 slider01">
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green) Đá Marble Xanh (Green) Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cmf</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="block block--02">
+        <div class="box-ttl">
+          <h3 class="c-title03">Đá Hoa Cương</h3>
+          <ul class="list-cate">
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="viewall-link">
+          <a href="#">Xem tất cả </a>
+        </div>
+        <ul class="c-slider01 slider01">
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cmf</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="block block03">
+        <div class="box-ttl">
+          <h3 class="c-title03">Đá Hoa Cương</h3>
+          <ul class="list-cate">
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+            <li>
+              <a href="#">Subcate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="viewall-link">
+          <a href="#">Xem tất cả </a>
+        </div>
+        <ul class="c-slider01 slider01">
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cmf</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
+              </figure>
+              <div class="sec">
+                <h4>Đá Marble Xanh (Green)</h4>
+                <ul class="list-tag">
+                  <li>India</li>
+                  <li>Lớn</li>
+                  <li>1.6 - 1.8cm</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="idx_service">
+    <div class="bg-wave"></div>
+    <div class="inner">
+      <h3 class="c-title02">Dịch Vụ Ngành Đá</h3>
+      <div class="service__cont">
+        <ul class="list-4cols">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/service_img01.png" alt="PHÂN PHỐI ĐÁ VẬT TƯ">
+              </figure>
+              <p>PHÂN PHỐI ĐÁ VẬT TƯ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/service_img01.png" alt="PHÂN PHỐI ĐÁ VẬT TƯ">
+              </figure>
+              <p>PHÂN PHỐI ĐÁ VẬT TƯ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/service_img01.png" alt="PHÂN PHỐI ĐÁ VẬT TƯ">
+              </figure>
+              <p>PHÂN PHỐI ĐÁ VẬT TƯ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/service_img01.png" alt="PHÂN PHỐI ĐÁ VẬT TƯ">
+              </figure>
+              <p>PHÂN PHỐI ĐÁ VẬT TƯ</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <figure class="illust illust03">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust03.svg" alt="illust">
+    </figure>
+    <figure class="illust illust04">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust04.svg" alt="illust">
+    </figure>
+  </section>
+  <section id="idx_construction">
+    <div class="inner">
+      <h3 class="c-title02">Công Trình Thi Công</h3>
+      <div class="viewall-link">
+        <a href="#">Xem tất cả </a>
+      </div>
+      <div class="m-block02">
+        <div class="m-block02__cont">
+          <div class="frame01">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/construc_img01.jpg" alt="Công Trình Thi Công">
+            </figure>
+            <div class="block">
+              <h4>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </h4>
+              <div class="sec">
+                <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+                <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+              </div>
+              <div class="link-detail">
+                <a href="#">Chi tiết...</a>
+              </div>
+            </div>
+          </div>
+          <div class="frame02">
+            <ul class="c-slider01 slider02">
+              <li class="items">
+                <a href="#">
+                  <figure>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/construc_img02.jpg" alt="Công Trình Thi Công">
+                  </figure>
+                  <div class="sec">
+                    <p class="tag">EBL 12022</p>
+                    <h4>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </h4>
+                    <p class="txt">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </a>
+              </li>
+              <li class="items">
+                <a href="#">
+                  <figure>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/construc_img02.jpg" alt="Công Trình Thi Công">
+                  </figure>
+                  <div class="sec">
+                    <p class="tag">EBL 12022</p>
+                    <h4>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </h4>
+                    <p class="txt">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </a>
+              </li>
+              <li class="items">
+                <a href="#">
+                  <figure>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/construc_img02.jpg" alt="Công Trình Thi Công">
+                  </figure>
+                  <div class="sec">
+                    <p class="tag">EBL 12022</p>
+                    <h4>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </h4>
+                    <p class="txt">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </a>
+              </li>
+              <li class="items">
+                <a href="#">
+                  <figure>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/construc_img02.jpg" alt="Công Trình Thi Công">
+                  </figure>
+                  <div class="sec">
+                    <p class="tag">EBL 12022</p>
+                    <h4>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </h4>
+                    <p class="txt">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="g-inner">
-          <ul class="aboutUs__list">
-            <li class="aboutUs__list-item"><a href="/corporate/top_message/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about01.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about01_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about01.png" alt="トップメッセージ">
-                </picture><span class="aboutUs__list-text">トップメッセージ</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/philosophy/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about02.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about02_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about02.png" alt="企業理念">
-                </picture><span class="aboutUs__list-text">企業理念</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/policy/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about03.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about03_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about03.png" alt="行動方針">
-                </picture><span class="aboutUs__list-text">行動方針</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/outline/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about04.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about04_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about04.png" alt="会社概要">
-                </picture><span class="aboutUs__list-text">会社概要</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/access/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about05.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about05_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about05.png" alt="アクセス">
-                </picture><span class="aboutUs__list-text">アクセス</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/management/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about06.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about06_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about06.png" alt="役員一覧・組織図">
-                </picture><span class="aboutUs__list-text">役員一覧・組織図</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/history/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about07.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about07_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about07.png" alt="沿革">
-                </picture><span class="aboutUs__list-text">沿革</span></a></li>
-            <li class="aboutUs__list-item"><a href="/corporate/aboutbeisia/">
-                <picture>
-                  <source media="(min-width: 1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about08.png">
-                  <source media="(max-width: 1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about08_sp.png"><img class="m-aboutUs__list-thumb" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-about08.png" alt="ベイシアグループについて">
-                </picture><span class="aboutUs__list-text">ベイシアグループについて</span></a></li>
+      </div>
+    </div>
+  </section>
+  <section id="idx_news">
+    <div class="inner">
+      <h3 class="c-title02">Tin Tức</h3>
+      <div class="viewall-link">
+        <a href="#">Xem tất cả</a>
+      </div>
+      <div class="news__cont">
+        <ul class="news__list">
+          <li class="news__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news_img01.jpg" alt="Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa">
+              </figure>
+              <div class="sec">
+                <h4>Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa</h4>
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+              </div>
+            </a>
+          </li>
+          <li class="news__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news_img01.jpg" alt="Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa">
+              </figure>
+              <h4>Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa</h4>
+            </a>
+          </li>
+          <li class="news__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news_img01.jpg" alt="Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa">
+              </figure>
+              <h4>Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa</h4>
+            </a>
+          </li>
+          <li class="news__card">
+            <a href="#">
+              <figure>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news_img01.jpg" alt="Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa">
+              </figure>
+              <h4>Bí Quyết Chọn Tra nh Đá Phòng Khách Cho Người Mệnh Hỏa</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="idx_contact">
+    <div class="inner">
+      <div class="box-left">
+        <ul class="person-slider">
+          <li class="items">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/person_img01.png" alt="Nguyen Van A">
+            </figure>
+            <div class="block">
+              <h4>Nguyen Van A <br>Chủ đầu tư dự án Novaland </h4>
+              <div class="sec">
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+              </div>
+            </div>
+          </li>
+          <li class="items">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/person_img01.png" alt="Nguyen Van A">
+            </figure>
+            <div class="block">
+              <h4>Nguyen Van A <br>Chủ đầu tư dự án Novaland </h4>
+              <div class="sec">
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+              </div>
+            </div>
+          </li>
+          <li class="items">
+            <figure>
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/person_img01.png" alt="Nguyen Van A">
+            </figure>
+            <div class="block">
+              <h4>Nguyen Van A <br>Chủ đầu tư dự án Novaland </h4>
+              <div class="sec">
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text.Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="box-right">
+        <div class="form-contact">
+          <h4 class="form-ttl">ĐẶT LỊCH HẸN VÀ TƯ VẤN TRỰC TIẾP</h4>
+          <p class="form-txt">Quý khách vui lòng để lại thông tin để được tư vấn về sản phẩm và dịch vụ của Eurostone</p>
+          <ul class="form-contact__cont">
+            <li class="cus_input">
+              <span class="required"></span>
+              <input id="fullname" type="text" name="fullname" value="" placeholder="Họ và tên">
+            </li>
+            <li class="cus_input">
+              <span class="required"></span>
+              <input id="number" type="text" name="number" value="" placeholder="Điện thoại">
+            </li>
+            <li class="cus_input">
+              <span class="required"></span>
+              <input id="email" type="text" name="email" value="" placeholder="email">
+            </li>
+            <li class="cus_textarea">
+              <textarea id="contentarea" name="" cols="30" rows="10" placeholder="nội dung"></textarea>
+            </li>
+            <li class="btn_gr">
+              <div class="btn_submit">
+                <input type="submit" value="GỬI EMAIL">
+              </div>
+              <span class="required">là thông tin bắt buộc</span>
+            </li>
           </ul>
-          <ul class="aboutUs__systemList">
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/product/">商品開発</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/store/">店舗について</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/diyhr/">人事戦略</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/logistics/">ロジティクス</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/quality/">品質管理</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/digital/">デジタル戦略</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/about/kumimachi/">くみまち構想</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="https://recruit.cainz.com/">採用</a></div>
-            </li>
-            <li class="aboutUs__systemList-item">
-              <div class="m-btnPrimary"><a class="m-btnPrimary__link js-link-btn" href="/partners/">ビジネスパートナー募集</a></div>
-            </li>
-          </ul>
-          <div class="aboutUs__logoBanner">
-            <div class="aboutUs__logoBanner-headline">
-              <h3 class="aboutUs__logoBanner-headline--title">関連サービス</h3>
-            </div>
-            <ul class="aboutUs__logoBanner__list">
-              <li class="aboutUs__logoBanner__list-item"><a href="https://diy-style.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service01.png" alt="CAINZ DIY Style"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://reserve.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service02.png" alt="CAINZ Reserve"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://reform.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service03.png" alt="CAINZ Reform"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://petsone.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service04.png" alt="Pet's One ペッツワン"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://img.cainz.com/jp/cooking_fun/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service05.png" alt="cooking Fun"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://czpro.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service06.png" alt="C'z PRO"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://style-factory.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-service07.png" alt="CAINZ Style Factory"></a></li>
-            </ul>
-          </div>
-          <div class="aboutUs__logoBanner">
-            <div class="aboutUs__logoBanner-headline">
-              <h3 class="aboutUs__logoBanner-headline--title">メディア</h3>
-            </div>
-            <ul class="aboutUs__logoBanner__list">
-              <li class="aboutUs__logoBanner__list-item"><a href="https://magazine.cainz.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-media01.png" alt="となりのカインズさん"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.youtube.com/@cainztv" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-media02.png" alt="CAINZ TV"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.wanqol.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-media03.png" alt="WanQol"></a></li>
-            </ul>
-          </div>
-          <div class="aboutUs__logoBanner">
-            <div class="aboutUs__logoBanner-headline">
-              <h3 class="aboutUs__logoBanner-headline--title">グループ企業</h3>
-            </div>
-            <ul class="aboutUs__logoBanner__list">
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.beisia.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group01.png" alt="Beisia"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.workman.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group02.png" alt="WORKMAN"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://hands.net/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group03.png" alt="HANDS"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.saveon.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group04.png" alt="SAVE ON"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.autors.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group05.png" alt="AUTER's"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://beisiadenki.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group06.png" alt="ベイシア電器"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.seikando-b.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group07.png" alt="清閑堂"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://www.cainz.co.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group08.png" alt="ベイシアスポーツクラブ"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://cainztravel.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group09.png" alt="CAINZ Travel"></a></li>
-              <li class="aboutUs__logoBanner__list-item"><a href="https://be-rri.jp/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/top/img-group10.png" alt="Beisia 流通技術研究所"></a></li>
-            </ul>
-          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 <?php get_footer();
