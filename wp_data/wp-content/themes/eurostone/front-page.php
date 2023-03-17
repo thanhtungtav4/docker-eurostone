@@ -14,45 +14,8 @@
   get_header();
   require( get_stylesheet_directory() . '/module/main-slider.php' );
   require( get_stylesheet_directory() . '/module/main-intro.php' );
+  require( get_stylesheet_directory() . '/module/main-showroom.php' );
 ?>
-  <section id="idx_system">
-    <div class="bg-wave"></div>
-    <div class="inner">
-      <div class="system__cont">
-        <h3 class="c-title02">Hệ Thống Showroom</h3>
-        <ul class="list-2cols">
-          <li class="system__card">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/showroom_img01.jpg" alt="Showroom Gò Vấp">
-              </figure>
-              <div class="system__card--sec">
-                <h4>Showroom Gò Vấp</h4>
-                <p>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp </p>
-              </div>
-            </a>
-          </li>
-          <li class="system__card">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/showroom_img02.jpg" alt="Showroom Gò Vấp">
-              </figure>
-              <div class="system__card--sec">
-                <h4>Showroom Gò Vấp</h4>
-                <p>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp </p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <figure class="illust illust01">
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust01.svg" alt="">
-    </figure>
-    <figure class="illust illust02">
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust02.svg" alt="">
-    </figure>
-  </section>
   <section id="box_tile">
     <div class="inner">
       <h3 class="c-title03">Hạng Mục Ốp Lát</h3>

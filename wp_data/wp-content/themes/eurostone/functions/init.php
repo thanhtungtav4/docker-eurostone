@@ -40,6 +40,8 @@ function corporate_theme_setup() {
 	add_image_size( 'INTRO-THUMBPC-2x', 1208, 936, true );
 	add_image_size( 'INTRO-THUMBSP', 356, 376, true );
 	add_image_size( 'INTRO-THUMBSP-2x', 712, 752, true );
+	add_image_size( 'SHOWROOM-THUMBSP', 356, 257, true );
+	add_image_size( 'SHOWROOM-THUMBPC', 580, 418, true );
 }
 /**
  * This function takes a string `$data` as its input and performs the following operations:
@@ -180,6 +182,28 @@ function handle_thumbnail($size){
 	return print $images;
 }
 
+
+/**
+ * Generate HTML for displaying post thumbnails picture
+ *
+ * @param string $size The thumbnail size to use
+ ** @param string $size The thumbnail size mobile to use
+ * @return string The HTML for the post thumbnail image
+ */
+function handle_thumbnail_picture($size, $sizemb){
+	$images = '';
+	if ( has_post_thumbnail() ) {
+		$images = the_post_thumbnail($size, array('loading' => 'lazy', 'alt'   => get_the_title() ) );
+	}
+	else{
+		$images .= '<picture">';
+		$images .= '</picture>';
+
+	}
+	return print $images;
+}
+
+
 /**
  * Generate HTML for displaying thumbnails by id
  *
@@ -192,7 +216,7 @@ function handle_thumbnail_id($id, $size = 'NEWS-THUMB', $alt = ''){
 	$placeholder = defined("PLACEHOLDER-".$size) ? constant("PLACEHOLDER-".$size) : null;
 	$images = wp_get_attachment_image_url($id, $size);
 	if ($images) {
-	  $images = '<figure><img src="'. wp_get_attachment_image_url($id, $size).'" alt="'. $alt .'" loading="lazy"></figure>';
+	  $images = '<img src="'. wp_get_attachment_image_url($id, $size).'" alt="'. $alt .'" loading="lazy">';
 	}
 	elseif(!empty($placeholder)){
 		$images = '<img src="'. $placeholder . '" alt="'. alt() .'" loading="lazy">';
