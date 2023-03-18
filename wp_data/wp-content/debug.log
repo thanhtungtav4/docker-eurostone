@@ -17,3 +17,8 @@
 [17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
 [17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
 [17-Mar-2023 17:25:44 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
+[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[18-Mar-2023 02:01:04 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
