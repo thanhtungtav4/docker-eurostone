@@ -1,24 +1,11 @@
-[17-Mar-2023 15:25:15 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
-[17-Mar-2023 15:25:15 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
-[17-Mar-2023 15:25:15 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
-[17-Mar-2023 15:25:15 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Undefined array key "default_lang" in /var/www/html/wp-content/plugins/polylang/frontend/choose-lang.php on line 193
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Undefined array key "default_lang" in /var/www/html/wp-content/plugins/polylang/frontend/choose-lang.php on line 89
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "is_rtl" on bool in /var/www/html/wp-content/plugins/polylang/frontend/choose-lang.php on line 91
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "slug" on bool in /var/www/html/wp-content/plugins/polylang/frontend/choose-lang.php on line 104
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 60
-[17-Mar-2023 15:45:24 UTC] PHP Warning:  Attempt to read property "locale" on bool in /var/www/html/wp-content/plugins/polylang/frontend/frontend-filters.php on line 203
-[17-Mar-2023 17:25:44 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
-[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
-[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
-[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
-[18-Mar-2023 02:01:03 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/plugins/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
-[18-Mar-2023 02:01:04 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
+[20-Mar-2023 06:32:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function alt() in /var/www/html/wp-content/themes/eurostone/functions/init.php:223
+Stack trace:
+#0 /var/www/html/wp-content/themes/eurostone/module/item/taxItem.php(5): handle_thumbnail_id(NULL, 'TAX-STONE-THUMB', '\xC4\x90\xC3\x81 L\xC3\x81T N\xE1\xBB\x80N', true)
+#1 /var/www/html/wp-content/themes/eurostone/module/main-stone-tax.php(14): require('/var/www/html/w...')
+#2 /var/www/html/wp-content/themes/eurostone/front-page.php(18): require('/var/www/html/w...')
+#3 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#4 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#5 /var/www/html/index.php(17): require('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/themes/eurostone/functions/init.php on line 223
+[20-Mar-2023 07:06:44 UTC] PHP Warning:  Constant PLACEHOLDER-TAX-STONE-THUMB already defined in /var/www/html/wp-content/themes/eurostone/functions/init.php on line 10

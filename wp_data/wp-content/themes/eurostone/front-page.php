@@ -15,62 +15,8 @@
   require( get_stylesheet_directory() . '/module/main-slider.php' );
   require( get_stylesheet_directory() . '/module/main-intro.php' );
   require( get_stylesheet_directory() . '/module/main-showroom.php' );
+  require( get_stylesheet_directory() . '/module/main-stone-tax.php' );
 ?>
-  <section id="box_tile">
-    <div class="inner">
-      <h3 class="c-title03">Hạng Mục Ốp Lát</h3>
-      <ul class="list-4cols">
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/tile_img01.png" alt="ĐÁ ỐP MẶT TIỀN">
-            </figure>
-            <p>ĐÁ ỐP MẶT TIỀN</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
   <section id="box_stone">
     <div class="inner">
       <div class="block block--01">

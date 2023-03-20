@@ -4,12 +4,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 define('PAGESIZE', 10);
-define( 'PLACEHOLDER-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_440x260.png' );
-define( 'PLACEHOLDER-NEWS-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_440x260.png' );
-define( 'PLACEHOLDER-NEWS-ITEM-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_300x186.png' );
-define( 'PLACEHOLDER-CONTENT-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_800x448.png' );
-define( 'PLACEHOLDER-CONTENT-ITEM-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_708x492.png' );
-define( 'PLACEHOLDER-CONTENT-DETAIL-THUMB', get_stylesheet_directory_uri() . '/assets/images/img_noimage_800x448.png' );
+define( 'PLACEHOLDER-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_270x270.jpg' );
+define( 'PLACEHOLDER-TAX-STONE-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_270x270.jpg' );
+define( 'PLACEHOLDER-SHOWROOM-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_580x418.jpg' );
+define( 'PLACEHOLDER-INTRO-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_600x645.jpg' );
 ///placeholder-content-thumb placeholder-news-thumb placeholder-thumb
 // using in meta data if null
 define('POST_TYPES', ['page', 'post', 'content']);
@@ -42,6 +40,7 @@ function corporate_theme_setup() {
 	add_image_size( 'INTRO-THUMBSP-2x', 712, 752, true );
 	add_image_size( 'SHOWROOM-THUMBSP', 356, 257, true );
 	add_image_size( 'SHOWROOM-THUMBPC', 580, 418, true );
+	add_image_size( 'TAX-STONE-THUMB', 270, 270, true );
 }
 /**
  * This function takes a string `$data` as its input and performs the following operations:
@@ -205,24 +204,31 @@ function handle_thumbnail_picture($size, $sizemb){
 
 
 /**
- * Generate HTML for displaying thumbnails by id
+ * Function to handle generating HTML for a thumbnail image.
  *
- * @param int $id  attachment image
- * @param string $size The thumbnail size to use
- * @param string $alt alt image
- * @return string The HTML for the post thumbnail image
+ * @param int $id The ID of the attachment.
+ * @param string $size The size of the image.
+ * @param string $alt The alt text for the image.
+ * @param bool $is_figure Whether or not to wrap the image in a <figure> element.
+ * @return string The generated HTML for the image.
  */
-function handle_thumbnail_id($id, $size = 'NEWS-THUMB', $alt = ''){
+function handle_thumbnail_id($id, $size = 'NEWS-THUMB', $alt = '', $is_figure = false){
 	$placeholder = defined("PLACEHOLDER-".$size) ? constant("PLACEHOLDER-".$size) : null;
 	$images = wp_get_attachment_image_url($id, $size);
 	if ($images) {
-	  $images = '<img src="'. wp_get_attachment_image_url($id, $size).'" alt="'. $alt .'" loading="lazy">';
+		$images = $is_figure ? '<figure>' : '';
+		$images .= '<img src="' . wp_get_attachment_image_url($id, $size) . '" alt="' . $alt . '" loading="lazy">';
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	elseif(!empty($placeholder)){
-		$images = '<img src="'. $placeholder . '" alt="'. alt() .'" loading="lazy">';
+		$images = $is_figure ? '<figure>' : '';
+		$images .= '<img src="'. $placeholder . '" alt="'. $alt .'" loading="lazy">';
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	else{
-		$images = '<img src="'. constant('PLACEHOLDER-THUMB') . '" alt="'. $alt .'" loading="lazy">';
+		$images = $is_figure ? '<figure>' : '';
+		$images .= '<img src="'. constant('PLACEHOLDER-THUMB') . '" alt="'. $alt .'" loading="lazy">';
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	return print $images;
 }
