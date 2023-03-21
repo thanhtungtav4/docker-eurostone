@@ -43,7 +43,11 @@
             <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
             <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>
             <ul>
-              <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?>
+              <?php
+              if ( function_exists('pll_the_languages') ) {
+                  pll_the_languages(array('show_flags'=>1,'show_names'=>0));
+                }
+              ?>
             </ul>
           </div>
         </div>

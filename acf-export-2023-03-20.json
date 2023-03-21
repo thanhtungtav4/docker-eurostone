@@ -125,6 +125,23 @@
                         "preview_size": "medium"
                     }
                 ]
+            },
+            {
+                "key": "field_6419103965aa6",
+                "label": "Link to",
+                "name": "link_to",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#",
+                "placeholder": ""
             }
         ],
         "location": [
