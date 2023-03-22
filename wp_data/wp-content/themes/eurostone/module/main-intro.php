@@ -1,9 +1,9 @@
 <section id="idx_intro">
   <figure class="illust illust03">
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust03.svg" alt="illust">
+    <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust03.svg" alt="illust">
   </figure>
   <figure class="illust illust04">
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust04.svg" alt="illust">
+    <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust04.svg" alt="illust">
   </figure>
   <div class="inner">
     <div class="m-block01">

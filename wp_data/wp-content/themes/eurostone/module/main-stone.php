@@ -21,14 +21,13 @@
   $queryStone = new WP_Query($argsStone);
   if( $queryStone->have_posts() ): ?>
   <section id="box_stone">
-    <?php var_dump(get_locale())?>
     <div class="inner">
       <div class="block block--01">
         <div class="box-ttl">
           <h3 class="c-title03"><?php echo $taxonomyParent->name ?></h3>
           <?php if($termchildren) :?>
           <ul class="list-cate">
-            <?php foreach($termchildren as $child) : 
+            <?php foreach($termchildren as $child) :
               $term = get_term_by( 'id', $child, $taxonomy_type );
               ?>
             <li>
@@ -39,7 +38,7 @@
           <?php endif; ?>
         </div>
         <div class="viewall-link">
-          <a href="<?php echo $taxonomySlug ?>" title="<?php echo $taxonomyParent->name ?>">Xem tất cả </a>
+          <a href="<?php echo $taxonomySlug ?>" title="<?php echo $taxonomyParent->name ?>"><?php _e('View all', 'eurostone') ?></a>
         </div>
         <ul class="c-slider01 slider01">
           <?php while ( $queryStone->have_posts() ) : $queryStone->the_post(); ?>

@@ -73,7 +73,7 @@
                         "label": "Link to",
                         "name": "link_to",
                         "aria-label": "",
-                        "type": "url",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -82,8 +82,11 @@
                             "class": "",
                             "id": ""
                         },
-                        "default_value": "#",
-                        "placeholder": ""
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
                     }
                 ]
             }

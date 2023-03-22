@@ -289,3 +289,10 @@ function get_category_slug_by_name( $category_name, $taxonomy = 'category' ) {
 		return preg_replace('/(width|height)="\d+"\s/', "", $html);
 	}
 	add_filter( 'post_thumbnail_html', 'remove_img_attr' );
+
+	function my_tags_hierarchical($args) {
+		$args['label'] = 'Tags';
+    $args['hierarchical'] = true;
+    return $args;
+	};
+	add_filter( 'register_post_tag_taxonomy_args', 'my_tags_hierarchical' );

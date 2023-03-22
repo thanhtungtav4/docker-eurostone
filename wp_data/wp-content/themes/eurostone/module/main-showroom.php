@@ -20,10 +20,10 @@
         </div>
       </div>
       <figure class="illust illust01">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust01.svg" alt="">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust01.svg" alt="">
       </figure>
       <figure class="illust illust02">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust02.svg" alt="">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust02.svg" alt="">
       </figure>
     </section>
     <?php wp_reset_query(); ?>
