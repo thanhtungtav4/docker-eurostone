@@ -8,6 +8,7 @@ define( 'PLACEHOLDER-THUMB', get_stylesheet_directory_uri() . '/assets/images/pl
 define( 'PLACEHOLDER-TAX-STONE-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_270x270.jpg' );
 define( 'PLACEHOLDER-SHOWROOM-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_580x418.jpg' );
 define( 'PLACEHOLDER-INTRO-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_600x645.jpg' );
+define( 'PLACEHOLDER-STONE-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_285x275.jpg' );
 ///placeholder-content-thumb placeholder-news-thumb placeholder-thumb
 // using in meta data if null
 define('POST_TYPES', ['page', 'post', 'content']);
@@ -41,6 +42,7 @@ function corporate_theme_setup() {
 	add_image_size( 'SHOWROOM-THUMBSP', 356, 257, true );
 	add_image_size( 'SHOWROOM-THUMBPC', 580, 418, true );
 	add_image_size( 'TAX-STONE-THUMB', 270, 270, true );
+	add_image_size( 'STONE-THUMB', 285, 275, true );
 }
 /**
  * This function takes a string `$data` as its input and performs the following operations:
@@ -166,17 +168,22 @@ function get_handle_thumbnail($size){
  * @param string $size The thumbnail size to use
  * @return string The HTML for the post thumbnail image
  */
-function handle_thumbnail($size){
+function handle_thumbnail($size, $is_figure = false){
 	$placeholder = defined("PLACEHOLDER-".$size) ? constant("PLACEHOLDER-".$size) : null;
-	$images = '';
 	if ( has_post_thumbnail() ) {
+		$images = $is_figure ? '<figure>' : '';
 		$images = the_post_thumbnail($size, array('loading' => 'lazy', 'alt'   => get_the_title() ) );
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	elseif(!empty($placeholder)){
+		$images = $is_figure ? '<figure>' : '';
 		$images = '<img src="'. $placeholder . '" alt="'. get_the_title() .'" loading="lazy">';
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	else{
+		$images = $is_figure ? '<figure>' : '';
 		$images = '<img src="'. constant('PLACEHOLDER-THUMB') . '" alt="'. get_the_title() .'" loading="lazy">';
+		$images .= $is_figure ? '</figure>' : '';
 	}
 	return print $images;
 }

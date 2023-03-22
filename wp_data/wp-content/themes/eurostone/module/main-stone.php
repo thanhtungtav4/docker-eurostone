@@ -1,8 +1,9 @@
 <?php
   $terms_slug = 'da-marble';
   $taxonomy_type = 'type-stone';
-  $taxonomyName = get_term_by('slug',  $terms_slug , $taxonomy_type);
+  $taxonomyParent = get_term_by('slug',  $terms_slug , $taxonomy_type);
   $taxonomySlug = get_term_link($terms_slug, $taxonomy_type);
+  $termchildren = get_term_children($taxonomyParent->term_id, $taxonomy_type );
   $argsStone = array(
     'post_type'		=> 'product',
     'post_status' => 'publish',
@@ -20,116 +21,30 @@
   $queryStone = new WP_Query($argsStone);
   if( $queryStone->have_posts() ): ?>
   <section id="box_stone">
+    <?php var_dump(get_locale())?>
     <div class="inner">
       <div class="block block--01">
         <div class="box-ttl">
-          <h3 class="c-title03"><?php echo $taxonomyName->name ?></h3>
+          <h3 class="c-title03"><?php echo $taxonomyParent->name ?></h3>
+          <?php if($termchildren) :?>
           <ul class="list-cate">
+            <?php foreach($termchildren as $child) : 
+              $term = get_term_by( 'id', $child, $taxonomy_type );
+              ?>
             <li>
-              <a href="#">Subcate</a>
+              <a href="<?php echo get_term_link( $child, $taxonomy_type ); ?>"><?php echo $term->name ?></a>
             </li>
-            <li>
-              <a href="#">Subcate</a>
-            </li>
-            <li>
-              <a href="#">Subcate</a>
-            </li>
+            <?php endforeach; ?>
           </ul>
+          <?php endif; ?>
         </div>
         <div class="viewall-link">
-          <a href="<?php echo $taxonomySlug ?>" title="<?php echo $taxonomyName->name ?>">Xem tất cả </a>
+          <a href="<?php echo $taxonomySlug ?>" title="<?php echo $taxonomyParent->name ?>">Xem tất cả </a>
         </div>
         <ul class="c-slider01 slider01">
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green) Đá Marble Xanh (Green) Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cm</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cmf</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cm</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cm</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cm</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          <li class="items">
-            <a href="#">
-              <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-              </figure>
-              <div class="sec">
-                <h4>Đá Marble Xanh (Green)</h4>
-                <ul class="list-tag">
-                  <li>India</li>
-                  <li>Lớn</li>
-                  <li>1.6 - 1.8cm</li>
-                </ul>
-              </div>
-            </a>
-          </li>
+          <?php while ( $queryStone->have_posts() ) : $queryStone->the_post(); ?>
+            <?php require( get_stylesheet_directory() . '/module/item/sliderItem.php' ); ?>
+          <?php endwhile; ?>
         </ul>
       </div>
     </div>
