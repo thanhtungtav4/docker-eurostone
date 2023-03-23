@@ -22,7 +22,7 @@
           <?php get_field('description-intro') ? the_field('description-intro') : ''?>
         </div>
         <div class="c-btn01">
-          <a href="<?php the_field('link_to-intro')?>">XEM THÊM</a>
+          <a href="<?php the_field('link_to-intro')?>"><?php _e('View more', 'eurostone'); ?></a>
         </div>
       </div>
     </div>

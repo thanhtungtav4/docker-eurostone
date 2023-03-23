@@ -3,7 +3,9 @@
   $taxonomy_type = 'type-stone';
   $taxonomyParent = get_term_by('slug',  $terms_slug , $taxonomy_type);
   $taxonomySlug = get_term_link($terms_slug, $taxonomy_type);
-  $termchildren = get_term_children($taxonomyParent->term_id, $taxonomy_type );
+  if($taxonomyParent && $taxonomyParent->term_id){
+    $termchildren = get_term_children($taxonomyParent->term_id, $taxonomy_type );
+  }
   $argsStone = array(
     'post_type'		=> 'product',
     'post_status' => 'publish',

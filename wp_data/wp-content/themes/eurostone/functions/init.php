@@ -43,6 +43,9 @@ function corporate_theme_setup() {
 	add_image_size( 'SHOWROOM-THUMBPC', 580, 418, true );
 	add_image_size( 'TAX-STONE-THUMB', 270, 270, true );
 	add_image_size( 'STONE-THUMB', 285, 275, true );
+	add_image_size( 'NEWS-THUMB', 400, 400, true );
+	add_image_size( 'WORKS-THUMB', 790, 467, true );
+	add_image_size( 'NEWS-THUMBNAIL', 120, 120, true );
 }
 /**
  * This function takes a string `$data` as its input and performs the following operations:
@@ -170,19 +173,20 @@ function get_handle_thumbnail($size){
  */
 function handle_thumbnail($size, $is_figure = false){
 	$placeholder = defined("PLACEHOLDER-".$size) ? constant("PLACEHOLDER-".$size) : null;
+	$images = '';
 	if ( has_post_thumbnail() ) {
-		$images = $is_figure ? '<figure>' : '';
-		$images = the_post_thumbnail($size, array('loading' => 'lazy', 'alt'   => get_the_title() ) );
+		$images .= $is_figure ? '<figure>' : '';
+		$images .= get_the_post_thumbnail(get_the_ID(), $size, array('loading' => 'lazy', 'alt'   => get_the_title() ) );
 		$images .= $is_figure ? '</figure>' : '';
 	}
 	elseif(!empty($placeholder)){
-		$images = $is_figure ? '<figure>' : '';
-		$images = '<img src="'. $placeholder . '" alt="'. get_the_title() .'" loading="lazy">';
+		$images .= $is_figure ? '<figure>' : '';
+		$images .= '<img src="'. $placeholder . '" alt="'. get_the_title() .'" loading="lazy">';
 		$images .= $is_figure ? '</figure>' : '';
 	}
 	else{
-		$images = $is_figure ? '<figure>' : '';
-		$images = '<img src="'. constant('PLACEHOLDER-THUMB') . '" alt="'. get_the_title() .'" loading="lazy">';
+		$images .= $is_figure ? '<figure>' : '';
+		$images .= '<img src="'. constant('PLACEHOLDER-THUMB') . '" alt="'. get_the_title() .'" loading="lazy">';
 		$images .= $is_figure ? '</figure>' : '';
 	}
 	return print $images;
