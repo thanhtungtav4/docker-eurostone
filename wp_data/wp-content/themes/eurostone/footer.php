@@ -28,31 +28,11 @@
         <div class="footer__frame">
           <div class="f_ttl">KẾT NỐI VỚI EUROSTONE</div>
           <ul class="list-social">
-            <li>
-              <a href="#" target="_blank">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/facebook.png" alt="facebook" width="30">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/pinterest.png" alt="pinterest" width="30">
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/youtube.png" alt="youtube" width="30">
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/zalo.png" alt="zalo" width="30">
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/messenger.png" alt="messenger" width="30">
-              </a>
-            </li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/facebook.png" alt="facebook" width="30"></a></li>
+            <li> <a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/pinterest.png" alt="pinterest" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/youtube.png" alt="youtube" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/zalo.png" alt="zalo" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/messenger.png" alt="messenger" width="30"></a></li>
           </ul>
         </div>
       </div>
@@ -69,20 +49,17 @@
             <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
             <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
           </ul>
-          <p class="f_txt02 phone">Hotline : <a href="tel:0903930126">0903 930 126</a>
-            <a href="tel:0903598407">0903 598 407</a>
-          </p>
-          <p class="f_txt02 mail">Email : <a href="mailto:info@eurostone.vn">info@eurostone.vn</a>
-          </p>
+          <p class="f_txt02 phone">Hotline : <a href="tel:0903930126">0903 930 126</a><a href="tel:0903598407">0903 598 407</a></p>
+          <p class="f_txt02 mail">Email : <a href="mailto:info@eurostone.vn">info@eurostone.vn</a></p>
         </div>
       </div>
       <div class="footer__block">
         <div class="footer__frame">
           <p class="f_ttl">CHÍNH SÁCH CHUNG</p>
           <ul class="f_list">
-            <li>Chính sách vận chuyển</li>
-            <li>Chính sách thi công</li>
-            <li>Chính sách bảo hành</li>
+            <li> <a href="#">Chính sách vận chuyển</a></li>
+            <li> <a href="#">Chính sách thi công</a></li>
+            <li> <a href="#">Chính sách bảo hành</a></li>
           </ul>
         </div>
         <div class="footer__contact">
@@ -95,9 +72,7 @@
               <input type="submit" value="">
             </p>
           </div>
-          <p class="f_logo">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/f_logo.png" alt="facebook" width="137">
-          </p>
+          <p class="f_logo"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/f_logo.png" alt="facebook" width="137"></p>
         </div>
       </div>
     </div>
