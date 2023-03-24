@@ -28,11 +28,11 @@
         <div class="footer__frame">
           <div class="f_ttl">KẾT NỐI VỚI EUROSTONE</div>
           <ul class="list-social">
-            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/facebook.png" alt="facebook" width="30"></a></li>
-            <li> <a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/pinterest.png" alt="pinterest" width="30"></a></li>
-            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/youtube.png" alt="youtube" width="30"></a></li>
-            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/zalo.png" alt="zalo" width="30"></a></li>
-            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/messenger.png" alt="messenger" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/facebook.png" alt="facebook" width="30"></a></li>
+            <li> <a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/pinterest.png" alt="pinterest" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/youtube.png" alt="youtube" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/zalo.png" alt="zalo" width="30"></a></li>
+            <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/messenger.png" alt="messenger" width="30"></a></li>
           </ul>
         </div>
       </div>
@@ -72,7 +72,7 @@
               <input type="submit" value="">
             </p>
           </div>
-          <p class="f_logo"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/f_logo.png" alt="facebook" width="137"></p>
+          <p class="f_logo"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/f_logo.png" alt="facebook" width="137"></p>
         </div>
       </div>
     </div>
