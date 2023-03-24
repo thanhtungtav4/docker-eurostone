@@ -1,0 +1,5 @@
+[24-Mar-2023 01:07:48 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
+[24-Mar-2023 01:07:48 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[24-Mar-2023 01:07:48 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[24-Mar-2023 01:07:48 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[24-Mar-2023 01:07:48 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
