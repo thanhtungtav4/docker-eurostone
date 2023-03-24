@@ -46,7 +46,10 @@ function corporate_theme_setup() {
 	add_image_size( 'NEWS-THUMB', 400, 400, true );
 	add_image_size( 'WORKS-THUMB', 790, 467, true );
 	add_image_size( 'NEWS-THUMBNAIL', 120, 120, true );
+	add_image_size( 'INTRO-TAX-THUMBNAIL', 600, 650, true );
+	add_image_size( 'INTRO-TAX-THUMBNAIL-SP', 353, 382, true );
 }
+
 /**
  * This function takes a string `$data` as its input and performs the following operations:
  * - Trim whitespaces using the PHP `trim` function.

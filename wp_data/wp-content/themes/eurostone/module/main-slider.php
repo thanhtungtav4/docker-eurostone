@@ -16,7 +16,7 @@
                   <picture>
                     <source media="(max-width:768px)" srcset="<?php echo wp_get_attachment_image_url($image, 'SLIDE-THUMBSP' ) ?>">
                     <source media="(min-width:768px)" srcset="<?php echo wp_get_attachment_image_url($image, 'SLIDE-THUMBPC' ) ?>">
-                    <img src="<?php echo wp_get_attachment_image_url($image, 'SLIDE-THUMBPC' ) ?>" alt="<?php the_field('name-slider') ?>">
+                    <img loading="lazy" src="<?php echo wp_get_attachment_image_url($image, 'SLIDE-THUMBPC' ) ?>" alt="<?php the_field('name-slider') ?>">
                   </picture>
                 </li>
               <?php endwhile; ?>
