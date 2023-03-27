@@ -43,7 +43,8 @@
         ?>
           <div class="frame02">
             <ul class="c-slider01 slider02">
-            <?php while ( $queryWorksList->have_posts() ) : $queryWorksList->the_post(); ?>
+            <?php while ( $queryWorksList->have_posts() ) : $queryWorksList->the_post();
+            ?>
               <li class="items">
                 <a href="<?php the_permalink()?>">
                   <?php handle_thumbnail('NEWS-THUMB', true); ?>

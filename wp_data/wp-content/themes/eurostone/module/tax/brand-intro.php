@@ -1,4 +1,4 @@
-<?php if(class_exists('ACF')) : ?>
+<?php if(class_exists('ACF') && get_field('name-intro', $taxonomy_term)) : ?>
 <section id="dekton_box01">
   <div class="inner">
     <div class="m-block03">
