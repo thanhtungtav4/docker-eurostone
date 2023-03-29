@@ -27,20 +27,22 @@
         </dl>
       <?php wp_reset_query(); ?>
       <?php endif; ?>
-      <dl> 
-        <dt class="active">Phương Án Thiết Kế</dt>
-        <dd style="display: none;"> 
-          <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text. Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
-          <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text. Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
+      <?php if(get_field('tax_design_options', $taxonomy_term)) : ?>
+        <dl>
+          <dt class="">Phương Án Thiết Kế</dt>
+          <dd style="display: none;">
+            <?php the_field('tax_design_options', $taxonomy_term); ?>
+          </dd>
+        </dl>
+      <?php endif; ?>
+      <?php if(get_field('tax_improve', $taxonomy_term)) : ?>
+      <dl>
+        <dt class="">Cải Tiến</dt>
+        <dd style="display: none;">
+          <?php the_field('tax_improve', $taxonomy_term); ?>
         </dd>
       </dl>
-      <dl> 
-        <dt class="active">Cải Tiến</dt>
-        <dd style="display: none;"> 
-          <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text. Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
-          <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text. Text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
-        </dd>
-      </dl>
+      <?php endif; ?>
     </div>
   </div>
   <figure class="illust illust03"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust03.svg" alt="illust"></figure>

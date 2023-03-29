@@ -116,3 +116,9 @@
 [28-Mar-2023 13:06:44 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
 [28-Mar-2023 13:40:15 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
 [28-Mar-2023 14:10:11 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/html/wp-includes/class-wp-image-editor-imagick.php on line 113
+[29-Mar-2023 02:56:42 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $id in /var/www/html/wp-content/themes/eurostone/functions/acf-gallery/includes/5-7/acf-gallery-field.php on line 304
+[29-Mar-2023 02:56:42 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[29-Mar-2023 02:56:42 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 739
+[29-Mar-2023 02:56:42 UTC] PHP Deprecated:  Required parameter $field follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[29-Mar-2023 02:56:42 UTC] PHP Deprecated:  Required parameter $post_id follows optional parameter $i in /var/www/html/wp-content/themes/eurostone/functions/acf-repeater/includes/5-7/acf-repeater-field.php on line 805
+[29-Mar-2023 02:59:42 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
