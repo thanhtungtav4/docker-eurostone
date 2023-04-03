@@ -26,8 +26,11 @@ msgstr "XEM THÊM"
 msgid "News"
 msgstr "Tin Tức"
 
-msgid "News"
+msgid "Stone industry services"
 msgstr "Dịch Vụ Ngành Đá"
 
 msgid "Detail..."
 msgstr "Chi tiết..."
+
+msgid "System"
+msgstr "Hệ Thống"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Eurostone 4.1.3\n"
 "POT-Creation-Date: 2023-01-03 14:08+0700\n"
-"PO-Revision-Date: 2023-03-22 16:23+0700\n"
+"PO-Revision-Date: 2023-04-03 14:17+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -20,3 +20,15 @@ msgstr "Công Trình Thi Công"
 
 msgid "View all"
 msgstr "Xem tất cả"
+
+msgid "View more"
+msgstr "XEM THÊM"
+
+msgid "News"
+msgstr "Tin Tức"
+
+msgid "Stone industry services"
+msgstr "Dịch Vụ Ngành Đá"
+
+msgid "Detail..."
+msgstr "Chi tiết..."

@@ -28,6 +28,12 @@ function corporate_enqueue_style() {
 }
 add_action( 'wp_enqueue_scripts', 'corporate_enqueue_style' );
 
+// Load text domain for theme translations
+function eurostone_load_textdomain() {
+	load_theme_textdomain( 'eurostone', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'eurostone_load_textdomain' );
+
 /**
  * Adds custom image sizes to the current theme.
  */
@@ -48,6 +54,7 @@ function corporate_theme_setup() {
 	add_image_size( 'NEWS-THUMBNAIL', 120, 120, true );
 	add_image_size( 'INTRO-TAX-THUMBNAIL', 600, 650, true );
 	add_image_size( 'INTRO-TAX-THUMBNAIL-SP', 353, 382, true );
+	add_image_size( 'FEATURES-THUMB', 380, 300, true );
 }
 
 /**

@@ -162,7 +162,7 @@ $(document).ready(function () {
       dots: true,
       focusOnSelect: true,
     });
-  
+
     if ($(".m-blockdetail__tab ").length) {
       $(".tab-ttl li").each(function (index) {
         $(this).click(function () {

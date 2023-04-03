@@ -11,7 +11,6 @@
  *
  * @package recruit
  */
-
 get_header();
 ?>
 

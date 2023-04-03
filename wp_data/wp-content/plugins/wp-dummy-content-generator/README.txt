@@ -3,7 +3,7 @@ Contributors: Deepak anand
 Donate link: 
 Tags: Dummy posts, Dummy Users, Dummy woocommerce products, dummy custom posts, WordPress dummy content, Test content for WordPress themes
 Requires at least: 5.6
-Tested up to: 6.1
+Tested up to: 6.2
 Stable tag: trunk
 Requires PHP: 5.4
 License: GPLv2 or later

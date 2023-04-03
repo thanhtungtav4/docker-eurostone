@@ -1,5 +1,5 @@
-# Translation of WordPress - 6.1.x - Development - Administration - Network Admin in Vietnamese
-# This file is distributed under the same license as the WordPress - 6.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 6.2.x - Development - Administration - Network Admin in Vietnamese
+# This file is distributed under the same license as the WordPress - 6.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-07-09 01:27:28+0000\n"
@@ -7,18 +7,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: vi_VN\n"
-"Project-Id-Version: WordPress - 6.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 6.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:735
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:743
 msgid "Child theme of %s"
 msgstr "Giao diện con của %s"
-
-#: wp-admin/network/settings.php:64
-msgid "<a href=\"https://wordpress.org/support/article/network-admin-settings-screen/\">Documentation on Network Settings</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/network-admin-settings-screen/\">Tài liệu về Cấu hình Mạng</a>"
 
 #: wp-admin/network/site-info.php:185
 msgctxt "site"
@@ -52,13 +48,9 @@ msgstr "Không có giao diện nào hiện đang có sẵn."
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:476
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:497
-#: wp-admin/includes/class-wp-ms-users-list-table.php:341
+#: wp-admin/includes/class-wp-ms-users-list-table.php:344
 msgid "Y/m/d g:i:s a"
 msgstr "d/m/Y g:i:s a"
-
-#: wp-admin/includes/network.php:648
-msgid "https://wordpress.org/support/article/nginx/"
-msgstr "https://wordpress.org/support/article/nginx/"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/includes/network.php:647
@@ -103,14 +95,6 @@ msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] "Tất cả <span class=\"count\">(%s)</span>"
 
-#: wp-admin/network/upgrade.php:32
-msgid "<a href=\"https://wordpress.org/support/article/network-admin-updates-screen/\">Documentation on Upgrade Network</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/network-admin-updates-screen/\">Tài liệu về Nâng cấp mạng lưới</a>"
-
-#: wp-admin/network/index.php:56
-msgid "<a href=\"https://wordpress.org/support/article/network-admin/\">Documentation on the Network Admin</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/network-admin/\">Tài liệu về Quản trị mạng lưới</a>"
-
 #. translators: %s: Number of themes.
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:405
 msgctxt "themes"
@@ -121,14 +105,6 @@ msgstr[0] "Cần nâng cấp <span class=\"count\">(%s)</span>"
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:616
 msgid "Main"
 msgstr "Chính"
-
-#: wp-admin/network.php:69 wp-admin/network.php:82
-msgid "<a href=\"https://wordpress.org/support/article/tools-network-screen/\">Documentation on the Network Screen</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/tools-network-screen/\">Tài liệu về Màn hình quản trị mạng lưới</a>"
-
-#: wp-admin/network.php:68 wp-admin/network.php:81
-msgid "<a href=\"https://wordpress.org/support/article/create-a-network/\">Documentation on Creating a Network</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/create-a-network/\">Tài liệu về Tạo mạng lưới</a>"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:118
@@ -160,7 +136,7 @@ msgstr "Cài đặt tên miền con"
 msgid "Sub-directory Installation"
 msgstr "Cài đặt thư mục con"
 
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:922
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:930
 msgid "Active Child Theme"
 msgstr "Theme con đang hoạt động"
 
@@ -169,7 +145,7 @@ msgid "Attributes"
 msgstr "Thuộc tính"
 
 #. translators: %s: File size in kilobytes.
-#: wp-admin/network/settings.php:424
+#: wp-admin/network/settings.php:432
 msgid "%s KB"
 msgstr "%s KB"
 
@@ -203,11 +179,11 @@ msgstr "Xin lỗi, bạn không có quyền thêm trang này vào mạng."
 msgid "Sorry, you are not allowed to edit this site."
 msgstr "Xin lỗi, bạn không có quyền chỉnh sửa trang này."
 
-#: wp-admin/network/settings.php:374
+#: wp-admin/network/settings.php:379
 msgid "The email address of the first comment author on a new site."
 msgstr "Địa chỉ email của tác giả bình luận đầu tiên trên một trang web mới."
 
-#: wp-admin/network/settings.php:370
+#: wp-admin/network/settings.php:375
 msgid "First Comment Email"
 msgstr "Email bình luận đầu tiên"
 
@@ -305,46 +281,46 @@ msgctxt "user"
 msgid "Mark as spam"
 msgstr "Đánh dấu người dùng là spam"
 
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:728
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:736
 msgid "Visit Theme Site"
 msgstr "Xem website giao diện"
 
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:691
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:699
 msgid "Broken Theme:"
 msgstr "Giao diện Bị Lỗi:"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:597
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:605
 msgid "Network Disable %s"
 msgstr "Tắt mạng cho %s"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:594
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:602
 msgid "Disable %s"
 msgstr "Vô hiệu hóa %s"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:571
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:579
 msgid "Network Enable %s"
 msgstr "Mạng đã được kích hoạt %s"
 
 #. translators: %s: Theme name.
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:568
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:576
 msgid "Enable %s"
 msgstr "Bật %s"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:470
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:604
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:612
 msgid "Network Disable"
 msgstr "Tắt mạng"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:470
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:604
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:612
 msgid "Disable"
 msgstr "Vô hiệu hóa"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:467
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:578
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:586
 msgid "Enable"
 msgstr "Cấp phép"
 
@@ -445,12 +421,12 @@ msgstr "Spam"
 msgid "Archived"
 msgstr "Lưu trữ"
 
-#: wp-admin/network/site-users.php:356 wp-admin/network/user-new.php:137
+#: wp-admin/network/site-users.php:356 wp-admin/network/user-new.php:134
 msgid "A password reset link will be sent to the user via email."
 msgstr "Một liên kết đặt lại mật khẩu sẽ được gửi cho người dùng qua email."
 
 #. translators: 1: NOBLOGREDIRECT, 2: wp-config.php
-#: wp-admin/network/settings.php:212
+#: wp-admin/network/settings.php:217
 msgid "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
 msgstr "Nếu đăng ký bị vô hiệu hóa, xin vui lòng đặt %1$s trong %2$s đến một URL bạn sẽ chuyển hướng người truy cập tới nếu họ truy cập vào một trang web không tồn tại."
 
@@ -600,23 +576,27 @@ msgstr "Các giao diện này có thể được kích hoạt trên các trang k
 msgid "Delete Themes"
 msgstr "Xóa Giao diện"
 
-#: wp-admin/network/site-info.php:197
+#. translators: Hidden accessibility text.
+#: wp-admin/network/site-info.php:200
 msgid "Set site attributes"
 msgstr "Thiết lập các thuộc tính trang web"
 
-#: wp-admin/network/settings.php:496
+#. translators: Hidden accessibility text.
+#: wp-admin/network/settings.php:509
 msgid "Enable menus"
 msgstr "Bật Menu"
 
-#: wp-admin/network/settings.php:429
+#. translators: Hidden accessibility text.
+#: wp-admin/network/settings.php:439
 msgid "Size in kilobytes"
 msgstr "Kích thước dưới dạng kilobyte"
 
-#: wp-admin/network/settings.php:413
+#: wp-admin/network/settings.php:421
 msgid "Allowed file types. Separate types by spaces."
 msgstr "Kiểu files được cho phép. Cách bằng phím spaces."
 
-#: wp-admin/network/settings.php:202
+#. translators: Hidden accessibility text.
+#: wp-admin/network/settings.php:205
 msgid "New registrations settings"
 msgstr "Thiết lập đăng ký mới"
 
@@ -703,11 +683,11 @@ msgstr "Mạng lưới sử dụng thư mục con có thể sẽ không tương 
 msgid "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
 msgstr "Thêm những dòng mã sau vào các tập tin wp-config.php (ngay trước <code>/*...stop editing...*/</code>) và <code>.htaccess</code> (thay thế cho các quy luật đã được định nghĩa sẵn bởi WordPress)."
 
-#: wp-admin/network/settings.php:440
+#: wp-admin/network/settings.php:451
 msgid "Language Settings"
 msgstr "Cài Đặt Ngôn Ngữ"
 
-#: wp-admin/network/settings.php:238
+#: wp-admin/network/settings.php:243
 msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page"
 msgstr "Cho phép người quản trị trang web thêm người dùng mới vào trang web của họ thông qua \"Thành viên &rarr; Thêm mới\"."
 
@@ -844,7 +824,7 @@ msgstr "Liên kết Biên Tập để mở màn hình Biên Tập Trang Mạng t
 msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
 msgstr "Thêm Mới đưa bạn tới màn hình Thêm Trang Mạng Mới. Bạn có thể tìm kiếm một trang mạng theo Tên Riêng, Số Nhận Diện, hoặc địa chỉ IP. Tùy Chọn Màn Hình cho phép bạn chỉ định số lượng trang mạng được hiển thị mỗi trang."
 
-#: wp-admin/network/site-users.php:319 wp-admin/network/user-new.php:149
+#: wp-admin/network/site-users.php:319 wp-admin/network/user-new.php:146
 msgid "Add User"
 msgstr "Thêm người dùng"
 
@@ -1108,11 +1088,11 @@ msgstr "Cài đặt đăng ký có thể tắt/bật đăng ký công khai. Nế
 msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
 msgstr "Màn hình này chỉ định và thay đổi các tùy chọn cho mạng lưới một cách tổng thể. Trang mạng đầu tiên là trang mạng chính trong mạng lưới và các tùy chọn mạng lưới được lấy từ các tùy chọn của trang mạng gốc đó."
 
-#: wp-admin/network/settings.php:301
+#: wp-admin/network/settings.php:306
 msgid "If you want to ban domains from site registrations. One domain per line."
 msgstr "Nếu bạn muốn cấm đăng ký trang mạng cho tên miền nào đó. Mỗi dòng một tên miền."
 
-#: wp-admin/network/settings.php:281
+#: wp-admin/network/settings.php:286
 msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "Nếu bạn muốn giới hạn đăng ký trang mạng cho tên miền nào đó. Mỗi dòng một tên miền."
 
@@ -1176,32 +1156,32 @@ msgstr "Bạn không có quyền thay đổi trang web hiện tại."
 msgid "There was an error creating the user."
 msgstr "Xảy ra lỗi khi khởi tạo người sử dụng."
 
-#: wp-admin/network/settings.php:409
+#: wp-admin/network/settings.php:417
 msgid "Upload file types"
 msgstr "Định dạng tập tin tải lên"
 
 #. translators: %s: Number of megabytes to limit uploads to.
-#: wp-admin/network/settings.php:397
+#: wp-admin/network/settings.php:402
 msgid "Limit total size of files uploaded to %s MB"
 msgstr "Giới hạn dung lượng tổng cộng của các tập tin được tải lên là %s MB"
 
-#: wp-admin/network/settings.php:383
+#: wp-admin/network/settings.php:388
 msgid "The URL for the first comment on a new site."
 msgstr "Liên kết cho bình luận đầu tiên trên một trang mạng mới."
 
-#: wp-admin/network/settings.php:365
+#: wp-admin/network/settings.php:370
 msgid "The author of the first comment on a new site."
 msgstr "Tác giả của bình luận đầu tiên trên một trang mạng mới."
 
-#: wp-admin/network/settings.php:356
+#: wp-admin/network/settings.php:361
 msgid "The first comment on a new site."
 msgstr "Bình luận đầu tiên trên một trang mạng mới."
 
-#: wp-admin/network/settings.php:346
+#: wp-admin/network/settings.php:351
 msgid "The first page on a new site."
 msgstr "Trang tĩnh đầu tiên trên một trang mạng mới."
 
-#: wp-admin/network/settings.php:336
+#: wp-admin/network/settings.php:341
 msgid "The first post on a new site."
 msgstr "Bài viết đầu tiên trên một trang mạng mới."
 
@@ -1209,31 +1189,31 @@ msgstr "Bài viết đầu tiên trên một trang mạng mới."
 msgid "All done!"
 msgstr "Hoàn tất!"
 
-#: wp-admin/network/settings.php:206
+#: wp-admin/network/settings.php:211
 msgid "Both sites and user accounts can be registered"
 msgstr "Cả trang mạng và tài khoản người dùng có thể được đăng ký"
 
-#: wp-admin/network/settings.php:205
+#: wp-admin/network/settings.php:210
 msgid "Logged in users may register new sites"
 msgstr "Người dùng có thể đăng ký trang mạng mới."
 
-#: wp-admin/network/settings.php:204
+#: wp-admin/network/settings.php:209
 msgid "User accounts may be registered"
 msgstr "Tài khoản người dùng có thể được đăng ký"
 
-#: wp-admin/network/settings.php:203
+#: wp-admin/network/settings.php:208
 msgid "Registration is disabled"
 msgstr "Không cho đăng ký."
 
-#: wp-admin/network/settings.php:493
+#: wp-admin/network/settings.php:504
 msgid "Enable administration menus"
 msgstr "Cho phép thực đơn quản trị"
 
-#: wp-admin/network/settings.php:388
+#: wp-admin/network/settings.php:393
 msgid "Upload Settings"
 msgstr "Cài Đặt Tải Lên"
 
-#: wp-admin/network/settings.php:307
+#: wp-admin/network/settings.php:312
 msgid "New Site Settings"
 msgstr "Cài Đặt Trang Mạng Mới"
 
@@ -1257,19 +1237,19 @@ msgstr "Thiếu địa chỉ mạng hoặc địa chỉ không hợp lệ."
 msgid "Next Sites"
 msgstr "Những Trang Mạng Tiếp Theo"
 
-#: wp-admin/network/settings.php:391
+#: wp-admin/network/settings.php:396
 msgid "Site upload space"
 msgstr "Dung lượng lưu trữ tập tin tải lên"
 
-#: wp-admin/network/settings.php:316
+#: wp-admin/network/settings.php:321
 msgid "The welcome email sent to new site owners."
 msgstr "Thư chào mừng gửi tới chủ sở hữu trang mạng mới."
 
-#: wp-admin/network/settings.php:256
+#: wp-admin/network/settings.php:261
 msgid "Users are not allowed to register these sites. Separate names by spaces."
 msgstr "Người dùng không được phép đăng ký những trang mạng này. Phân tách tên bằng khoảng trống."
 
-#: wp-admin/network/settings.php:231
+#: wp-admin/network/settings.php:236
 msgid "Send the network admin an email notification every time someone registers a site or user account"
 msgstr "Gửi thư thông báo tới quản trị viên mạng lưới mỗi khi có người đăng ký một trang mạng hoặc tài khoản người dùng mới."
 
@@ -1289,59 +1269,59 @@ msgstr "Thư điện tử"
 msgid "Add Site"
 msgstr "Thêm trang web"
 
-#: wp-admin/network/settings.php:443
+#: wp-admin/network/settings.php:454
 msgid "Default Language"
 msgstr "Ảnh đại diện mặc định"
 
-#: wp-admin/network/settings.php:419
+#: wp-admin/network/settings.php:427
 msgid "Max upload file size"
 msgstr "Kích thước: <strong>%s</strong> byte"
 
-#: wp-admin/network/settings.php:379
+#: wp-admin/network/settings.php:384
 msgid "First Comment URL"
 msgstr "Địa Chỉ Mạng Cho Bình Luận Đầu Tiên"
 
-#: wp-admin/network/settings.php:361
+#: wp-admin/network/settings.php:366
 msgid "First Comment Author"
 msgstr "Tác Giả Bình Luận Đầu Tiên"
 
-#: wp-admin/network/settings.php:351
+#: wp-admin/network/settings.php:356
 msgid "First Comment"
 msgstr "Bình Luận Đầu Tiên"
 
-#: wp-admin/network/settings.php:341
+#: wp-admin/network/settings.php:346
 msgid "First Page"
 msgstr "Trang Tĩnh Đầu Tiên"
 
-#: wp-admin/network/settings.php:326
+#: wp-admin/network/settings.php:331
 msgid "The welcome email sent to new users."
 msgstr "Thư chào mừng gửi tới người dùng mới."
 
-#: wp-admin/network/settings.php:321
+#: wp-admin/network/settings.php:326
 msgid "Welcome User Email"
 msgstr "Thư Chào Mừng Người Dùng"
 
-#: wp-admin/network/settings.php:311
+#: wp-admin/network/settings.php:316
 msgid "Welcome Email"
 msgstr "Thư điện tử"
 
-#: wp-admin/network/settings.php:287
+#: wp-admin/network/settings.php:292
 msgid "Banned Email Domains"
 msgstr "Thêm thư điện tử"
 
-#: wp-admin/network/settings.php:262
+#: wp-admin/network/settings.php:267
 msgid "Limited Email Registrations"
 msgstr "Thêm thư điện tử"
 
-#: wp-admin/network/settings.php:243
+#: wp-admin/network/settings.php:248
 msgid "Banned Names"
 msgstr "Các tên bị cấm"
 
-#: wp-admin/network/settings.php:236
+#: wp-admin/network/settings.php:241
 msgid "Add New Users"
 msgstr "thêm thư điện tử"
 
-#: wp-admin/network/settings.php:224
+#: wp-admin/network/settings.php:229
 msgid "Registration notification"
 msgstr "Mẫu đăng kí"
 

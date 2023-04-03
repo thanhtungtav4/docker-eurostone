@@ -21,6 +21,7 @@ else{
 }
 require( get_stylesheet_directory() . '/module/tax/brand-block-info.php' );
 require( get_stylesheet_directory() . '/module/tax/brand-benefit.php' );
+require( get_stylesheet_directory() . '/module/module-features.php' );
 ?>
 <?php
 get_footer();

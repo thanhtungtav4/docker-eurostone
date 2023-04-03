@@ -11,7 +11,7 @@
       <div class="bg-wave"></div>
       <div class="inner">
         <div class="system__cont">
-          <h3 class="c-title02">Hệ Thống Showroom</h3>
+          <h3 class="c-title02"><?php _e('System', 'eurostone') ?> Showroom</h3>
           <ul class="list-2cols">
             <?php while ( $queryShowroom->have_posts() ) : $queryShowroom->the_post(); ?>
               <?php require( get_stylesheet_directory() . '/module/item/showroomItem.php' ); ?>

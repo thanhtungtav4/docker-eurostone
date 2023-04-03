@@ -248,7 +248,7 @@ iframe {
   content: "";
   width: 34px;
   height: 34px;
-  background: url(../../assets/images/icon_phone.svg) no-repeat center;
+  background: url(../images/icon_phone.svg) no-repeat center;
   background-size: contain;
   position: relative;
   margin-right: 10px;
@@ -260,7 +260,7 @@ iframe {
   content: "";
   width: 34px;
   height: 34px;
-  background: url(../../assets/images/icon_email.svg) no-repeat center;
+  background: url(../images/icon_email.svg) no-repeat center;
   background-size: contain;
   position: relative;
   margin-right: 10px;
@@ -307,7 +307,7 @@ iframe {
   content: "";
   width: 20px;
   height: 20px;
-  background: url(../../assets/images/search_btn.png) no-repeat center;
+  background: url(../images/search_btn.png) no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -355,7 +355,7 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../../assets/images/submenu_bg.png) no-repeat center;
+  background: url(../images/submenu_bg.png) no-repeat center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -450,7 +450,7 @@ iframe {
   content: "";
   height: 100%;
   width: 100%;
-  background: url("../../assets/images/arrow_icon03.png") no-repeat center;
+  background: url("../images/arrow_icon03.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -547,7 +547,7 @@ iframe {
     width: 6px;
     height: 10px;
     display: block;
-    background: url(../../assets/images/icon03.png) no-repeat center;
+    background: url(../images/icon03.png) no-repeat center;
     background-size: contain;
     position: absolute;
     top: 22px;
@@ -716,7 +716,7 @@ iframe {
 .c-footer {
   background: #000936;
   position: relative;
-  z-index: 1;
+  z-index: 9;
   padding: 100px 0 0;
   margin-top: 12.5vw;
 }
@@ -724,7 +724,7 @@ iframe {
   content: "";
   width: 100%;
   height: 7.292vw;
-  background: url(../../assets/images/bg_wave_top.svg) no-repeat center bottom;
+  background: url(../images/bg_wave_top.svg) no-repeat center bottom;
   background-size: 100%;
   position: absolute;
   top: -7.292vw;
@@ -784,7 +784,7 @@ iframe {
   width: 6px;
   height: 10px;
   display: block;
-  background: url(../../assets/images/icon03.png) no-repeat center;
+  background: url(../images/icon03.png) no-repeat center;
   background-size: contain;
   position: relative;
   top: 8px;
@@ -835,13 +835,13 @@ iframe {
 .c-footer .footer__frame .f_txt02.icon01::before {
   width: 12px;
   height: 17px;
-  background: url(../../assets/images/f_ico01.png) no-repeat center;
+  background: url(../images/f_ico01.png) no-repeat center;
   background-size: contain;
 }
 .c-footer .footer__frame .f_txt02.icon02::before {
   width: 14px;
   height: 14px;
-  background: url(../../assets/images/f_ico02.png) no-repeat center;
+  background: url(../images/f_ico02.png) no-repeat center;
   background-size: contain;
 }
 .c-footer .footer__frame .f_txt02.phone {
@@ -854,7 +854,7 @@ iframe {
 .c-footer .footer__frame .f_txt02.phone::before {
   width: 15px;
   height: 15px;
-  background: url(../../assets/images/f_ico03.png) no-repeat center;
+  background: url(../images/f_ico03.png) no-repeat center;
   background-size: contain;
 }
 .c-footer .footer__frame .f_txt02.mail {
@@ -864,7 +864,7 @@ iframe {
 .c-footer .footer__frame .f_txt02.mail::before {
   width: 16px;
   height: 11px;
-  background: url(../../assets/images/email_icon02.png) no-repeat center;
+  background: url(../images/email_icon02.png) no-repeat center;
   background-size: contain;
   top: 10px;
 }
@@ -969,7 +969,7 @@ iframe {
 }
 #idx_intro {
   position: relative;
-  padding: 150px 0 100px;
+  padding: 7.813vw 0 5.208vw;
 }
 #idx_intro .inner {
   position: relative;
@@ -984,7 +984,7 @@ iframe {
 }
 @media screen and (max-width: 1024px) {
   #idx_intro {
-    padding: 60px 0 60px;
+    padding: 75px 0 60px;
   }
   #idx_intro .illust03 {
     top: -8vw;
@@ -994,8 +994,9 @@ iframe {
   }
 }
 #idx_system {
-  padding: 300px 0 100px;
+  padding: 15.625vw 0 5.208vw;
   position: relative;
+  z-index: 2;
 }
 #idx_system:after {
   content: "";
@@ -1052,7 +1053,7 @@ iframe {
   flex-shrink: 0;
   width: 12px;
   height: 17px;
-  background: url("../../assets/images/location_icon01.png") no-repeat center;
+  background: url("..//images/location_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
   position: relative;
@@ -1070,7 +1071,7 @@ iframe {
 }
 #box_tile {
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 5.208vw;
 }
 @media screen and (max-width: 1024px) {
   #box_tile {
@@ -1079,13 +1080,13 @@ iframe {
 }
 #box_stone {
   position: relative;
-  padding: 150px 0 100px;
+  padding: 7.813vw 0 5.208vw;
 }
 #box_stone::before {
   content: "";
   width: 100%;
   height: 15.625vw;
-  background: url("../../assets/images/stone_bg_top.png") no-repeat center;
+  background: url("..//images/stone_bg_top.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -1095,7 +1096,7 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("../../assets/images/stone_bg.png") no-repeat center;
+  background: url("..//images/stone_bg.png") no-repeat center;
   background-size: contain;
   z-index: 0;
   position: absolute;
@@ -1165,7 +1166,7 @@ iframe {
 }
 #idx_service {
   position: relative;
-  padding: 200px 0 250px;
+  padding: 10.417vw 0 13.021vw;
 }
 #idx_service::after {
   content: "";
@@ -1195,7 +1196,7 @@ iframe {
   bottom: 0;
 }
 #idx_construction {
-  padding: 100px 0 100px;
+  padding: 5.208vw 0 100px;
 }
 @media screen and (max-width: 1024px) {
   #idx_construction {
@@ -1294,7 +1295,7 @@ iframe {
 }
 #idx_contact {
   background: #f5f5f5;
-  padding: 0 0 100px;
+  padding: 0 0 5.208vw;
 }
 @media screen and (max-width: 1024px) {
   #idx_contact {
@@ -1452,7 +1453,7 @@ iframe {
 }
 #dekton_box01 {
   overflow: hidden;
-  padding: 150px 0 100px;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #dekton_box01 {
@@ -1479,7 +1480,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("../../assets/images/dekton/bg01.png") no-repeat center bottom;
+  background: url("..//images/dekton/bg01.png") no-repeat center bottom;
   background-size: 100%;
   position: absolute;
   top: 0;
@@ -1490,7 +1491,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("../../assets/images/dekton/bg02.png") no-repeat center top;
+  background: url("..//images/dekton/bg02.png") no-repeat center top;
   background-size: 100%;
   position: absolute;
   bottom: 0;
@@ -1501,7 +1502,7 @@ iframe {
   content: "";
   width: 100%;
   height: calc(100% - 9vw);
-  background: url("../../assets/images/dekton/bg03.png") no-repeat center;
+  background: url("..//images/dekton/bg03.png") no-repeat center;
   background-size: cover;
   position: absolute;
   top: 4.5vw;
@@ -1551,7 +1552,7 @@ iframe {
   padding: 0 3vw 45px;
 }
 #dekton_box02 .dekton_box02__cont .box-right .frame h4 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -1595,7 +1596,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("../../assets/images/dekton/bg04.png") no-repeat center bottom;
+    background: url("..//images/dekton/bg04.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: -1;
@@ -1616,7 +1617,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10vw;
-    background: url("../../assets/images/dekton/bg05.png") no-repeat center bottom;
+    background: url("..//images/dekton/bg05.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1641,7 +1642,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("../../assets/images/dekton/bg06.png") no-repeat center top;
+    background: url("..//images/dekton/bg06.png") no-repeat center top;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1655,7 +1656,7 @@ iframe {
   }
 }
 #dekton_box03 {
-  padding: 150px 0 150px;
+  padding: 5.208vw 0;
   position: relative;
   z-index: 0;
 }
@@ -1670,18 +1671,18 @@ iframe {
   background: #fff;
   border-radius: 10px;
   color: #000;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 700;
   position: relative;
   cursor: pointer;
-  padding: 28px 80px 20px 40px;
+  padding: 20px 60px 20px 30px;
   margin-bottom: 50px;
 }
 #dekton_box03 .benefit__block dl dt:after {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("../../assets/images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("..//images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -1690,7 +1691,7 @@ iframe {
 }
 #dekton_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("../../assets/images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("..//images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -1720,7 +1721,7 @@ iframe {
   }
 }
 #dekton_box05 {
-  padding: 100px 0 100px;
+  padding: 5.208vw 0;
 }
 #dekton_box05 .c-title02 {
   margin-bottom: 50px;
@@ -1734,7 +1735,7 @@ iframe {
   }
 }
 #dekton_box07 {
-  padding: 80px 0 0;
+  padding: 5.208vw 0 0;
 }
 @media screen and (max-width: 1024px) {
   #dekton_box07 {
@@ -1746,7 +1747,7 @@ iframe {
 }
 #silestone_box01 {
   overflow: hidden;
-  padding: 150px 0 100px;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #silestone_box01 {
@@ -1759,7 +1760,7 @@ iframe {
   }
 }
 #silestone_box02 {
-  padding-bottom: 100px;
+  padding-bottom: 5.208vw;
 }
 #silestone_box02 .silestone_bg {
   position: relative;
@@ -1784,7 +1785,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.417vw;
-  background: url("../../assets/images/silestone/union_bg02.png") no-repeat center
+  background: url("..//images/silestone/union_bg02.png") no-repeat center
     top;
   background-size: contain;
   position: absolute;
@@ -1835,7 +1836,7 @@ iframe {
   }
 }
 #silestone_box03 {
-  padding: 150px 0 150px;
+  padding: 7.5vw 0;
   position: relative;
   z-index: 0;
 }
@@ -1861,7 +1862,7 @@ iframe {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("../../assets/images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("..//images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -1870,7 +1871,7 @@ iframe {
 }
 #silestone_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("../../assets/images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("..//images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -1901,7 +1902,7 @@ iframe {
 }
 #silestone_box05 {
   position: relative;
-  padding: 100px 0 0;
+  padding: 5.208vw 0 0;
 }
 #silestone_box05 .inner {
   position: relative;
@@ -1919,7 +1920,7 @@ iframe {
   }
 }
 #silestone_box06 {
-  padding: 100px 0 0;
+  padding: 5.208vw 0 0;
 }
 #silestone_box06 .app_block:not(:last-child) {
   margin-bottom: 150px;
@@ -1929,12 +1930,16 @@ iframe {
     padding: 60px 0 0;
   }
   #silestone_box06 .app_block:not(:last-child) {
-    margin-bottom: 100px;
+    margin-bottom: 5.208vw;
   }
 }
 #silestone_box07 {
   position: relative;
-  padding: 80px 0 0;
+  padding: 5.208vw 0 0;
+}
+#silestone_box07 .inner {
+  position: relative;
+  z-index: 9;
 }
 @media screen and (max-width: 1024px) {
   #silestone_box07 {
@@ -1946,7 +1951,7 @@ iframe {
 }
 #marble_box01 {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #marble_box01 {
@@ -1967,7 +1972,7 @@ iframe {
   }
 }
 #marble_box03 {
-  padding: 100px 0 100px;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #marble_box03 {
@@ -1989,11 +1994,11 @@ iframe {
   }
 }
 #marble_box07 {
-  padding: 80px 0 0;
+  padding: 5.208vw 0 0;
 }
 @media screen and (max-width: 1024px) {
   #marble_box07 {
-    padding: 60px 0 0;
+    padding: 50px 0 0;
   }
 }
 #granite_mainv {
@@ -2001,7 +2006,7 @@ iframe {
 }
 #granite_box01 {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #granite_box01 {
@@ -2022,7 +2027,7 @@ iframe {
   }
 }
 #granite_box03 {
-  padding: 100px 0 100px;
+  padding: 5.208vw 0;
 }
 @media screen and (max-width: 1024px) {
   #granite_box03 {
@@ -2044,7 +2049,7 @@ iframe {
   }
 }
 #granite_box07 {
-  padding: 80px 0 0;
+  padding: 5.208vw 0 0;
 }
 @media screen and (max-width: 1024px) {
   #granite_box07 {
@@ -2056,12 +2061,12 @@ iframe {
   z-index: 2;
 }
 #detail_mainv .m-mainv01 {
-  background-image: url(../../assets/images/detail/mainv.jpg);
+  background-image: url(../images/detail/mainv.jpg);
 }
 #detail_box01 {
   z-index: 1;
   position: relative;
-  padding: 100px 0 0;
+  padding: 5.208vw 0 0;
   overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
@@ -2154,7 +2159,7 @@ iframe {
   content: "";
   width: 24px;
   height: 12px;
-  background: url(../../assets/images/ico_arr02.svg) no-repeat center;
+  background: url(../images/ico_arr02.svg) no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -2251,7 +2256,7 @@ iframe {
   }
 }
 #detail_box04 .block:not(:last-child) {
-  margin-bottom: 100px;
+  margin-bottom: 5.208vw;
 }
 #detail_box04 .detail_list01 {
   display: flex;
@@ -2349,7 +2354,7 @@ iframe {
   z-index: 2;
 }
 #kitchen_mainv .m-mainv01 {
-  background-image: url(../../assets/images/kitchen/mainv.jpg);
+  background-image: url(../images/kitchen/mainv.jpg);
 }
 #kitchen_box01 {
   z-index: 1;
@@ -2545,7 +2550,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("../../assets/images/arr_btn01.svg") no-repeat center;
+  background: url("..//images/arr_btn01.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -2592,7 +2597,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url(../../assets/images/arrow_icon02.png) no-repeat center;
+  background: url(../images/arrow_icon02.png) no-repeat center;
   background-size: contain;
   display: block;
   margin-left: 20px;
@@ -2619,13 +2624,13 @@ iframe {
 }
 .btn_submit::after {
   content: "";
-  width: 40px;
-  height: 15px;
-  background: url(../../assets/images/arr_btn01.svg) no-repeat center;
+  width: 30px;
+  height: 12px;
+  background: url(../images/arr_btn01.svg) no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 15px;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -2669,7 +2674,7 @@ iframe {
   content: "";
   width: calc(100% + 50px);
   height: 10px;
-  background: url("../../assets/images/ico_line.svg") no-repeat right;
+  background: url("..//images/ico_line.svg") no-repeat right;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -2686,7 +2691,7 @@ iframe {
   font-weight: 600;
   text-align: center;
   padding: 0 0 20px;
-  margin: 0 0 60px;
+  margin: 0 0 50px;
   position: relative;
 }
 .c-title02--01 {
@@ -2696,7 +2701,7 @@ iframe {
   content: "";
   width: 250px;
   height: 16px;
-  background: url("../../assets/images/decor.svg") no-repeat center;
+  background: url("..//images/decor.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -2869,7 +2874,7 @@ iframe {
   content: "";
   width: 30px;
   height: 12px;
-  background: url(../../assets/images/arr_btn02.svg) no-repeat center;
+  background: url(../images/arr_btn02.svg) no-repeat center;
   background-size: contain;
   position: relative;
   display: block;
@@ -2979,7 +2984,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("../../assets/images/arrow_icon02.png") no-repeat center;
+  background: url("..//images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3008,7 +3013,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("../../assets/images/arrow_icon02.png") no-repeat center;
+  background: url("..//images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -3055,12 +3060,6 @@ iframe {
   filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.15));
   margin: 0 10px;
 }
-@media screen and (max-width: 1024px) {
-  .c-slider01 .items {
-    border-radius: 5px;
-    margin: 0 5px;
-  }
-}
 .c-slider01 .items a {
   color: #000936;
   transition: all 0.3s ease;
@@ -3069,7 +3068,15 @@ iframe {
   opacity: 0.7;
 }
 .c-slider01 .items figure {
+  height: 220px;
+  overflow: hidden;
   line-height: 0;
+}
+.c-slider01 .items figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .c-slider01 .items .sec {
   padding: 20px 20px 25px;
@@ -3143,6 +3150,31 @@ iframe {
     padding: 5px 5px;
   }
 }
+.c-slider01.slider02 .items figure {
+  height: 300px;
+}
+@media screen and (max-width: 1024px) {
+  .c-slider01 .items {
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  .c-slider01 .items figure {
+    height: 180px;
+  }
+  .c-slider01.slider02 .items figure {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-slider01 .items figure {
+    height: 40vw;
+    max-height: 220px;
+  }
+  .c-slider01.slider02 .items figure {
+    height: 60vw;
+    max-height: 400px;
+  }
+}
 .person-slider {
   color: #fff;
 }
@@ -3202,7 +3234,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("../../assets/images/arrow_icon01.png") no-repeat center;
+  background: url("..//images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3216,7 +3248,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("../../assets/images/arrow_icon01.png") no-repeat center;
+  background: url("..//images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -3231,7 +3263,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.5vw;
-  background: url(../../assets/images/bg_wave_top.png) no-repeat center top;
+  background: url(../images/bg_wave_top.png) no-repeat center top;
   background-size: contain;
   position: absolute;
   top: -3px;
@@ -3242,7 +3274,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.5vw;
-  background: url(../../assets/images/bg_wave_bottom.png) no-repeat center bottom;
+  background: url(../images/bg_wave_bottom.png) no-repeat center bottom;
   background-size: contain;
   position: absolute;
   bottom: -10px;
@@ -3347,7 +3379,7 @@ iframe {
   content: "";
   width: 100%;
   height: 15.625vw;
-  background: url(../../assets/images/bg_main.svg) no-repeat center bottom;
+  background: url(../images/bg_main.svg) no-repeat center bottom;
   background-size: 100%;
   position: absolute;
   bottom: -10.417vw;
@@ -3462,7 +3494,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.417vw;
-  background: url(../../assets/images/icon_wave01.png) no-repeat center;
+  background: url(../images/icon_wave01.png) no-repeat center;
   background-size: contain;
   position: absolute;
   bottom: -10px;
@@ -3521,7 +3553,7 @@ iframe {
   content: "";
   width: 5px;
   height: 10px;
-  background: url(../../assets/images/ico_arr01.svg) no-repeat center;
+  background: url(../images/ico_arr01.svg) no-repeat center;
   background-size: contain;
   display: block;
   margin: 0 10px;
@@ -3641,7 +3673,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url(../../assets/images/arr_btn02.svg) no-repeat center;
+  background: url(../images/arr_btn02.svg) no-repeat center;
   background-size: contain;
   display: block;
   margin-left: 20px;
@@ -3765,7 +3797,7 @@ iframe {
   }
 }
 .m-block05 {
-  background: url("../../assets/images/dekton/dekton_bg01.png") no-repeat top;
+  background: url("..//images/dekton/dekton_bg01.png") no-repeat top;
   background-size: 100%;
   position: relative;
   z-index: 1;
@@ -3806,7 +3838,7 @@ iframe {
   content: "";
   width: 24px;
   height: 24px;
-  background: url(../../assets/images/fqa_ico02.png) no-repeat center;
+  background: url(../images/fqa_ico02.png) no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -3820,7 +3852,7 @@ iframe {
 }
 .m-blockfqa dl dt.active::after {
   height: 2px;
-  background: url(../../assets/images/fqa_ico01.png) no-repeat center;
+  background: url(../images/fqa_ico01.png) no-repeat center;
   background-size: contain;
 }
 .m-blockfqa dl dd {
@@ -3861,7 +3893,7 @@ iframe {
   content: "";
   width: 20px;
   height: 20px;
-  background: url(../../assets/images/star_ico01.png) no-repeat center;
+  background: url(../images/star_ico01.png) no-repeat center;
   background-size: contain;
   display: block;
   position: relative;
@@ -3931,11 +3963,11 @@ iframe {
   margin-right: 4px;
 }
 .m-blockeval .rating .gr_star span.star01 {
-  background: url(../../assets/images/star_ico01.png) no-repeat center;
+  background: url(../images/star_ico01.png) no-repeat center;
   background-size: contain;
 }
 .m-blockeval .rating .gr_star span.star02 {
-  background: url(../../assets/images/star_ico02.png) no-repeat center;
+  background: url(../images/star_ico02.png) no-repeat center;
   background-size: contain;
 }
 .m-blockcate h4 {
@@ -4198,7 +4230,7 @@ iframe {
   z-index: 1;
 }
 .bg_top::before {
-  background-image: url("../../assets/images/bg_wave_top.svg");
+  background-image: url("..//images/bg_wave_top.svg");
   background-repeat: no-repeat;
   background-size: auto;
   height: 150px;
@@ -4234,7 +4266,7 @@ iframe {
   }
 }
 .bg_bottom::after {
-  background-image: url("../../assets/images/bg_main.svg");
+  background-image: url("..//images/bg_main.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top;

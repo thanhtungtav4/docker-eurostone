@@ -20,5 +20,14 @@ msgstr "Công Trình Thi Công"
 msgid "View all"
 msgstr "Xem tất cả"
 
+msgid "View more"
+msgstr "XEM THÊM"
 
+msgid "News"
+msgstr "Tin Tức"
 
+msgid "News"
+msgstr "Dịch Vụ Ngành Đá"
+
+msgid "Detail..."
+msgstr "Chi tiết..."

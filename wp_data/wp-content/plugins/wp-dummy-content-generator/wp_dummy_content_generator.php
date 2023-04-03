@@ -16,13 +16,13 @@
  * Plugin Name:       WP Dummy Content Generator
  * Plugin URI:        https://tutsocean.com/wp-dummy-content-generator/
  * Description:       This plugin is purely made by developers and for developers. Use this plugin to generate dummy/fake users, posts, custom posts and woocommerce products for various purposes. 
- * Version:           2.1.2
+ * Version:           2.2.0
  * Author:            Deepak anand
  * Author URI:        https://tutsocean.com/about-me
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wp_dummy_content_generator
- * WC tested up to:   7.0.1
+ * WC tested up to:   7.5
  * Domain Path:       /languages
  */
 
@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'wp_dummy_content_generator_PLUGIN_NAME_VERSION', '2.1.2' );
+define( 'wp_dummy_content_generator_PLUGIN_NAME_VERSION', '2.2.0' );
 define( 'wp_dummy_content_generator_PLUGIN_BASE_URL',plugin_basename( __FILE__ )); 
 define( 'wp_dummy_content_generator_PLUGIN_BASE_URI',plugin_dir_path( __FILE__ )); 
 define("wp_dummy_content_generator_PLUGIN_DIR",plugin_basename( __DIR__ ));
