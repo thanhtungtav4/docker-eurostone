@@ -7,6 +7,7 @@
  * @package recruit
  */
 require_once( get_stylesheet_directory() . '/functions/init.php' );
+require_once( get_stylesheet_directory() . '/functions/security.php' );
 require_once( get_stylesheet_directory() . '/functions/slug.php' );
 require_once( get_stylesheet_directory() . '/functions/bodyClass.php' );
 require_once( get_stylesheet_directory() . '/functions/breadcrumbs.php' );
