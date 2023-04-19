@@ -189,6 +189,17 @@ iframe {
   max-inline-size: 100%;
   block-size: auto;
 }
+.only_sp {
+  display: none !important;
+}
+@media screen and (max-width: 1024px) {
+  .only_pc {
+    display: none !important;
+  }
+  .only_sp {
+    display: block !important;
+  }
+}
 .inner {
   width: 100%;
   max-width: calc(1200px + 6vw);
@@ -463,6 +474,87 @@ iframe {
 .m-header__submenu .menu-slider .slick-next::before {
   transform: rotate(180deg);
 }
+.m-header__submenu .list_tab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #777777;
+}
+.m-header__submenu .list_tab li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  padding: 0 20px 10px;
+  margin: 0 20px;
+}
+.m-header__submenu .list_tab li.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.m-header__submenu .menu_tab {
+  padding: 30px 0 50px;
+}
+@media screen and (min-width: 1025px) {
+  .m-header__submenu .menu_tab {
+    display: none;
+  }
+  .m-header__submenu .menu_tab.active {
+    display: block;
+  }
+}
+.m-header__submenu .menu_tab .tab_cont {
+  display: flex;
+}
+.m-header__submenu .menu_tab .tab_cont .box-left {
+  max-width: 250px;
+  background: #fff;
+  margin-right: 50px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-left figure {
+  line-height: 0;
+  margin-bottom: 10px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-left .sec {
+  padding: 0 15px 15px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-left .ttl {
+  font-size: 18px;
+  font-weight: 600;
+}
+.m-header__submenu .menu_tab .tab_cont .box-left .txt {
+  font-size: 14px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px -30px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right dl {
+  color: #fff;
+  margin: 0 20px 30px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right dl dt {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right dl dd p {
+  font-size: 16px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right dl dd p:not(:last-child) {
+  margin-bottom: 5px;
+}
+.m-header__submenu .menu_tab .tab_cont .box-right dl dd p a {
+  color: #fff;
+}
 .m-header .translate {
   flex-shrink: 0;
 }
@@ -637,6 +729,69 @@ iframe {
   .m-header__submenu .submenu li figcaption {
     height: auto;
     font-size: 15px;
+  }
+  .m-header__submenu .menu_tab {
+    padding: 0;
+  }
+  .m-header__submenu .menu_tab:not(:first-child) p.ttl {
+    border-top: 1px solid #000936;
+  }
+  .m-header__submenu .menu_tab p.ttl {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    color: #000936;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+  }
+  .m-header__submenu .menu_tab p.ttl::after {
+    content: "";
+    border: solid #000936;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 22px;
+    right: 3vw;
+    padding: 3px;
+  }
+  .m-header__submenu .menu_tab p.ttl.active::after {
+    transform: rotate(-135deg);
+  }
+  .m-header__submenu .menu_tab .tab_cont {
+    width: 100%;
+    display: none;
+  }
+  .m-header__submenu .menu_tab .tab_cont.active {
+    display: block;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-left {
+    display: none;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-right {
+    width: 100%;
+    background: #000936;
+    flex-direction: column;
+    padding: 20px 3vw;
+    margin: 0;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-right .tab_link:not(:last-child) {
+    margin: 0 0 10px;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-right dl {
+    text-align: center;
+    margin: 0;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-right dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .m-header__submenu .menu_tab .tab_cont .box-right dl dd p:not(:last-child) {
+    margin-bottom: 10px;
   }
   .m-header .hamburger {
     width: 40px;
@@ -1053,7 +1208,7 @@ iframe {
   flex-shrink: 0;
   width: 12px;
   height: 17px;
-  background: url("..//images/location_icon01.png") no-repeat center;
+  background: url("../images/location_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
   position: relative;
@@ -1086,7 +1241,7 @@ iframe {
   content: "";
   width: 100%;
   height: 15.625vw;
-  background: url("..//images/stone_bg_top.png") no-repeat center;
+  background: url("../images/stone_bg_top.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -1096,7 +1251,7 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("..//images/stone_bg.png") no-repeat center;
+  background: url("../images/stone_bg.png") no-repeat center;
   background-size: contain;
   z-index: 0;
   position: absolute;
@@ -1480,7 +1635,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("..//images/dekton/bg01.png") no-repeat center bottom;
+  background: url("../images/dekton/bg01.png") no-repeat center bottom;
   background-size: 100%;
   position: absolute;
   top: 0;
@@ -1491,7 +1646,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("..//images/dekton/bg02.png") no-repeat center top;
+  background: url("../images/dekton/bg02.png") no-repeat center top;
   background-size: 100%;
   position: absolute;
   bottom: 0;
@@ -1502,7 +1657,7 @@ iframe {
   content: "";
   width: 100%;
   height: calc(100% - 9vw);
-  background: url("..//images/dekton/bg03.png") no-repeat center;
+  background: url("../images/dekton/bg03.png") no-repeat center;
   background-size: cover;
   position: absolute;
   top: 4.5vw;
@@ -1596,7 +1751,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("..//images/dekton/bg04.png") no-repeat center bottom;
+    background: url("../images/dekton/bg04.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: -1;
@@ -1617,7 +1772,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10vw;
-    background: url("..//images/dekton/bg05.png") no-repeat center bottom;
+    background: url("../images/dekton/bg05.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1642,7 +1797,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("..//images/dekton/bg06.png") no-repeat center top;
+    background: url("../images/dekton/bg06.png") no-repeat center top;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1682,7 +1837,7 @@ iframe {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("..//images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -1691,7 +1846,7 @@ iframe {
 }
 #dekton_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("..//images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -1785,7 +1940,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.417vw;
-  background: url("..//images/silestone/union_bg02.png") no-repeat center
+  background: url("../images/silestone/union_bg02.png") no-repeat center
     top;
   background-size: contain;
   position: absolute;
@@ -1862,7 +2017,7 @@ iframe {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("..//images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -1871,7 +2026,7 @@ iframe {
 }
 #silestone_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("..//images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -2550,7 +2705,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("..//images/arr_btn01.svg") no-repeat center;
+  background: url("../images/arr_btn01.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -2674,7 +2829,7 @@ iframe {
   content: "";
   width: calc(100% + 50px);
   height: 10px;
-  background: url("..//images/ico_line.svg") no-repeat right;
+  background: url("../images/ico_line.svg") no-repeat right;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -2701,7 +2856,7 @@ iframe {
   content: "";
   width: 250px;
   height: 16px;
-  background: url("..//images/decor.svg") no-repeat center;
+  background: url("../images/decor.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -2984,7 +3139,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("..//images/arrow_icon02.png") no-repeat center;
+  background: url("../images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3013,7 +3168,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("..//images/arrow_icon02.png") no-repeat center;
+  background: url("../images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -3234,7 +3389,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("..//images/arrow_icon01.png") no-repeat center;
+  background: url("../images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3248,7 +3403,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("..//images/arrow_icon01.png") no-repeat center;
+  background: url("../images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -3797,7 +3952,7 @@ iframe {
   }
 }
 .m-block05 {
-  background: url("..//images/dekton/dekton_bg01.png") no-repeat top;
+  background: url("../images/dekton/dekton_bg01.png") no-repeat top;
   background-size: 100%;
   position: relative;
   z-index: 1;
@@ -4230,7 +4385,7 @@ iframe {
   z-index: 1;
 }
 .bg_top::before {
-  background-image: url("..//images/bg_wave_top.svg");
+  background-image: url("../images/bg_wave_top.svg");
   background-repeat: no-repeat;
   background-size: auto;
   height: 150px;
@@ -4266,7 +4421,7 @@ iframe {
   }
 }
 .bg_bottom::after {
-  background-image: url("..//images/bg_main.svg");
+  background-image: url("../images/bg_main.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top;

@@ -20,7 +20,7 @@ define('PLACEHOLDER_IMAGE_OGP', get_stylesheet_directory_uri() . '/assets/images
 function corporate_setup() {
 	add_theme_support( 'post-thumbnails' );
 }
-add_action( 'after_setup_theme', 'corporate_setup' );
+add_action( 'after_setup_theme', 'corporate_setup', 99);
 
 // load style css
 function corporate_enqueue_style() {

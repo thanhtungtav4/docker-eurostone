@@ -2,7 +2,7 @@
   $argsShowroom = array(
     'post_type'		=> 'showroom',
     'post_status' => 'publish',
-    'posts_per_page' => '4',
+    'posts_per_page' => '2',
     'order' => 'DESC',
   );
   $queryShowroom = new WP_Query($argsShowroom);
