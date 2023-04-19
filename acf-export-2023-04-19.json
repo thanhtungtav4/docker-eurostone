@@ -298,7 +298,7 @@
         "fields": [
             {
                 "key": "field_64149d8613f45",
-                "label": "Product code",
+                "label": "Mã sản phẩm",
                 "name": "product_code",
                 "aria-label": "",
                 "type": "text",
@@ -317,11 +317,11 @@
                 "append": ""
             },
             {
-                "key": "field_64149df5063bc",
-                "label": "Product Tab",
-                "name": "product_tab",
+                "key": "field_644007da991b0",
+                "label": "Thông số kỹ Thuật",
+                "name": "specification",
                 "aria-label": "",
-                "type": "group",
+                "type": "wysiwyg",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -330,75 +330,11 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "row",
-                "sub_fields": [
-                    {
-                        "key": "field_64149fb152266",
-                        "label": "description",
-                        "name": "description",
-                        "aria-label": "",
-                        "type": "wysiwyg",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "tabs": "all",
-                        "toolbar": "full",
-                        "media_upload": 1,
-                        "delay": 1
-                    },
-                    {
-                        "key": "field_64149fba52267",
-                        "label": "Specification",
-                        "name": "specification",
-                        "aria-label": "",
-                        "type": "wysiwyg",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "tabs": "all",
-                        "toolbar": "full",
-                        "media_upload": 1,
-                        "delay": 1
-                    }
-                ]
-            },
-            {
-                "key": "field_6414a19680069",
-                "label": "Product Image Gallery",
-                "name": "product_image_gallery",
-                "aria-label": "",
-                "type": "gallery",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "min": "",
-                "max": "",
-                "insert": "append",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
             }
         ],
         "location": [
@@ -456,6 +392,108 @@
                     "param": "taxonomy",
                     "operator": "==",
                     "value": "brand"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6440086db999e",
+        "title": "Thư viện ảnh sản phẩm",
+        "fields": [
+            {
+                "key": "field_6440086e2608a",
+                "label": "Thư viện ảnh sản phẩm",
+                "name": "product_image_gallery",
+                "aria-label": "",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_644018a1b59a0",
+        "title": "Tính năng sản phẩm",
+        "fields": [
+            {
+                "key": "field_644018a24ee51",
+                "label": "Product Features",
+                "name": "product_features",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "scratch_resistant": "Chống Trầy",
+                    "super_durable": "Siêu Bền",
+                    "high_hardness": "Độ Cứng  Cao",
+                    "waterproofing": "Chống Thấm"
+                },
+                "default_value": [],
+                "return_format": "array",
+                "allow_custom": 0,
+                "layout": "vertical",
+                "toggle": 1,
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
                 }
             ]
         ],
