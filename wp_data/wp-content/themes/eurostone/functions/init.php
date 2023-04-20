@@ -51,10 +51,11 @@ function corporate_theme_setup() {
 	add_image_size( 'STONE-THUMB', 285, 275, true );
 	add_image_size( 'NEWS-THUMB', 400, 400, true );
 	add_image_size( 'WORKS-THUMB', 790, 467, true );
-	add_image_size( 'NEWS-THUMBNAIL', 120, 120, true );
+	add_image_size( 'NEWS-THUMBNAIL', 150, 150, true );
 	add_image_size( 'INTRO-TAX-THUMBNAIL', 600, 650, true );
 	add_image_size( 'INTRO-TAX-THUMBNAIL-SP', 353, 382, true );
 	add_image_size( 'FEATURES-THUMB', 380, 300, true );
+	add_image_size( 'FEATURES-PRODUCT-THUMB', 600, 600, true );
 }
 
 /**
@@ -312,4 +313,3 @@ function get_category_slug_by_name( $category_name, $taxonomy = 'category' ) {
 	add_filter( 'register_post_tag_taxonomy_args', 'my_tags_hierarchical' );
 
 
-	

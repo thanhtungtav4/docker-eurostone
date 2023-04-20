@@ -34,3 +34,17 @@ msgstr "Chi tiết..."
 
 msgid "System"
 msgstr "Hệ Thống"
+
+msgid "Home"
+msgstr "Trang chủ"
+
+
+msgid "Product SKU : "
+msgstr "Mã sản phẩm : "
+
+
+msgid "Description"
+msgstr "Mô tả"
+
+msgid "Specifications"
+msgstr "Thông số kỹ Thuật"

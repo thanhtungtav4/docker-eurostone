@@ -6,53 +6,23 @@
  *
  * @package recruit
  */
-// Get the current post ID
-$post_id = get_the_ID();
-
-// Get the terms for the 'brand' taxonomy for the current post
-$terms = get_the_terms( $post_id, 'brand' );
-var_dump($terms);
-// Get the parent and child taxonomy names
-$parent_name = '';
-$child_names = array();
-if ( $terms && ! is_wp_error( $terms ) ) {
-    $term = current( $terms );
-    if ( $term->parent != 0 ) {
-        $parent = get_term_by( 'id', $term->parent, 'brand' );
-        $parent_name = $parent->name;
-    }
-    if ( $term->children ) {
-        $children = get_term_children( $term->term_id, 'brand' );
-        foreach ( $children as $child ) {
-            $child_term = get_term_by( 'id', $child, 'brand' );
-            $child_names[] = $child_term->name;
-        }
-    }
-}
-
-// Build the breadcrumbs string
-$breadcrumbs = '';
-if ( ! empty( $parent_name ) ) {
-    $breadcrumbs .= '<a href="' . get_term_link( $parent->term_id, 'brand' ) . '">' . $parent_name . '</a> &gt; ';
-}
-if ( ! empty( $child_names ) ) {
-    $breadcrumbs .= '<a href="' . get_term_link( $term->term_id, 'brand' ) . '">' . $term->name . '</a> &gt; ';
-}
-$breadcrumbs .= get_the_title();
-
-// Display the breadcrumbs
-echo '<div class="breadcrumbs">' . $breadcrumbs . '</div>';
+$primary_category = get_primary_taxonomy_term( get_the_ID(), 'brand' );
+$brand = $primary_category ? $primary_category['title'] : '';
+$brand_url = $primary_category ? $primary_category['slug'] : '';
+$brand_bg = get_background_taxonomy('brand', $primary_category['id']);
+$image_gallery = get_field('product_image_gallery');
+$sku = get_field('product_code');
 ?>
       <section id="detail_mainv">
-        <div class="m-mainv01">
-          <h2>MARBLE</h2>
+        <div class="m-mainv01" style="<?php echo $brand_bg; ?>">
+          <h2><?php echo $brand ?></h2>
         </div>
         <ul class="breadcrumb">
           <li>
-            <a href="#">Trang chủ</a>
+            <a href="<?php echo home_url(); ?>"><?php _e('Home', 'eurostone'); ?></a>
           </li>
           <li>
-            <a href="#">Đá Marble - Cẩm Thạch</a>
+            <a href="<?php echo $brand_url ?>"><?php echo $brand ?></a>
           </li>
           <li><?php the_title(); ?></li>
         </ul>
@@ -63,57 +33,54 @@ echo '<div class="breadcrumbs">' . $breadcrumbs . '</div>';
             <div class="detail-slider">
               <ul class="slider-for">
                 <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img01.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
+                  <?php handle_thumbnail('FEATURES-PRODUCT-THUMB') ?>
                 </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img02.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img03.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
+                <?php
+                if($image_gallery) :
+                  foreach( $image_gallery as $image ):
+                  ?>
+                  <li class="items">
+                    <?php  handle_thumbnail_id($image['ID'], 'FEATURES-PRODUCT-THUMB', get_the_title() ); ?>
+                  </li>
+                <?php
+                  endforeach;
+                endif;
+                ?>
               </ul>
               <ul class="slider-nav">
                 <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img01.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
+                  <?php handle_thumbnail('NEWS-THUMBNAIL') ?>
                 </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img02.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img03.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
-                <li class="items">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/marble/marble_img04.jpg" alt="Đá Marble Trắng Vân Mây (Volakas)">
-                </li>
+                <?php
+                if($image_gallery) :
+                  foreach( $image_gallery as $image ):
+                  ?>
+                  <li class="items">
+                    <?php  handle_thumbnail_id($image['ID'], 'NEWS-THUMBNAIL', get_the_title() ); ?>
+                  </li>
+                <?php
+                  endforeach;
+                endif;
+                ?>
               </ul>
             </div>
             <div class="m-blockdetail__cont">
               <div class="block-top">
                 <h4><?php the_title(); ?></h4>
                 <ul class="list-tag">
-                  <li>Mã sản phẩm : <span class="bold">EWH11014</span>
+                  <li><?php _e('Product SKU : ', 'eurostone'); ?><span class="bold"><?php echo $sku ?></span>
                   </li>
                   <li>Dekton - Onirika</li>
                 </ul>
                 <div class="m-blockdetail__tab">
                   <ul class="tab-ttl">
-                    <li class="active">Mô tả</li>
-                    <li>Thông số kỹ Thuật</li>
+                    <li class="active"><?php _e('Description', 'eurostone'); ?></li>
+                    <li><?php _e('Specifications', 'eurostone'); ?></li>
                   </ul>
                   <div class="tab-cont">
                     <div class="tab-frame active">
                       <div class="sec">
-                        <p>Đá Marble trắng vân mây đến từ Hy Lạp với màu đá trắng chủ đạo cùng với các đường vân màu xám, nâu, tím, hồng..., phù hợp ốp tường trang trí, hoặc các tiện ích khác góp phần tạo nên sự sang trọng cho ngôi nhà của bạn.</p>
-                        <p>Với công nghệ hiện đại đến từ Châu Âu, đá Marble vân mây siêu bền, siêu chắc chắn với thời gian, sẽ đem đến cho bạn một không gian thoải mái, tuyệt vời.</p>
+                        <p><?php echo get_the_excerpt(); ?></p>
                       </div>
                     </div>
                     <div class="tab-frame">
