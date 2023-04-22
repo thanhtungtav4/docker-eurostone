@@ -48,3 +48,12 @@ msgstr "Mô tả"
 
 msgid "Specifications"
 msgstr "Thông số kỹ Thuật"
+
+msgid "Superior Features"
+msgstr "Tính Năng Ưu Việt"
+
+msgid "Design now"
+msgstr "Thiết kế ngay"
+
+msgid "Related Products"
+msgstr "Sản Phẩm Tương Tự"

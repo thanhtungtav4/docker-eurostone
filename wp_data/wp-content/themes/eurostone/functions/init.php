@@ -56,6 +56,8 @@ function corporate_theme_setup() {
 	add_image_size( 'INTRO-TAX-THUMBNAIL-SP', 353, 382, true );
 	add_image_size( 'FEATURES-THUMB', 380, 300, true );
 	add_image_size( 'FEATURES-PRODUCT-THUMB', 600, 600, true );
+	add_image_size( 'SUB-PRODUCT-THUMB', 318, 218, true );
+	add_image_size( 'RELATED-PRODUCT-THUMB', 280, 220, true );
 }
 
 /**

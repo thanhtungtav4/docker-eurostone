@@ -169,282 +169,56 @@ $sku = get_field('product_code');
           </div>
         </div>
       </section>
+      <?php
+      $argsRelated = array(
+        'post_type'		=> 'product',
+        'post_status' => 'publish',
+        'posts_per_page' => '5',
+        'order' => 'DESC',
+      );
+      $queryRelated = new WP_Query($argsRelated);
+      if( $queryRelated->have_posts() ): ?>
       <section id="detail_box03">
         <div class="bg-wave"></div>
         <div class="inner">
-          <h3 class="c-title02">Sản Phẩm Tương Tự</h3>
+          <h3 class="c-title02"><?php _e('Related Products', 'eurostone'); ?></h3>
           <ul class="c-slider01 slider01">
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cmf</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="items">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/stone_img01.jpg" alt="Đá Marble Xanh (Green)">
-                </figure>
-                <div class="sec">
-                  <h4>Đá Marble Xanh (Green)</h4>
-                  <ul class="list-tag">
-                    <li>India</li>
-                    <li>Lớn</li>
-                    <li>1.6 - 1.8cm</li>
-                  </ul>
-                </div>
-              </a>
-            </li>
+            <?php while ( $queryRelated->have_posts() ) : $queryRelated->the_post(); ?>
+              <?php require( get_stylesheet_directory() . '/module/item/productItem.php' ); ?>
+            <?php endwhile; ?>
           </ul>
         </div>
       </section>
+      <?php wp_reset_query(); ?>
+      <?php endif; ?>
+      <?php  if( have_rows('product_module') ): ?>
       <section id="detail_box04">
         <div class="inner">
+          <?php  while( have_rows('product_module') ) : the_row(); ?>
           <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
+            <h3 class="c-title03"><?php the_sub_field('product-category-name'); ?></h3>
             <ul class="detail_list01">
+              <?php 
+                $productList = get_sub_field('product-list'); 
+                if($productList) :
+                foreach ($productList as $item) :
+              ?>
               <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img01.png" alt="Đối xứng">
-                  </figure>
-                  <p>Đối xứng</p>
-                </a>
+                  <?php 
+                  if($item && $item['image']) :
+                    handle_thumbnail_id($item['image'], 'SUB-PRODUCT-THUMB', $item['Image-product-name'], true) ;
+                  endif;  
+                  ?>
+                  <p><?php ($item && $item['Image-product-name']) ? print $item['Image-product-name'] : '' ?></p>
               </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img02.png" alt="Cân bằng">
-                  </figure>
-                  <p>Cân bằng</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img03.png" alt="Phản chiếu">
-                  </figure>
-                  <p>Phản chiếu</p>
-                </a>
-              </li>
+              <?php
+                endforeach;
+                endif; 
+              ?>
             </ul>
-          </div>
-          <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
-            <ul class="detail_list01">
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img04.png" alt="Bubble">
-                  </figure>
-                  <p>Bubble</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img05.png" alt="Exelis">
-                  </figure>
-                  <p>Exelis</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/products_img06.png" alt="Freccia">
-                  </figure>
-                  <p>Freccia</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="block">
-            <h3 class="c-title03">Bồn rửa chén</h3>
-            <ul class="detail_list01 detail_list01--01">
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img01.png" alt="Căn bản">
-                  </figure>
-                  <p>Căn bản</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img02.png" alt="Bán gờ tròn">
-                  </figure>
-                  <p>Bán gờ tròn</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img03.png" alt="Thác nước / Góc tròn">
-                  </figure>
-                  <p>Thác nước / Góc tròn</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img01.png" alt="Bậc bán gờ tròn">
-                  </figure>
-                  <p>Bậc bán gờ tròn</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img05.png" alt="Vát cạnh">
-                  </figure>
-                  <p>Vát cạnh</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img06.png" alt="Gờ tròn">
-                  </figure>
-                  <p>Gờ tròn </p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img07.png" alt="Hình cung nhọn">
-                  </figure>
-                  <p>Hình cung nhọn</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/cornor_img08.png" alt="Đỉnh tròn">
-                  </figure>
-                  <p>Đỉnh tròn</p>
-                </a>
-              </li>
-            </ul>
+          <?php endwhile; ?>  
           </div>
         </div>
       </section>
-      <section id="detail_box05">
-        <div class="inner">
-          <div class="m-block04">
-            <h3 class="c-title02 c-title02--01">Tính Năng Ưu Việt</h3>
-            <p class="txt01">Hơn 130 lựa chọn màu sắc thỏa mãn mọi nhu cầu của bạn</p>
-            <p class="txt02">Với các tính năng và màu sắc đa dạng phong phú, sản phẩm đá DEKTON thích hợp với mọi ứng dụng nội thất cho căn nhà của bạn</p>
-            <ul class="list-3cols">
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN">
-                  </figure>
-                  <div class="sec">
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN">
-                  </figure>
-                  <div class="sec">
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dekton/fea_img01.jpg" alt="GIẢ LẬP KHÔNG GIAN">
-                  </figure>
-                  <div class="sec">
-                    <h4 class="ttl">GIẢ LẬP KHÔNG GIAN</h4>
-                    <p class="txt">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích.</p>
-                    <p class="link">Thiết kế ngay </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <figure class="illust illust04">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/illust04.svg" alt="illust">
-        </figure>
-      </section>
+      <?php endif; ?>
+      <?php require( get_stylesheet_directory() . '/module/module-features.php' ); ?>
