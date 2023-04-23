@@ -1,5 +1,5 @@
 <?php
-  $postFeatures = get_field('module_features', $taxonomy_term) ? array_filter(get_field('tax_advantage', $taxonomy_term)) : '' ;
+  $postFeatures = get_field('module_features', $taxonomy_term) ? array_filter(get_field('module_features', $taxonomy_term)) : '' ;
   $argsFeatures = array(
     'post_type'		=> array('post', 'product', 'construction_works'),
     'post_status' => 'publish',
@@ -22,7 +22,7 @@
               <?php handle_thumbnail('FEATURES-THUMB', true); ?>
               <div class="sec">
                 <h4 class="ttl"><?php the_title()?></h4>
-                <p class="txt"><?php echo wp_trim_words(get_the_excerpt()) ?></p>
+                <p class="txt"><?php echo wp_trim_words(get_the_excerpt(), 20, '...') ?></p>
                 <p class="link"><?php _e('Design now', 'eurostone') ?></p>
               </div>
             </a>

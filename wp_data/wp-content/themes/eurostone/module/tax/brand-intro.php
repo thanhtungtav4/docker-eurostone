@@ -13,7 +13,7 @@
           <source media="(max-width:768px)" srcset="<?php echo wp_get_attachment_image_url(get_field('image-intro', $taxonomy_term), 'INTRO-TAX-THUMBNAIL' ) ?>">
           <source media="(min-width:768px)" srcset="<?php echo wp_get_attachment_image_url(get_field('image-intro', $taxonomy_term), 'INTRO-TAX-THUMBNAIL-SP' ) ?>">
           <?php
-            handle_thumbnail_id(get_field('image-intro', $taxonomy_term), 'INTRO-TAX-THUMBNAIL-SP', get_field('name-intro', $taxonomy_term) );
+            handle_thumbnail_id(get_field('image-intro', $taxonomy_term), 'INTRO-TAX-THUMBNAIL', get_field('name-intro', $taxonomy_term) );
           ?>
         </picture>
       </div>

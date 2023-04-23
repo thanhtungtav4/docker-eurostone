@@ -42,9 +42,9 @@
             </li>
             <li class="btn_gr">
               <div class="btn_submit">
-                <input type="submit" value="GỬI EMAIL">
+                <input type="submit" value="<?php _e('SUBMIT EMAIL', 'eurostone'); ?>">
               </div>
-              <span class="required">là thông tin bắt buộc</span>
+              <span class="required"><?php _e('Required Information', 'eurostone'); ?></span>
             </li>
           </ul>
         </div>

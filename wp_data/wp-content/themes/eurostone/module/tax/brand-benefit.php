@@ -10,13 +10,13 @@
 ?>
 <section id="dekton_box03">
   <div class="inner">
-    <h3 class="c-title02 c-title02--01">Lợi Ích Của Dekton</h3>
+    <h3 class="c-title02 c-title02--01"><?php _e('Benefits of', 'eurostone') ?> <?php single_term_title(); ?></h3>
     <div class="benefit__block">
       <?php
       $queryArgsWorks = new WP_Query($argsArgsWorks);
       if( $queryArgsWorks->have_posts() ): ?>
         <dl>
-          <dt class="active">ƯU ĐIỂM</dt>
+          <dt class="active"><?php _e('ADVANTAGE', 'eurostone') ?></dt>
           <dd>
             <ul class="c-slider01 slider02">
               <?php while ( $queryArgsWorks->have_posts() ) : $queryArgsWorks->the_post(); ?>
@@ -29,7 +29,7 @@
       <?php endif; ?>
       <?php if(get_field('tax_design_options', $taxonomy_term)) : ?>
         <dl>
-          <dt class="">Phương Án Thiết Kế</dt>
+          <dt class=""><?php _e('Design options', 'eurostone') ?></dt>
           <dd style="display: none;">
             <?php the_field('tax_design_options', $taxonomy_term); ?>
           </dd>
@@ -37,7 +37,7 @@
       <?php endif; ?>
       <?php if(get_field('tax_improve', $taxonomy_term)) : ?>
       <dl>
-        <dt class="">Cải Tiến</dt>
+        <dt class=""><?php _e('Improve', 'eurostone') ?></dt>
         <dd style="display: none;">
           <?php the_field('tax_improve', $taxonomy_term); ?>
         </dd>

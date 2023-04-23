@@ -16,7 +16,7 @@
     <div class="footer__cont">
       <div class="footer__block">
         <div class="footer__frame">
-          <div class="f_ttl">THÔNG TIN CÔNG TY</div>
+          <div class="f_ttl"><?php _e('COMPANY INFORMATION', 'eurostone'); ?></div>
           <div class="f_txt01">CÔNG TY CỔ PHẦN ĐÁ HOA CƯƠNG CHÂU ÂU - EUROSTONE</div>
           <ul class="f_list">
             <li>MST: 0309720941</li>
@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="footer__frame">
-          <div class="f_ttl">KẾT NỐI VỚI EUROSTONE</div>
+          <div class="f_ttl"><?php _e('CONNECT WITH EUROSTONE', 'eurostone'); ?></div>
           <ul class="list-social">
             <li> <a href="#" target="_blank"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/facebook.png" alt="facebook" width="30"></a></li>
             <li> <a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/pinterest.png" alt="pinterest" width="30"></a></li>
@@ -38,13 +38,13 @@
       </div>
       <div class="footer__block">
         <div class="footer__frame">
-          <div class="f_ttl">VỀ EUROSTONE</div>
+          <div class="f_ttl"><?php _e('ABOUT EUROSTONE', 'eurostone'); ?></div>
           <p class="f_txt02 icon01">Showroom</p>
           <ul class="f_list">
             <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
             <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
           </ul>
-          <p class="f_txt02 icon02">Nhà máy</p>
+          <p class="f_txt02 icon02"><?php _e('Factory', 'eurostone'); ?></p>
           <ul class="f_list">
             <li>số 120 đường số 7, KDC Cityland - Center Hill, P.7, Q. Gò Vấp</li>
             <li>số 25 đường số 10, KĐT Sala, P. An Lợi Đông, Q.2, TP. Thủ Đức</li>
@@ -55,7 +55,7 @@
       </div>
       <div class="footer__block">
         <div class="footer__frame">
-          <p class="f_ttl">CHÍNH SÁCH CHUNG</p>
+          <p class="f_ttl"><?php _e('GENERAL POLICY', 'eurostone'); ?></p>
           <ul class="f_list">
             <li> <a href="#">Chính sách vận chuyển</a></li>
             <li> <a href="#">Chính sách thi công</a></li>
@@ -63,10 +63,10 @@
           </ul>
         </div>
         <div class="footer__contact">
-          <p>Đăng ký Email ngay để nhận ưu đãi mới nhất!</p>
+          <p><?php _e('Sign up for Email now to receive the latest offers!', 'eurostone'); ?></p>
           <div class="register">
             <p class="cus_input">
-              <input type="text" placeholder="Nhập Email">
+              <input type="text" placeholder="<?php _e('Enter Email', 'eurostone'); ?>">
             </p>
             <p class="btn_submit">
               <input type="submit" value="">
