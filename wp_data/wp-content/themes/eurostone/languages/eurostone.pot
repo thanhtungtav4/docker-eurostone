@@ -102,3 +102,7 @@ msgstr "ƯU ĐIỂM"
 
 msgid "Featured Colors"
 msgstr "Các Màu Nổi Bật"
+
+msgid "Applications Of"
+msgstr "Ứng Dụng Của"
+
