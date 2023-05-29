@@ -22,8 +22,8 @@
       </div>
       <div class="box-right">
         <div class="form-contact">
-          <h4 class="form-ttl">ĐẶT LỊCH HẸN VÀ TƯ VẤN TRỰC TIẾP</h4>
-          <p class="form-txt">Quý khách vui lòng để lại thông tin để được tư vấn về sản phẩm và dịch vụ của Eurostone</p>
+          <h4 class="form-ttl"><?php _e('BOOK A DIRECTION SCHEDULE AND CONSULTATION', 'eurostone') ?></h4>
+          <p class="form-txt"><?php _e('Please leave information for advice on Eurostones products and services', 'eurostone') ?></p>
           <ul class="form-contact__cont">
             <li class="cus_input">
               <span class="required"></span>

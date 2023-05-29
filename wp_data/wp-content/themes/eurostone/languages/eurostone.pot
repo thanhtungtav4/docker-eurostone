@@ -106,3 +106,14 @@ msgstr "Các Màu Nổi Bật"
 msgid "Applications Of"
 msgstr "Ứng Dụng Của"
 
+msgid "TILING CATEGORY"
+msgstr "Hạng Mục Ốp Lát"
+
+msgid "Details..."
+msgstr "Chi tiết..."
+
+msgid "BOOK A DIRECTION SCHEDULE AND CONSULTATION"
+msgstr "ĐẶT LỊCH HẸN VÀ TƯ VẤN TRỰC TIẾP"
+
+msgid "Please leave information for advice on Eurostone's products and services"
+msgstr "Quý khách vui lòng để lại thông tin để được tư vấn về sản phẩm và dịch vụ của Eurostone"

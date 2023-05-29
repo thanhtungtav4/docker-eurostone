@@ -31,7 +31,7 @@
                 <?php echo wp_trim_words(get_the_excerpt()) ?>
               </div>
               <div class="link-detail">
-                <a href="<?php the_permalink()?>">Chi tiết...</a>
+                <a href="<?php the_permalink()?>"><?php _e('Details...', 'eurostone') ?></a>
               </div>
             </div>
           </div>

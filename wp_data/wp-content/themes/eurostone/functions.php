@@ -27,3 +27,4 @@ if ( function_exists( 'pll_count_posts' ) ) {
 }
 include_once(get_stylesheet_directory() .  '/functions/yoast.php');
 include_once(get_stylesheet_directory() .  '/functions/product.php');
+include_once(get_stylesheet_directory() .  '/functions/smtp.php');
