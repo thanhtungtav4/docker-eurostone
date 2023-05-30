@@ -117,3 +117,6 @@ msgstr "ĐẶT LỊCH HẸN VÀ TƯ VẤN TRỰC TIẾP"
 
 msgid "Please leave information for advice on Eurostone's products and services"
 msgstr "Quý khách vui lòng để lại thông tin để được tư vấn về sản phẩm và dịch vụ của Eurostone"
+
+msgid "Xem chi tiết"
+msgstr "View details"

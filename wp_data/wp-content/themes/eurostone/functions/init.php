@@ -4,7 +4,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 define('PAGESIZE', 10);
-define( 'PLACEHOLDER-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_270x270.jpg' );
+define( 'PLACEHOLDER-THUMB', 'http://via.placeholder.com/850x850' );
 define( 'PLACEHOLDER-TAX-STONE-THUMB', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_270x270.jpg' );
 define( 'PLACEHOLDER-SHOWROOM-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_580x418.jpg' );
 define( 'PLACEHOLDER-INTRO-THUMBPC', get_stylesheet_directory_uri() . '/assets/images/placeholder/img_noimage_600x645.jpg' );
