@@ -1,0 +1,27 @@
+/*------------------------------------------------------------
+	Other
+------------------------------------------------------------*/
+.m-only{
+	&pc{
+		@include sp{
+			display: none;
+		}
+	}
+	&sp{
+		display: none;
+		@include sp{
+			display: inline-block;
+		}
+	}
+}
+.m-viewall{
+	a{
+		font-size: 1.8rem;
+		line-height: 1.38;
+		display: inline-block;
+		color: $color-main;
+		img{
+			margin-left: 2rem;
+		}
+	}
+}

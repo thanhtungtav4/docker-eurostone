@@ -1,0 +1,18 @@
+extends _layout/default
+
+block vars
+  -title        = 'Trang chủ'
+  -description  = 'Trang chủ - Spiderum trang tin tức'
+  -keywords     = 'Trang chủ, Spiderum'
+  -pageID       = 'top'
+  -image        = 'https://images.unsplash.com/photo-1629927506216-fcdf656d74de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+  -path         = ''
+
+block container
+  include _modules/slider
+  include _modules/intro
+  include _modules/showroom
+  include _modules/caterory_section
+  include _modules/product_section
+  include _modules/home_news
+  include _modules/support_section

@@ -1,0 +1,50 @@
+include ../_mixins/_all
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -image        = ''
+  -pageID       = ''
+  -path         = ''
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title=title
+    link(rel='preload', href=path+'assets/css/slick.css', as='style', onload="this.onload=null;this.rel='stylesheet'")
+    noscript
+      link(rel='stylesheet', href=path+'assets/css/slick.css')
+    link(rel='stylesheet' href=path+'assets/css/style.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap', rel='stylesheet')
+    link(as='image', rel='preload', href='assets/images/logo.svg', fetchpriority='high')
+    // Primary Meta Tags
+    meta(name='title' content=title)
+    meta(name='description' content=description)
+    // Open Graph / Facebook
+    meta(property='og:type' content='website')
+    meta(property='og:url' content=path)
+    meta(property='og:title' content=title)
+    meta(property='og:description' content=description)
+    meta(property='og:image' content=image)
+    // Twitter
+    meta(property='twitter:card' content='summary_large_image')
+    meta(property='twitter:url' content=path)
+    meta(property='twitter:title' content=title)
+    meta(property='twitter:description' content=description)
+    meta(property='twitter:image' content=image)
+
+
+  body(itemscope="" itemtype="http://schema.org/WebPage")
+    include ../_modules/header
+    main.l-main
+      block container
+    include ../_modules/footer
+    script(type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(type="text/javascript" src=path+"assets/js/slick-min.js" ,defer async)
+    script(type="text/javascript" src=path+"assets/js/common-min.js" ,defer async)

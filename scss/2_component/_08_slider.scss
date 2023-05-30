@@ -1,0 +1,61 @@
+
+.m-slider{
+  background-color: #000936;
+  color: white;
+  position: relative;
+  padding: 13rem 0px;
+  margin-bottom: 8rem;
+  @include min(1440px){
+    margin-top: 8rem;
+  }
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  &::before{
+    background-color: white;
+    bottom: 0px;
+    height: 130px;
+  }
+  &::after{
+    background-image: url('/assets/images/bg_main.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    height: 300px;
+  }
+  .m-title{
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    justify-content: flex-start;
+  }
+  p{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  @include sp{
+    padding: 90px 0;
+    margin-bottom: 1rem;
+    &::before,
+    &::after{
+      height: 90px;
+    }
+    .m-title{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+  }
+}
+.m-carousel.slick-not-init {
+	.m-carousel_item {
+		&:nth-child(n+2) {
+			display: none;
+		}
+	}
+}

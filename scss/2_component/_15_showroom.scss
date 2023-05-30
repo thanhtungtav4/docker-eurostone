@@ -1,0 +1,17 @@
+.m-showroom{
+  margin: 2rem 0;
+  background-color: $color-main;
+  &_inner{
+    padding: 6rem 0;
+  }
+  &_item{
+    @include flex-center;
+    img{
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+  &_content{
+    color: white;
+    padding: 2rem 0;
+  }
+}

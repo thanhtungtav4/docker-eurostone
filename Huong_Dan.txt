@@ -1,0 +1,17 @@
+Chuẩn bị:
+* Down và cài đặt Nodejs : https://nodejs.org/en/
+* Cài đặt SaSS và Gulp Cli thông qua Command Prompt (cmd)
+  - npm install sass -g
+  - npm install gulp-cli -g
+
+Chạy dự án:
+* Vào folder dự án mở cmd và chạy lệnh : npm i
+* Sau khi xong chạy lệnh : gulp
+
+* Cài đặt plugin cho PUG và sourcemap CSS
+  -npm i gulp-pug
+  -npm i gulp-sourcemaps
+
+==> Làm việc
+
+https://frowcss.com/getting-started.html

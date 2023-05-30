@@ -1,0 +1,14 @@
+.m-btn{
+  background-color: #0779F1;
+  color: white;
+  padding: 10px;
+  width: 203px;
+  height: 57px;
+  align-items: center;
+  gap: 20px;
+  &:hover{
+    text-decoration: none;
+    background-color: $color-main;
+    color: white;
+  }
+}
