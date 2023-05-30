@@ -1,0 +1,109 @@
+# <!=Copyright (C) 2022 Automattic
+# This file is distributed under the GNU General Public License v3 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Eurostone 4.1.3\n"
+"POT-Creation-Date: 2023-01-03 14:08+0700\n"
+"PO-Revision-Date: 2023-05-29 13:31+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: module/main-construction-works.php:3
+msgid "Construction Works"
+msgstr "Công Trình Thi Công"
+
+msgid "View all"
+msgstr "Xem tất cả"
+
+msgid "View more"
+msgstr "XEM THÊM"
+
+msgid "News"
+msgstr "Tin Tức"
+
+msgid "Stone industry services"
+msgstr "Dịch Vụ Ngành Đá"
+
+msgid "Detail..."
+msgstr "Chi tiết..."
+
+msgid "System"
+msgstr "Hệ Thống"
+
+msgid "Home"
+msgstr "Trang chủ"
+
+msgid "Product SKU : "
+msgstr "Mã sản phẩm : "
+
+msgid "Description"
+msgstr "Mô tả"
+
+msgid "Specifications"
+msgstr "Thông số kỹ Thuật"
+
+msgid "Superior Features"
+msgstr "Tính Năng Ưu Việt"
+
+msgid "Design now"
+msgstr "Thiết kế ngay"
+
+msgid "Related Products"
+msgstr "Sản Phẩm Tương Tự"
+
+msgid "SUBMIT EMAIL"
+msgstr "GỬI EMAIL"
+
+msgid "Required Information"
+msgstr "Thông tin bắt buộc"
+
+msgid "BOOK A DATE AND CONSULT DIRECTLY"
+msgstr "BOOK A DIRECT CONSULTATION"
+
+msgid "COMPANY INFORMATION"
+msgstr "THÔNG TIN CÔNG TY"
+
+msgid "ABOUT EUROSTONE"
+msgstr "VỀ EUROSTONE"
+
+msgid "GENERAL POLICY"
+msgstr "CHÍNH SÁCH CHUNG"
+
+msgid "Sign up for Email now to receive the latest offers!"
+msgstr "Đăng ký Email ngay để nhận những ưu đãi mới nhất!"
+
+msgid "CONNECT WITH EUROSTONE"
+msgstr "KẾT NỐI VỚI EUROSTONE"
+
+msgid "Factory"
+msgstr "Nhà máy"
+
+msgid "Enter Email"
+msgstr "Nhập Email"
+
+msgid "Benefits of"
+msgstr "Lợi Ích Của"
+
+msgid "Design options"
+msgstr "Phương Án Thiết Kế"
+
+msgid "Improve"
+msgstr "Cải Tiến"
+
+msgid "ADVANTAGE"
+msgstr "ƯU ĐIỂM"
+
+msgid "Featured Colors"
+msgstr "Các Màu Nổi Bật"
+
+msgid "Applications Of"
+msgstr "Ứng Dụng Của"
+
+msgid "Tiling category"
+msgstr "Hạng Mục Ốp Lát"
