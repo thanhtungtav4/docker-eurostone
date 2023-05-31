@@ -560,3 +560,53 @@ Stack trace:
 [31-May-2023 07:13:06 UTC] WPCC (error): URL does not exist in the database.
 [31-May-2023 07:13:53 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
 [31-May-2023 07:13:53 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:15:00 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:15:00 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:18:50 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:18:50 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:20:18 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:20:18 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:21:24 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:21:24 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:29:05 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:29:05 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:32:16 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
+[31-May-2023 07:32:24 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:32:24 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:38:44 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:38:44 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:52:48 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
+[31-May-2023 07:52:53 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:52:54 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:05:21 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:05:21 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:12:29 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:12:29 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:12:58 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:12:58 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:13:52 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:13:52 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:15:21 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:15:22 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:17:03 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:17:03 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:22:16 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:22:16 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:23:53 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:23:53 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:24:50 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:24:50 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:31:24 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:31:24 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:33:59 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:33:59 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:37:28 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:37:29 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:38:16 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:38:17 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:40:05 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:40:05 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:41:28 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:41:28 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 08:42:11 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 08:42:11 UTC] WPCC (error): URL does not exist in the database.
