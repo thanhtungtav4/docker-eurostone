@@ -154,9 +154,6 @@ $(document).ready(function () {
     });
   }
   if ($(".list-3cols").length) {
-    $(".list-3cols figure").matchHeight({
-      byRow: true,
-    });
     $(".list-3cols h4").matchHeight({
       byRow: true,
     });
