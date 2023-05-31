@@ -191,5 +191,11 @@ $(document).ready(function () {
         });
       });
     }
+    if ($(".viewmore_block").length) {
+      $(".viewmore_block .viewmore_btn").click(function () {
+        $(this).parents().find(".viewmore_cont").toggleClass("showmore");
+        $(this).toggleClass("active");
+      });
+    }
   }
 });
