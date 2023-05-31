@@ -519,3 +519,44 @@ Stack trace:
 [31-May-2023 01:07:57 UTC] WPCC (error): Current URL is locked. It means it is being used by another process.
 [31-May-2023 01:07:57 UTC] WPCC (error): Current URL is locked. It means it is being used by another process.
 [31-May-2023 01:08:07 UTC] WPCC (error): Current URL is locked. It means it is being used by another process.
+[31-May-2023 05:40:46 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
+[31-May-2023 06:25:03 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:25:03 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:26:14 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:26:14 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:27:16 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:27:16 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:28:17 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:28:17 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:31:00 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:31:00 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:32:33 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:32:33 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:33:23 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:33:23 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:38:29 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:38:29 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:48:03 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:48:03 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:49:32 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:49:32 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:50:27 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:50:28 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:51:49 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:51:50 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 06:58:38 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 06:58:38 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:04:27 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:04:27 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:05:23 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:05:23 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:06:02 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:06:02 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:12:55 UTC] PHP Warning:  Undefined array key "id" in /var/www/html/wp-content/themes/eurostone/template-parts/content-product.php on line 12
+[31-May-2023 07:12:55 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in /var/www/html/wp-content/themes/eurostone/template-parts/content-product.php on line 40
+[31-May-2023 07:12:55 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in /var/www/html/wp-content/themes/eurostone/template-parts/content-product.php on line 56
+[31-May-2023 07:12:55 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
+[31-May-2023 07:13:06 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:13:06 UTC] WPCC (error): URL does not exist in the database.
+[31-May-2023 07:13:53 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[31-May-2023 07:13:53 UTC] WPCC (error): URL does not exist in the database.
