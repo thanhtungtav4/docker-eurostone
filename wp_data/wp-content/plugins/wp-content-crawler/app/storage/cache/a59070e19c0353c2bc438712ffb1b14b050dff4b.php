@@ -1,3 +1,5 @@
+
+
 <?php
 
 $registrationUrl = "http://www.turkcespin.com/";

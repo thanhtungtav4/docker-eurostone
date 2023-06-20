@@ -1,3 +1,5 @@
+
+
 <?php
 
 $apiDocsUrl = \WPCCrawler\Objects\Transformation\Spinning\Clients\SpinRewriterClient::getAffiliateLink('https://www.spinrewriter.com/cp-api');

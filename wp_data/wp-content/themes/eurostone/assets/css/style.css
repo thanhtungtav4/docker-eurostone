@@ -1208,7 +1208,7 @@ iframe {
   flex-shrink: 0;
   width: 12px;
   height: 17px;
-  background: url("/assets/images/location_icon01.png") no-repeat center;
+  background: url("../images/location_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
   position: relative;
@@ -1241,7 +1241,7 @@ iframe {
   content: "";
   width: 100%;
   height: 15.625vw;
-  background: url("/assets/images/stone_bg_top.png") no-repeat center;
+  background: url("../images/stone_bg_top.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -1251,7 +1251,7 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("/assets/images/stone_bg.png") no-repeat center;
+  background: url("../images/stone_bg.png") no-repeat center;
   background-size: contain;
   z-index: 0;
   position: absolute;
@@ -1635,7 +1635,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("/assets/images/dekton/bg01.png") no-repeat center bottom;
+  background: url("../images/dekton/bg01.png") no-repeat center bottom;
   background-size: 100%;
   position: absolute;
   top: 0;
@@ -1646,7 +1646,7 @@ iframe {
   content: "";
   width: 100%;
   height: 5.208vw;
-  background: url("/assets/images/dekton/bg02.png") no-repeat center top;
+  background: url("../images/dekton/bg02.png") no-repeat center top;
   background-size: 100%;
   position: absolute;
   bottom: 0;
@@ -1657,7 +1657,7 @@ iframe {
   content: "";
   width: 100%;
   height: calc(100% - 9vw);
-  background: url("/assets/images/dekton/bg03.png") no-repeat center;
+  background: url("../images/dekton/bg03.png") no-repeat center;
   background-size: cover;
   position: absolute;
   top: 4.5vw;
@@ -1754,7 +1754,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("/assets/images/dekton/bg04.png") no-repeat center bottom;
+    background: url("../images/dekton/bg04.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: -1;
@@ -1775,7 +1775,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10vw;
-    background: url("/assets/images/dekton/bg05.png") no-repeat center bottom;
+    background: url("../images/dekton/bg05.png") no-repeat center bottom;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1800,7 +1800,7 @@ iframe {
     content: "";
     width: 100%;
     height: 10.449vw;
-    background: url("/assets/images/dekton/bg06.png") no-repeat center top;
+    background: url("../images/dekton/bg06.png") no-repeat center top;
     background-size: 100%;
     position: absolute;
     z-index: 1;
@@ -1840,7 +1840,7 @@ iframe {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("/assets/images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -1849,7 +1849,7 @@ iframe {
 }
 #dekton_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("/assets/images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -1943,7 +1943,7 @@ iframe {
   content: "";
   width: 100%;
   height: 10.417vw;
-  background: url("/assets/images/silestone/union_bg02.png") no-repeat center
+  background: url("../images/silestone/union_bg02.png") no-repeat center
     top;
   background-size: contain;
   position: absolute;
@@ -2020,7 +2020,7 @@ iframe {
   content: "";
   width: 40px;
   height: 3px;
-  background: url("/assets/images/dekton/dekton_ico01.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico01.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -2029,7 +2029,7 @@ iframe {
 }
 #silestone_box03 .benefit__block dl dt.active:after {
   height: 40px;
-  background: url("/assets/images/dekton/dekton_ico02.png") no-repeat center;
+  background: url("../images/dekton/dekton_ico02.png") no-repeat center;
   background-size: contain;
 }
 @media screen and (max-width: 1024px) {
@@ -2715,7 +2715,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("/assets/images/arr_btn01.svg") no-repeat center;
+  background: url("../images/arr_btn01.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -2839,7 +2839,7 @@ iframe {
   content: "";
   width: calc(100% + 50px);
   height: 10px;
-  background: url("/assets/images/ico_line.svg") no-repeat right;
+  background: url("../images/ico_line.svg") no-repeat right;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -3190,7 +3190,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("/assets/images/arrow_icon02.png") no-repeat center;
+  background: url("../images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3219,7 +3219,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("/assets/images/arrow_icon02.png") no-repeat center;
+  background: url("../images/arrow_icon02.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -3440,7 +3440,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("/assets/images/arrow_icon01.png") no-repeat center;
+  background: url("../images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   transform: rotate(180deg);
   display: block;
@@ -3454,7 +3454,7 @@ iframe {
   content: "";
   width: 40px;
   height: 15px;
-  background: url("/assets/images/arrow_icon01.png") no-repeat center;
+  background: url("../images/arrow_icon01.png") no-repeat center;
   background-size: contain;
   display: block;
 }
@@ -4003,7 +4003,7 @@ iframe {
   }
 }
 .m-block05 {
-  background: url("/assets/images/dekton/dekton_bg01.png") no-repeat top;
+  background: url("../images/dekton/dekton_bg01.png") no-repeat top;
   background-size: 100%;
   position: relative;
   z-index: 1;
@@ -4436,7 +4436,7 @@ iframe {
   z-index: 1;
 }
 .bg_top::before {
-  background-image: url("/assets/images/bg_wave_top.svg");
+  background-image: url("../images/bg_wave_top.svg");
   background-repeat: no-repeat;
   background-size: auto;
   height: 150px;
@@ -4472,7 +4472,7 @@ iframe {
   }
 }
 .bg_bottom::after {
-  background-image: url("/assets/images/bg_main.svg");
+  background-image: url("../images/bg_main.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top;

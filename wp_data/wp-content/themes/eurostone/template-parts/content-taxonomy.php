@@ -12,7 +12,7 @@ $category = get_queried_object()->slug;
 $queryPost = new WP_Query(
 	array(
 		'paged'         => $paged,
-		'category_name' => $category,
+		// 'category_name' => $category,
 		'order'         => 'asc',
 		'post_type'     => get_post_type(),
 		'post_status'   => 'publish',

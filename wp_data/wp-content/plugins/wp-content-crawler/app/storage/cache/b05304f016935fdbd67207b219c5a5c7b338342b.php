@@ -1,3 +1,5 @@
+
+
 <?php
 
 $apiRetrievalUrl = 'https://tech.yandex.com/translate/';
