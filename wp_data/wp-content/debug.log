@@ -764,3 +764,20 @@ Stack trace:
 [20-Jun-2023 12:48:05 UTC] WPCC (error): URL does not exist in the database.
 [20-Jun-2023 12:51:21 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
 [20-Jun-2023 12:51:22 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 13:11:38 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 13:11:38 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 13:18:09 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 13:18:09 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 16:20:40 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
+[20-Jun-2023 16:21:02 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 16:21:02 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 16:23:02 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 16:23:02 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 16:25:02 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 16:25:02 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 16:37:07 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 16:37:08 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 16:53:06 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 16:53:07 UTC] WPCC (error): URL does not exist in the database.
+[20-Jun-2023 17:25:11 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[20-Jun-2023 17:25:12 UTC] WPCC (error): URL does not exist in the database.
