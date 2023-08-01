@@ -36,11 +36,11 @@ $sku = get_field('product_code');
                   <?php handle_thumbnail('FEATURES-PRODUCT-THUMB') ?>
                 </li>
                 <?php
-                if($image_gallery) :
+                if(!empty($image_gallery)) :
                   foreach( $image_gallery as $image ):
                   ?>
                   <li class="items">
-                    <?php  handle_thumbnail_id($image['ID'], 'FEATURES-PRODUCT-THUMB', get_the_title() ); ?>
+                    <?php  handle_thumbnail_id($image, 'FEATURES-PRODUCT-THUMB', get_the_title() ); ?>
                   </li>
                 <?php
                   endforeach;
@@ -56,7 +56,7 @@ $sku = get_field('product_code');
                   foreach( $image_gallery as $image ):
                   ?>
                   <li class="items">
-                    <?php  handle_thumbnail_id($image['ID'], 'NEWS-THUMBNAIL', get_the_title() ); ?>
+                    <?php  handle_thumbnail_id($image, 'NEWS-THUMBNAIL', get_the_title() ); ?>
                   </li>
                 <?php
                   endforeach;
@@ -155,7 +155,7 @@ $sku = get_field('product_code');
               </div>
             </div>
             <figure class="reference_img">
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/detail/detail_img01.jpg" alt="NHẬN BÁO GIÁ">
+              <?php handle_thumbnail('FEATURES-PRODUCT-THUMB') ?>
             </figure>
           </div>
           <div class="viewmore_block">
@@ -198,25 +198,25 @@ $sku = get_field('product_code');
           <div class="block">
             <h3 class="c-title03"><?php the_sub_field('product-category-name'); ?></h3>
             <ul class="detail_list01">
-              <?php 
-                $productList = get_sub_field('product-list'); 
+              <?php
+                $productList = get_sub_field('product-list');
                 if($productList) :
                 foreach ($productList as $item) :
               ?>
               <li>
-                  <?php 
+                  <?php
                   if($item && $item['image']) :
                     handle_thumbnail_id($item['image'], 'SUB-PRODUCT-THUMB', $item['Image-product-name'], true) ;
-                  endif;  
+                  endif;
                   ?>
                   <p><?php ($item && $item['Image-product-name']) ? print $item['Image-product-name'] : '' ?></p>
               </li>
               <?php
                 endforeach;
-                endif; 
+                endif;
               ?>
             </ul>
-          <?php endwhile; ?>  
+          <?php endwhile; ?>
           </div>
         </div>
       </section>
