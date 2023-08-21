@@ -61,6 +61,7 @@ if ( ! class_exists( 'ACF_Admin_Internal_Post_Type_List' ) ) :
 		 */
 		public function __construct() {
 			add_action( 'current_screen', array( $this, 'current_screen' ) );
+			add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 
 			// Handle post status change events.
 			add_action( 'trashed_post', array( $this, 'trashed_post' ) );
@@ -116,7 +117,7 @@ if ( ! class_exists( 'ACF_Admin_Internal_Post_Type_List' ) ) :
 			}
 
 			// Get the current view.
-			$this->view = acf_request_arg( 'post_status', '' );
+			$this->view = isset( $_GET['post_status'] ) ? sanitize_text_field( $_GET['post_status'] ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 
 			// Setup and check for custom actions.
 			$this->setup_sync();
@@ -221,10 +222,10 @@ if ( ! class_exists( 'ACF_Admin_Internal_Post_Type_List' ) ) :
 		 * @return string
 		 */
 		public function admin_body_class( $classes ) {
-			$classes .= ' acf-admin-page acf-internal-post-type ' . esc_attr( $this->admin_body_class );
+			$classes .= " acf-admin-page acf-internal-post-type {$this->admin_body_class}";
 
 			if ( $this->view ) {
-				$classes .= ' view-' . esc_attr( $this->view );
+				$classes .= " view-{$this->view}";
 			}
 
 			return $classes;

@@ -22,7 +22,14 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 	protected $links;
 
 	/**
-	 * Constructor: setups filters and actions
+	 * Stores plugin's options.
+	 *
+	 * @var array
+	 */
+	protected $options;
+
+	/**
+	 * Constructor: setups filters and actions.
 	 *
 	 * @since 1.8
 	 *
@@ -32,11 +39,12 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 		parent::__construct( $polylang );
 
 		$this->links_model = &$polylang->links_model;
-		$this->links = &$polylang->links;
+		$this->links       = &$polylang->links;
+		$this->options     = &$polylang->options;
 
 		add_action( 'pll_home_requested', array( $this, 'pll_home_requested' ) );
 
-		// Manages the redirection of the homepage
+		// Manages the redirection of the homepage.
 		add_filter( 'redirect_canonical', array( $this, 'redirect_canonical' ) );
 
 		add_filter( 'pll_pre_translation_url', array( $this, 'pll_pre_translation_url' ), 10, 3 );
@@ -44,23 +52,9 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 
 		add_filter( 'pll_set_language_from_query', array( $this, 'page_on_front_query' ), 10, 2 );
 		add_filter( 'pll_set_language_from_query', array( $this, 'page_for_posts_query' ), 10, 2 );
-	}
 
-	/**
-	 * Init the filters
-	 *
-	 * @since 1.8
-	 *
-	 * @return void
-	 */
-	public function pll_language_defined() {
-		parent::pll_language_defined();
-
-		// Support theme customizer
-		if ( isset( $_POST['wp_customize'], $_POST['customized'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification
-			add_filter( 'pre_option_page_on_front', 'pll_get_post', 20 );
-			add_filter( 'pre_option_page_for_post', 'pll_get_post', 20 );
-		}
+		// Specific cases for the customizer.
+		add_action( 'customize_register', array( $this, 'filter_customizer' ) );
 	}
 
 	/**
@@ -105,21 +99,31 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 	 *
 	 * @since 1.8
 	 *
-	 * @param string       $url               Not used.
-	 * @param PLL_Language $language          Language in which we want the translation.
-	 * @param int          $queried_object_id Id of the queried object.
+	 * @param string       $url               Empty string or the url of the translation of the current page.
+	 * @param PLL_Language $language          Language of the translation.
+	 * @param int          $queried_object_id Queried object ID.
 	 * @return string The translation url.
 	 */
 	public function pll_pre_translation_url( $url, $language, $queried_object_id ) {
-		if ( ! empty( $queried_object_id ) ) {
-			// Page for posts
-			if ( $GLOBALS['wp_query']->is_posts_page && ( $id = $this->model->post->get( $queried_object_id, $language ) ) ) {
-				$url = get_permalink( $id );
-			}
+		if ( empty( $queried_object_id ) ) {
+			return $url;
+		}
 
-			// Page on front
-			elseif ( is_front_page() && $language->page_on_front && ( $language->page_on_front == $this->model->post->get( $queried_object_id, $language ) ) ) {
-				$url = $language->home_url;
+		// Page for posts.
+		if ( $GLOBALS['wp_query']->is_posts_page ) {
+			$id = $this->model->post->get( $queried_object_id, $language );
+
+			if ( ! empty( $id ) ) {
+				return (string) get_permalink( $id );
+			}
+		}
+
+		// Page on front.
+		if ( is_front_page() && ! empty( $language->page_on_front ) ) {
+			$id = $this->model->post->get( $queried_object_id, $language );
+
+			if ( $language->page_on_front === $id ) {
+				return $language->get_home_url();
 			}
 		}
 
@@ -168,7 +172,7 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 		// Redirect the language page to the homepage when using a static front page
 		if ( ( $this->options['redirect_lang'] || $this->options['hide_default'] ) && $this->is_front_page( $query ) && $lang = $this->model->get_language( get_query_var( 'lang' ) ) ) {
 			$query->is_archive = $query->is_tax = false;
-			if ( ! empty( $lang->page_on_front ) ) {
+			if ( 'page' === get_option( 'show_on_front' ) && ! empty( $lang->page_on_front ) ) {
 				$query->set( 'page_id', $lang->page_on_front );
 				$query->is_singular = $query->is_page = true;
 				unset( $query->query_vars['lang'], $query->queried_object ); // Reset queried object
@@ -180,7 +184,7 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 
 		// Fix paged static front page in plain permalinks when Settings > Reading doesn't match the default language
 		elseif ( ! $this->links_model->using_permalinks && count( $query->query ) === 1 && ! empty( $query->query['page'] ) ) {
-			$lang = $this->model->get_language( $this->options['default_lang'] );
+			$lang = $this->model->get_default_language();
 			if ( empty( $lang ) ) {
 				return $lang;
 			}
@@ -259,5 +263,48 @@ class PLL_Frontend_Static_Pages extends PLL_Static_Pages {
 		}
 
 		return 0; // No page queried.
+	}
+
+	/**
+	 * Adds support for the theme customizer.
+	 *
+	 * @since 3.4.2
+	 *
+	 * @return void
+	 */
+	public function filter_customizer() {
+		add_filter( 'pre_option_page_on_front', array( $this, 'customize_page' ), 20 ); // After the customizer.
+		add_filter( 'pre_option_page_for_post', array( $this, 'customize_page' ), 20 );
+
+		add_filter( 'pll_pre_translation_url', array( $this, 'customize_translation_url' ), 20, 2 ); // After the generic hook in this class.
+	}
+
+	/**
+	 * Translates the page ID when customized.
+	 *
+	 * @since 3.4.2
+	 *
+	 * @param int|false $pre A page ID if the setting is customized, false otherwise.
+	 * @return int|false
+	 */
+	public function customize_page( $pre ) {
+		return is_numeric( $pre ) ? pll_get_post( (int) $pre ) : $pre;
+	}
+
+	/**
+	 * Fixes the translation URL if the option 'show_on_front' is customized.
+	 *
+	 * @since 3.4.2
+	 *
+	 * @param string       $url      An empty string or the URL of the translation of the current page.
+	 * @param PLL_Language $language The language of the translation.
+	 * @return string
+	 */
+	public function customize_translation_url( $url, $language ) {
+		if ( 'posts' === get_option( 'show_on_front' ) && is_front_page() ) {
+			// When the page on front displays posts, the home URL is the same as the search URL.
+			return $language->get_search_url();
+		}
+		return $url;
 	}
 }

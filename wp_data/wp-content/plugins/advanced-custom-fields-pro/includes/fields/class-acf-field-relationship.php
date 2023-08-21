@@ -670,7 +670,7 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Minimum Posts', 'acf' ),
+					'label'        => __( 'Minimum posts', 'acf' ),
 					'instructions' => '',
 					'type'         => 'number',
 					'name'         => 'min',
@@ -680,7 +680,7 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Maximum Posts', 'acf' ),
+					'label'        => __( 'Maximum posts', 'acf' ),
 					'instructions' => '',
 					'type'         => 'number',
 					'name'         => 'max',

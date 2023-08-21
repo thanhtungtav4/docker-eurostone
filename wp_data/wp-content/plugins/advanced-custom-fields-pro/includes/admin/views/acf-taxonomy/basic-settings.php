@@ -39,13 +39,13 @@ acf_render_field_wrap(
 acf_render_field_wrap(
 	array(
 		'label'        => __( 'Taxonomy Key', 'acf' ),
-		'instructions' => __( 'Lower case letters, underscores and dashes only, Max 32 characters.', 'acf' ),
+		'instructions' => __( 'Lower case letters, underscores and dashes only, Max 20 characters.', 'acf' ),
 		/* translators: example taxonomy */
 		'placeholder'  => __( 'genre', 'acf' ),
 		'type'         => 'text',
 		'key'          => 'taxonomy',
 		'name'         => 'taxonomy',
-		'maxlength'    => 32,
+		'maxlength'    => 20,
 		'class'        => 'acf_slugified_key',
 		'prefix'       => 'acf_taxonomy',
 		'value'        => $acf_taxonomy['taxonomy'],

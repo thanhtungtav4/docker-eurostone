@@ -1406,15 +1406,6 @@ function acf_get_posts( $args = array() ) {
 		$args['post__in'] = array_map( 'intval', acf_array( $args['post__in'] ) );
 	}
 
-	/**
-	 * Filters the args used in `acf_get_posts()` that are passed to `get_posts()`.
-	 *
-	 * @since 6.1.7
-	 *
-	 * @param array $args The args passed to `get_posts()`.
-	 */
-	$args = apply_filters( 'acf/acf_get_posts/args', $args );
-
 	// Query posts.
 	$posts = get_posts( $args );
 
@@ -1430,15 +1421,8 @@ function acf_get_posts( $args = array() ) {
 		array_multisort( $order, $posts );
 	}
 
-
-	/**
-	 * Filters the results found in the `acf_get_posts()` function.
-	 *
-	 * @since 6.1.7
-	 *
-	 * @param array $posts The results from the `get_posts()` call.
-	 */
-	return apply_filters( 'acf/acf_get_posts/results', $posts );
+	// Return posts.
+	return $posts;
 }
 
 

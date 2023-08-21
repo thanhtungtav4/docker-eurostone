@@ -43,6 +43,8 @@ class PLL_Filters {
 	 * @param object $polylang
 	 */
 	public function __construct( &$polylang ) {
+		global $wp_version;
+
 		$this->links_model = &$polylang->links_model;
 		$this->model = &$polylang->model;
 		$this->options = &$polylang->options;
@@ -58,7 +60,11 @@ class PLL_Filters {
 		add_filter( 'comments_clauses', array( $this, 'comments_clauses' ), 10, 2 );
 
 		// Filters the get_pages function according to the current language
-		add_filter( 'get_pages', array( $this, 'get_pages' ), 10, 2 );
+		if ( version_compare( $wp_version, '6.3-alpha', '<' ) ) {
+			// Backward compatibility with WP < 6.3.
+			add_filter( 'get_pages', array( $this, 'get_pages' ), 10, 2 );
+		}
+		add_filter( 'get_pages_query_args', array( $this, 'get_pages_query_args' ), 10, 2 );
 
 		// Rewrites next and previous post links to filter them by language
 		add_filter( 'get_previous_post_join', array( $this, 'posts_join' ), 10, 5 );
@@ -209,7 +215,8 @@ class PLL_Filters {
 
 			// Take care that 'exclude' argument accepts integer or strings too.
 			$args['exclude'] = array_merge( wp_parse_id_list( $args['exclude'] ), $this->get_related_page_ids( $language, 'NOT IN', $args ) ); // phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude
-			$pages = get_pages( $args );
+			$numbered_pages  = get_pages( $args );
+			$pages           = ! $numbered_pages ? $pages : $numbered_pages;
 		}
 
 		$ids = wp_list_pluck( $pages, 'ID' );
@@ -235,6 +242,23 @@ class PLL_Filters {
 	}
 
 	/**
+	 * Filters the WP_Query in get_pages() per language.
+	 *
+	 * @since 3.4.3
+	 *
+	 * @param array $query_args  Array of arguments passed to WP_Query.
+	 * @param array $parsed_args Array of get_pages() arguments.
+	 * @return array Array of arguments passed to WP_Query with the language.
+	 */
+	public function get_pages_query_args( $query_args, $parsed_args ) {
+		if ( isset( $parsed_args['lang'] ) ) {
+			$query_args['lang'] = $parsed_args['lang'];
+		}
+
+		return $query_args;
+	}
+
+	/**
 	 * Get page ids related to a get_pages() in or not in a given language.
 	 *
 	 * @since 3.2
@@ -256,7 +280,7 @@ class PLL_Filters {
 				array(
 					'taxonomy' => 'language',
 					'field'    => 'term_taxonomy_id', // Since WP 3.5.
-					'terms'    => $language->term_taxonomy_id,
+					'terms'    => $language->get_tax_prop( 'language', 'term_taxonomy_id' ),
 					'operator' => $relation,
 				),
 			),
@@ -393,7 +417,7 @@ class PLL_Filters {
 
 		if ( $user = get_user_by( 'email', $email_address ) ) {
 			foreach ( $this->model->get_languages_list() as $lang ) {
-				if ( $lang->slug !== $this->options['default_lang'] && $value = get_user_meta( $user->ID, 'description_' . $lang->slug, true ) ) {
+				if ( ! $lang->is_default && $value = get_user_meta( $user->ID, 'description_' . $lang->slug, true ) ) {
 					$user_data_to_export[] = array(
 						/* translators: %s is a language native name */
 						'name'  => sprintf( __( 'User description - %s', 'polylang' ), $lang->name ),

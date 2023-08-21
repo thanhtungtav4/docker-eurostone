@@ -32,3 +32,5 @@ Stack trace:
 [01-Aug-2023 09:57:11 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
 [01-Aug-2023 09:57:19 UTC] WPCC (info): File could not be saved (Details: Địa chỉ URL không hợp lệ., File URL: data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 [01-Aug-2023 09:57:19 UTC] WPCC (info): File could not be saved (Details: Original URL: data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==, Prepared URL: data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+[21-Aug-2023 06:33:54 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
+[21-Aug-2023 06:33:54 UTC] WPCC (error): URL does not exist in the database.

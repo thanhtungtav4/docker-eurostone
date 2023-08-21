@@ -189,12 +189,6 @@ if ( ! class_exists( 'ACF_Taxonomy' ) ) {
 					'item_link_description'      => '',
 				),
 				'description'            => '',
-				'capabilities'           => array(
-					'manage_terms'    => 'manage_categories',
-					'edit_terms'      => 'manage_categories',
-					'delete_terms'    => 'manage_categories',
-					'assign_terms'    => 'edit_posts',
-				),
 				'public'                 => true,
 				'publicly_queryable'     => true,
 				'hierarchical'           => false,
@@ -242,9 +236,9 @@ if ( ! class_exists( 'ACF_Taxonomy' ) ) {
 			$taxonomy_key = is_string( $taxonomy_key ) ? $taxonomy_key : '';
 			$valid        = true;
 
-			if ( strlen( $taxonomy_key ) > 32 ) {
+			if ( strlen( $taxonomy_key ) > 20 ) {
 				$valid = false;
-				acf_add_internal_post_type_validation_error( 'taxonomy', __( 'The taxonomy key must be under 32 characters.', 'acf' ) );
+				acf_add_internal_post_type_validation_error( 'taxonomy', __( 'The taxonomy key must be under 20 characters.', 'acf' ) );
 			}
 
 			if ( preg_match( '/^[a-z0-9_-]*$/', $taxonomy_key ) !== 1 ) {
@@ -389,28 +383,6 @@ if ( ! class_exists( 'ACF_Taxonomy' ) ) {
 			$show_admin_column = (bool) $post['show_admin_column'];
 			if ( $show_admin_column ) {
 				$args['show_admin_column'] = true;
-			}
-
-			$capabilities = array();
-
-			if ( ! empty( $post['capabilities']['manage_terms'] ) && 'manage_categories' !== $post['capabilities']['manage_terms'] ) {
-				$capabilities['manage_terms'] = (string) $post['capabilities']['manage_terms'];
-			}
-
-			if ( ! empty( $post['capabilities']['edit_terms'] ) && 'manage_categories' !== $post['capabilities']['edit_terms'] ) {
-				$capabilities['edit_terms'] = (string) $post['capabilities']['edit_terms'];
-			}
-
-			if ( ! empty( $post['capabilities']['delete_terms'] ) && 'manage_categories' !== $post['capabilities']['delete_terms'] ) {
-				$capabilities['delete_terms'] = (string) $post['capabilities']['delete_terms'];
-			}
-
-			if ( ! empty( $post['capabilities']['assign_terms'] ) && 'edit_posts' !== $post['capabilities']['assign_terms'] ) {
-				$capabilities['assign_terms'] = (string) $post['capabilities']['assign_terms'];
-			}
-
-			if ( ! empty( $capabilities ) ) {
-				$args['capabilities'] = $capabilities;
 			}
 
 			// WordPress defaults to the tags/categories metabox, but a custom callback or `false` is also supported.

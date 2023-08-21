@@ -733,14 +733,7 @@ function acf_enqueue_block_assets() {
 	);
 
 	// Get block types.
-	$block_types = array_map(
-		function( $block ) {
-			// Render Callback may contain a incompatible class for JSON encoding. Turn it into a boolean for the frontend.
-			$block['render_callback'] = ! empty( $block['render_callback'] );
-			return $block;
-		},
-		acf_get_block_types()
-	);
+	$block_types = acf_get_block_types();
 
 	// Localize data.
 	acf_localize_data(
@@ -974,7 +967,6 @@ function acf_parse_save_blocks( $text = '' ) {
 			stripslashes( $text )
 		)
 	);
-
 }
 
 // Hook into saving process.

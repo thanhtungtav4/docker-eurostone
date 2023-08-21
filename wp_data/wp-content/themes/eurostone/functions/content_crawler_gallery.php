@@ -83,6 +83,9 @@ function update_product_image_gallery_by_id($post_id) {
   $meta_key = 'product_image_gallery';
   $meta_value = get_post_meta($post_id, $meta_key, true);
 
+  // Explicitly convert $meta_value to a string
+  $meta_value = (string) $meta_value;
+
   // Check if the meta_value is empty or does not contain valid URLs
   if (empty($meta_value) || (preg_match($pattern, $meta_value) != 1)) {
     return false;
