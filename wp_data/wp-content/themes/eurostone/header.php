@@ -38,14 +38,14 @@
       </div>
       <div class="m-header__bottom">
         <ul class="m-header__bottom--menu">
-          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
           <li><a href="#">Màu Sắc</a></li>
-          <li class="sub sub_tab"><span>Brands</span>
+          <li class="sub sub_tab"><span>Thương Hiệu</span>
             <div class="m-header__submenu">
               <ul class="list_tab only_pc">
-                <li class="active">Silestone</li>
-                <li>Silestone 01</li>
-                <li>Silestone 02</li>
+                <li class="active">Đá Dekton</li>
+                <li>Đá Silestone</li>
+                <li>Đá Marble - Cẩm thạch</li>
               </ul>
               <div class="inner">
                 <div class="menu_tab active">

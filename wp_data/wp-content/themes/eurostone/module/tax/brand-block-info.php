@@ -1,4 +1,4 @@
-<?php if(class_exists('ACF') && get_field('tax-block-name', $taxonomy_term)) : ?>
+<?php if(class_exists('ACF') && get_field('tax-block-name', $taxonomy_term) && (get_field('show_tax_block_info', $taxonomy_term) == true)) : ?>
 <section id="dekton_box02">
   <div class="bg"></div>
   <div class="dekton_box02__cont">

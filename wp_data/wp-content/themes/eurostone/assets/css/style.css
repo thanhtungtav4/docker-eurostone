@@ -1834,7 +1834,7 @@ iframe {
   position: relative;
   cursor: pointer;
   padding: 20px 60px 20px 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 #dekton_box03 .benefit__block dl dt:after {
   content: "";
