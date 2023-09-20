@@ -98,3 +98,4 @@ Stack trace:
 [06-Sep-2023 08:38:49 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
 [06-Sep-2023 08:39:49 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
 [06-Sep-2023 08:41:11 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 13
+[19-Sep-2023 04:31:50 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
