@@ -10,12 +10,12 @@
 ?>
 <section id="dekton_box04">
   <div class="m-block05">
-    <div class="inner"> 
+    <div class="inner">
       <h3 class="c-title02"><?php _e('Featured Colors', 'eurostone') ?></h3>
       <ul class="c-slider01 slider01">
-        <?php 
+        <?php
           $queryColor = new WP_Query($argsColor);
-          if( $queryColor->have_posts() ): 
+          if( $queryColor->have_posts() ):
         ?>
         <?php while ( $queryColor->have_posts() ) : $queryColor->the_post(); ?>
             <?php require( get_stylesheet_directory() . '/module/item/productItem.php' ); ?>

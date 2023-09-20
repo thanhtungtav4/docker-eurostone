@@ -8,12 +8,16 @@
  */
 
 ?>
-<?php
-	echo get_breadcrumbs();
-	$post_id = get_the_ID();
-?>
-<section class="newsDetail postDetail">
-	<h1 class="newsDetail__title"><?php the_title() ?></h1>
-	<div class="newsDetail__date"><?php the_date('Y.m.d') ?></div>
-	<?php the_content(); ?>
-</section>
+<article class="m-article">
+	<?php
+		if ( function_exists('yoast_breadcrumb') ) {
+			yoast_breadcrumb( '<div class="breadcrumb">','</div>' );
+		}
+	?>
+	<div class="inner">
+		<h1 class="c-title02 c-title02--01"><?php the_title(); ?></h1>
+		<div class="m-article--content">
+			<?php the_content(); ?>
+		</div>
+	</div>
+</article>

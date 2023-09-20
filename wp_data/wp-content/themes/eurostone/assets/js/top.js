@@ -154,9 +154,6 @@ $(document).ready(function () {
     });
   }
   if ($(".list-3cols").length) {
-    $(".list-3cols figure").matchHeight({
-      byRow: true,
-    });
     $(".list-3cols h4").matchHeight({
       byRow: true,
     });
@@ -189,6 +186,12 @@ $(document).ready(function () {
           $(".tab-cont .tab-frame").removeClass("active");
           $(".tab-cont .tab-frame").eq(index).toggleClass("active");
         });
+      });
+    }
+    if ($(".viewmore_block").length) {
+      $(".viewmore_block .viewmore_btn").click(function () {
+        $(this).parents().find(".viewmore_cont").toggleClass("showmore");
+        $(this).toggleClass("active");
       });
     }
   }

@@ -19,7 +19,7 @@
   <header class="m-header">
     <div class="inner">
       <div class="m-header__top">
-        <div class="m-header__logo"><a href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt="EuroStrone" width="280" height="62"></a></div>
+        <div class="m-header__logo"><a href="/"><img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.svg" alt="EuroStrone" width="280" height="62"></a></div>
         <div class="m-header__boxright">
           <div class="m-header__search">
             <input type="text" placeholder="tìm kiếm">
@@ -28,47 +28,179 @@
           <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
           <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>
           <ul class="translate">
-            <?php
-              if ( function_exists('pll_the_languages') ) {
-                  pll_the_languages(array('show_flags'=>1,'show_names'=>0));
-                }
+          <?php
+            if ( function_exists('pll_the_languages') ) {
+                pll_the_languages(array('show_flags'=>1,'show_names'=>0));
+              }
             ?>
           </ul>
         </div>
       </div>
       <div class="m-header__bottom">
         <ul class="m-header__bottom--menu">
-          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
           <li><a href="#">Màu Sắc</a></li>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Brands</a></li>
+          <li class="sub sub_tab"><span>Thương Hiệu</span>
+            <div class="m-header__submenu">
+              <ul class="list_tab only_pc">
+                <li class="active">Đá Dekton</li>
+                <li>Đá Silestone</li>
+                <li>Đá Marble - Cẩm thạch</li>
+              </ul>
+              <div class="inner">
+                <div class="menu_tab active">
+                  <p class="ttl only_sp">Silestone</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 01</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu_tab">
+                  <p class="ttl only_sp">Silestone01</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 02</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu_tab">
+                  <p class="ttl only_sp">Silestone02</p>
+                  <div class="tab_cont">
+                    <div class="box-left">
+                      <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_silestone.jpg" alt="silestone"></figure>
+                      <div class="sec">
+                        <p class="ttl">SILESTONE 03</p>
+                        <p class="txt">text</p>
+                      </div>
+                    </div>
+                    <div class="box-right">
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="tab_link">
+                        <dl>
+                          <dt>Silestone Information</dt>
+                          <dd>
+                            <p> <a href="#">text text</a></p>
+                            <p> <a href="#">text text</a></p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="sub"><span>Hạng Mục Ốp Đá</span>
             <div class="m-header__submenu">
               <div class="inner">
                 <ul class="menu-slider">
                   <li class="items"><a href="#">
-                          <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
+                          <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
                             <figcaption>Phòng bếp test test test test test</figcaption>
                           </figure>
                           <p>text text text text test test test test test</p></a>
                   </li>
                   <li class="items"><a href="#">
-                          <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img02.jpg" alt="Phòng bếp">
+                          <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img02.jpg" alt="Phòng bếp">
                             <figcaption>Phòng bếp</figcaption>
                           </figure></a>
                   </li>
                   <li class="items"><a href="#">
-                          <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img03.jpg" alt="Phòng bếp">
+                          <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img03.jpg" alt="Phòng bếp">
                             <figcaption>Phòng bếp</figcaption>
                           </figure></a>
                   </li>
                   <li class="items"><a href="#">
-                          <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
+                          <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
                             <figcaption>Phòng bếp</figcaption>
                           </figure></a>
                   </li>
                   <li class="items"><a href="#">
-                          <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
+                          <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
                             <figcaption>Phòng bếp</figcaption>
                           </figure></a>
                   </li>
@@ -80,17 +212,17 @@
             <div class="m-header__submenu">
               <ul class="submenu submenu--01">
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img05.jpg" alt="Hình dung trực tuyến test test">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img05.jpg" alt="Hình dung trực tuyến test test">
                           <figcaption>Hình dung trực tuyến test test</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img06.jpg" alt="Nhà bếp 3D">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img06.jpg" alt="Nhà bếp 3D">
                           <figcaption>Nhà bếp 3D</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img07.jpg" alt="Bảng thiết kế">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img07.jpg" alt="Bảng thiết kế">
                           <figcaption>Bảng thiết kế</figcaption>
                         </figure></a>
                 </li>
@@ -101,27 +233,27 @@
             <div class="m-header__submenu">
               <ul class="submenu submenu--02">
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img08.jpg" alt="Blog &amp; Sự kiện">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img08.jpg" alt="Blog &amp; Sự kiện">
                           <figcaption>Blog &amp; Sự kiện</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img09.jpg" alt="Mẫu nhà đẹp">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img09.jpg" alt="Mẫu nhà đẹp">
                           <figcaption>Mẫu nhà đẹp</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img10.jpg" alt="Bảng thiết kế">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img10.jpg" alt="Bảng thiết kế">
                           <figcaption>Bảng thiết kế</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img12.jpg" alt="Bảng thiết kế">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img12.jpg" alt="Bảng thiết kế">
                           <figcaption>Bảng thiết kế</figcaption>
                         </figure></a>
                 </li>
                 <li><a href="#">
-                        <figure> <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img11.jpg" alt="Bảng thiết kế">
+                        <figure> <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img11.jpg" alt="Bảng thiết kế">
                           <figcaption>Bảng thiết kế</figcaption>
                         </figure></a>
                 </li>
@@ -135,4 +267,4 @@
       <div class="hamburger"><span> </span><span></span><span></span></div>
     </div>
   </header>
-    <main class="l-main">
+  <main class="l-main">

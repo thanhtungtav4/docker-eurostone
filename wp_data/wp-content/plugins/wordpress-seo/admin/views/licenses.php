@@ -151,6 +151,10 @@ $new_tab_message         = sprintf(
 				?>
 				<ul class="yoast-seo-premium-benefits yoast-list--usp">
 					<li class="yoast-seo-premium-benefits__item">
+						<span class="yoast-seo-premium-benefits__title"><?php esc_html_e( 'Be more efficient in creating content', 'wordpress-seo' ); ?></span>
+						<span class="yoast-seo-premium-benefits__description"><?php esc_html_e( 'Use AI to create high-quality titles and meta descriptions for posts and pages', 'wordpress-seo' ); ?></span>
+					</li>
+					<li class="yoast-seo-premium-benefits__item">
 						<span class="yoast-seo-premium-benefits__title"><?php esc_html_e( 'Reach bigger audiences', 'wordpress-seo' ); ?></span>
 						<span class="yoast-seo-premium-benefits__description"><?php esc_html_e( 'Optimize a single post for synonyms and related keyphrases and get extra checks with the Premium SEO analysis', 'wordpress-seo' ); ?></span>
 					</li>
@@ -185,7 +189,7 @@ $new_tab_message         = sprintf(
 
 				<?php
 				if ( $has_valid_premium_subscription ) :
-					$number_plugins_active++;
+					++$number_plugins_active;
 					?>
 					<div class="yoast-button yoast-button--noarrow yoast-button--extension yoast-button--extension-activated"><?php esc_html_e( 'Activated', 'wordpress-seo' ); ?></div>
 					<a target="_blank" href="<?php WPSEO_Shortlinker::show( 'https://yoa.st/13k' ); ?>" class="yoast-link--license">
@@ -295,7 +299,7 @@ $new_tab_message         = sprintf(
 
 							<?php
 							if ( $addon_manager->has_valid_subscription( $slug ) ) :
-								$number_plugins_active++;
+								++$number_plugins_active;
 								?>
 								<div class="yoast-button yoast-button--noarrow yoast-button--extension yoast-button--extension-activated"><?php esc_html_e( 'Activated', 'wordpress-seo' ); ?></div>
 								<a target="_blank" href="<?php WPSEO_Shortlinker::show( 'https://yoa.st/13k' ); ?>" class="yoast-link--license">

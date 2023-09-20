@@ -30,7 +30,7 @@
       <?php if(get_field('tax_design_options', $taxonomy_term)) : ?>
         <dl>
           <dt class=""><?php _e('Design options', 'eurostone') ?></dt>
-          <dd style="display: none;">
+          <dd class="plr-15" style="display: none;">
             <?php the_field('tax_design_options', $taxonomy_term); ?>
           </dd>
         </dl>
@@ -38,7 +38,7 @@
       <?php if(get_field('tax_improve', $taxonomy_term)) : ?>
       <dl>
         <dt class=""><?php _e('Improve', 'eurostone') ?></dt>
-        <dd style="display: none;">
+        <dd class="plr-15" style="display: none;">
           <?php the_field('tax_improve', $taxonomy_term); ?>
         </dd>
       </dl>

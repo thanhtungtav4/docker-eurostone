@@ -5,14 +5,14 @@
         <h4><?php the_title()?></h4>
         <ul class="list-tag">
         <?php
-        $terms= get_the_terms(get_the_ID(), 'made-in' );
-        $posttags = get_the_tags();
-        $terms ? print '<li>'. $terms[0]->name .'</li>' : '';
-        if($posttags){
-            foreach($posttags as $tag) {
-                print '<li>'. $tag->name .'</li>';
-            }
-        }
+        // $terms= get_the_terms(get_the_ID(), 'made-in' );
+        // $posttags = get_the_tags();
+        // ($terms && $terms[0]) ? print '<li>'. $terms[0]->name .'</li>' : '';
+        // if($posttags){
+        //     foreach($posttags as $tag) {
+        //         print '<li>'. $tag->name .'</li>';
+        //     }
+        // }
         ?>
         </ul>
     </div>

@@ -6,8 +6,8 @@
  *
  * @package recruit
  */
-$primary_category = get_primary_taxonomy_term( get_the_ID(), 'category' );
-$brand_bg = get_background_taxonomy('category', $primary_category['id']);
+$primary_category = get_primary_taxonomy_term( get_the_ID(), get_queried_object()->taxonomy );
+$brand_bg = get_background_taxonomy(get_queried_object()->taxonomy, $primary_category['id']);
 $category = get_queried_object()->slug;
 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 $queryPost = new WP_Query(

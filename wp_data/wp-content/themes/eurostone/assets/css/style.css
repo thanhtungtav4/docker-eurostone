@@ -1680,14 +1680,17 @@ iframe {
   padding: 0 5vw;
 }
 #dekton_box02 .dekton_box02__cont .box-left .txt01 {
-  width: 5.313vw;
-  margin-right: 3vw;
+  font-size: 5.313vw;
+  font-weight: 900;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 2.083vw;
   flex-shrink: 0;
-}
-#dekton_box02 .dekton_box02__cont .box-left .txt01 img {
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  transform: rotate(180deg);
 }
 #dekton_box02 .dekton_box02__cont .box-left h3 {
   color: #fff;
@@ -1762,7 +1765,7 @@ iframe {
     font-size: 7vw;
   }
   #dekton_box02 .dekton_box02__cont .box-left .txt01 {
-    width: 6vw;
+    font-size: 8vw;
     margin-right: 5vw;
   }
   #dekton_box02 .dekton_box02__cont .box-right {
@@ -1831,7 +1834,7 @@ iframe {
   position: relative;
   cursor: pointer;
   padding: 20px 60px 20px 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 #dekton_box03 .benefit__block dl dt:after {
   content: "";
@@ -2292,7 +2295,12 @@ iframe {
   overflow: hidden;
 }
 #detail_box02 .viewmore_block .viewmore_cont {
+  max-height: calc(1em * 2 * 1.625);
+  overflow: hidden;
   margin-bottom: 50px;
+}
+#detail_box02 .viewmore_block .viewmore_cont.showmore {
+  max-height: none;
 }
 #detail_box02 .viewmore_block .viewmore_btn {
   width: 100%;
@@ -2319,10 +2327,12 @@ iframe {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s ease;
   right: 30px;
 }
 #detail_box02 .viewmore_block .viewmore_btn.active::after {
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 1024px) {
   #detail_box02 {
@@ -3003,7 +3013,16 @@ iframe {
   opacity: 0.7;
 }
 .list-3cols > li figure {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
   line-height: 0;
+}
+.list-3cols > li figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .list-3cols > li .sec {
   color: #000936;
@@ -3035,6 +3054,11 @@ iframe {
   display: block;
   margin-left: 8px;
 }
+@media screen and (max-width: 1200px) {
+  .list-3cols > li figure {
+    height: 23vw;
+  }
+}
 @media screen and (max-width: 1024px) {
   .list-3cols {
     margin: 0 -10px -20px;
@@ -3058,6 +3082,9 @@ iframe {
     width: calc(50% - 20px);
     margin: 0 10px 30px;
   }
+  .list-3cols > li figure {
+    height: 35.202vw;
+  }
   .list-3cols > li .sec {
     padding: 20px 3vw;
   }
@@ -3071,6 +3098,9 @@ iframe {
   .list-3cols > li {
     width: 100%;
     margin: 0 0 30px;
+  }
+  .list-3cols > li figure {
+    height: 60vw;
   }
 }
 .list-4cols {
@@ -3088,26 +3118,19 @@ iframe {
   width: calc(25% - 40px);
   margin: 0 20px 50px;
 }
-@media screen and (max-width: 1024px) {
-  .list-4cols > li {
-    width: calc(25% - 20px);
-    margin: 0 10px 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .list-4cols > li {
-    width: calc(50% - 20px);
-    max-width: 180px;
-  }
-}
 .list-4cols > li figure {
-  width: 100%;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   line-height: 0;
   overflow: hidden;
   margin-bottom: 20px;
 }
 .list-4cols > li figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   transition: all 0.5s ease;
 }
 .list-4cols > li > a {
@@ -3125,6 +3148,34 @@ iframe {
 }
 .list-4cols > li > a:hover img {
   transform: scale(1.1, 1.1);
+}
+@media screen and (max-width: 1300px) {
+  .list-4cols > li figure {
+    width: 20.769vw;
+    height: 20.769vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .list-4cols > li {
+    width: calc(25% - 20px);
+    margin: 0 10px 30px;
+  }
+  .list-4cols > li figure {
+    width: 21.582vw;
+    height: 21.582vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .list-4cols > li {
+    width: calc(50% - 20px);
+    max-width: 180px;
+  }
+  .list-4cols > li figure {
+    width: 42.067vw;
+    height: 42.067vw;
+    max-width: 180px;
+    max-height: 180px;
+  }
 }
 .c-slider01 .slick-prev {
   display: flex;
