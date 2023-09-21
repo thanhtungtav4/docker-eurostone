@@ -313,6 +313,7 @@ iframe {
   top: 0;
   right: 0;
   cursor: pointer;
+  border: none;
 }
 .m-header__search .btn_search::before {
   content: "";

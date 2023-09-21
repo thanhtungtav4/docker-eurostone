@@ -99,3 +99,95 @@ Stack trace:
 [06-Sep-2023 08:39:49 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
 [06-Sep-2023 08:41:11 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 13
 [19-Sep-2023 04:31:50 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
+[21-Sep-2023 08:36:12 UTC] PHP Warning:  require(/var/www/html/wp-content/themes/eurostone/module/archive-item.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/themes/eurostone/search.php on line 40
+[21-Sep-2023 08:36:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/eurostone/module/archive-item.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/themes/eurostone/search.php:40
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/eurostone/search.php on line 40

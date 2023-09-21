@@ -23,7 +23,7 @@
         <div class="m-header__boxright">
           <div class="m-header__search">
             <input type="text" placeholder="tìm kiếm">
-            <p class="btn_search"></p>
+            <button class="btn_search"></button>
           </div>
           <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
           <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>

@@ -18,10 +18,6 @@ require_once( get_stylesheet_directory() . '/functions/page.php' );
 require_once( get_stylesheet_directory() . '/functions/metaTag.php' );
 require_once( get_stylesheet_directory() . '/functions/style.php' );
 require_once( get_stylesheet_directory() . '/functions/pagenavi.php' );
-if( class_exists('acf') ) {
-  // include_once(get_stylesheet_directory() .  '/functions/acf-gallery/acf-gallery.php');
-  // include_once(get_stylesheet_directory() .  '/functions/acf-repeater/acf-repeater.php');
-}
 if ( function_exists( 'pll_count_posts' ) ) {
   include_once(get_stylesheet_directory() .  '/functions/polylang-share-slug.php');
 }
@@ -29,3 +25,4 @@ include_once(get_stylesheet_directory() .  '/functions/yoast.php');
 include_once(get_stylesheet_directory() .  '/functions/product.php');
 include_once(get_stylesheet_directory() .  '/functions/smtp.php');
 include_once(get_stylesheet_directory() .  '/functions/content_crawler_gallery.php');
+include_once(get_stylesheet_directory() .  '/functions/AllowDuplicateSlugs.php');
