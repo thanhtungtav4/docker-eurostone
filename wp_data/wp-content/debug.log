@@ -191,3 +191,4 @@ Stack trace:
 #2 /var/www/html/index.php(17): require('/var/www/html/w...')
 #3 {main}
   thrown in /var/www/html/wp-content/themes/eurostone/search.php on line 40
+[25-Sep-2023 07:47:30 UTC] PHP Deprecated:  Required parameter $position follows optional parameter $current_pager_value in /var/www/html/wp-content/plugins/permalinks-customizer/admin/class-permalinks-customizer-common-functions.php on line 99
