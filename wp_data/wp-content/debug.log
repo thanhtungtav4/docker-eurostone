@@ -1,193 +1,38 @@
-[06-Sep-2023 00:59:30 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
-[06-Sep-2023 00:59:30 UTC] WPCC (error): URL does not exist in the database.
-[06-Sep-2023 01:24:23 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
-[06-Sep-2023 01:24:23 UTC] WPCC (error): URL does not exist in the database.
-[06-Sep-2023 01:27:18 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
-[06-Sep-2023 01:27:18 UTC] WPCC (error): URL does not exist in the database.
-[06-Sep-2023 01:27:35 UTC] WPCC - No URL is found in the database. Site ID to check: 2783, Last Crawled URL ID: does not exist
-[06-Sep-2023 01:27:35 UTC] WPCC (error): URL does not exist in the database.
-[06-Sep-2023 03:06:02 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:06:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:06:42 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:10:37 UTC] PHP Warning:  require_once(/var/www/html/wp-content/themes/eurostone/functions/init.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/themes/eurostone/functions.php on line 9
-[06-Sep-2023 03:10:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/eurostone/functions/init.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/themes/eurostone/functions.php:9
+[25-Sep-2023 16:43:26 UTC] PHP Warning:  Undefined array key "id" in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\template-parts\content-category.php on line 10
+[25-Sep-2023 16:56:15 UTC] PHP Warning:  include_once(D:\Xampp\htdocs\Docker\docker-eurostone\wp_data/wp-content/themes/eurostone/module/is-parent.php): Failed to open stream: No such file or directory in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\taxonomy-brand.php on line 12
+[25-Sep-2023 16:56:15 UTC] PHP Warning:  include_once(): Failed opening 'D:\Xampp\htdocs\Docker\docker-eurostone\wp_data/wp-content/themes/eurostone/module/is-parent.php' for inclusion (include_path='D:\Xampp\php\PEAR') in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\taxonomy-brand.php on line 12
+[25-Sep-2023 16:56:58 UTC] PHP Warning:  include_once(D:\Xampp\htdocs\Docker\docker-eurostone\wp_data/wp-content/themes/eurostone/module/is-parent.php): Failed to open stream: No such file or directory in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\taxonomy-brand.php on line 13
+[25-Sep-2023 16:56:58 UTC] PHP Warning:  include_once(): Failed opening 'D:\Xampp\htdocs\Docker\docker-eurostone\wp_data/wp-content/themes/eurostone/module/is-parent.php' for inclusion (include_path='D:\Xampp\php\PEAR') in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\taxonomy-brand.php on line 13
+[25-Sep-2023 17:05:47 UTC] PHP Warning:  Undefined array key "id" in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 10
+[25-Sep-2023 17:06:47 UTC] PHP Warning:  Undefined array key "id" in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 11
+[25-Sep-2023 17:13:05 UTC] PHP Warning:  Undefined variable $taxonomy_object in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 10
+[25-Sep-2023 17:13:05 UTC] PHP Warning:  Undefined array key "id" in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 11
+[25-Sep-2023 17:13:38 UTC] PHP Warning:  Undefined array key "id" in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 11
+[25-Sep-2023 17:32:42 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:32:42 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:32:50 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:32:50 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:36:11 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:36:11 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:38:38 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:38:38 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:38:49 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:38:49 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:39:52 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:39:52 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:40:13 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:40:13 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:48:38 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:48:38 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:51:23 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:51:23 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:51:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function bootstrap_pagination() in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php:36
 Stack trace:
-#0 /var/www/html/wp-settings.php(591): include()
-#1 /var/www/html/wp-config.php(145): require_once('/var/www/html/w...')
-#2 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
-#3 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#0 D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\taxonomy-brand.php(15): include_once()
+#1 D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-includes\template-loader.php(106): include('D:\\Xampp\\htdocs...')
+#2 D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-blog-header.php(19): require_once('D:\\Xampp\\htdocs...')
+#3 D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\index.php(17): require('D:\\Xampp\\htdocs...')
 #4 {main}
-  thrown in /var/www/html/wp-content/themes/eurostone/functions.php on line 9
-[06-Sep-2023 03:18:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:20:12 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:21:02 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:21:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:23:08 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:23:53 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:24:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:27:11 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 03:32:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:35:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 03:58:05 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 04:05:40 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:07:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:07:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:19:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:19:30 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:19:44 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:20:11 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
-[06-Sep-2023 04:20:18 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:24:59 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:30:06 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:31:22 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 04:34:39 UTC] PHP Warning:  Undefined variable $taxonomy_term in /var/www/html/wp-content/themes/eurostone/module/module-features.php on line 2
-[06-Sep-2023 04:34:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:35:20 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:35:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 04:35:46 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 05:51:26 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 05:54:10 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 05:55:22 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 05:56:32 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 05:57:19 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 05:58:59 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 05:59:27 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:00:09 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:00:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:00:34 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:01:13 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:01:29 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:02:29 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:21:10 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:21:23 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:21:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:21:52 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:22:04 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 06:23:10 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:25:18 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:28:23 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:28:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:30:54 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:32:07 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:39:05 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 06:50:46 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:50:58 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:51:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:52:50 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 06:53:25 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 06:54:18 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 07:12:11 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 07:33:06 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:35:20 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:36:00 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:36:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:39:02 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 07:40:21 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 07:40:41 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:42:17 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:42:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:43:27 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 07:45:04 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 07:45:47 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 7
-[06-Sep-2023 08:02:53 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 08:03:42 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[06-Sep-2023 08:13:31 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 11
-[06-Sep-2023 08:30:00 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
-[06-Sep-2023 08:32:45 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
-[06-Sep-2023 08:37:53 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
-[06-Sep-2023 08:38:49 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
-[06-Sep-2023 08:39:49 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 12
-[06-Sep-2023 08:41:11 UTC] PHP Warning:  Trying to access array offset on value of type int in /var/www/html/wp-content/themes/eurostone/module/tax/brand-application.php on line 13
-[19-Sep-2023 04:31:50 UTC] PHP Warning:  Attempt to read property "object_id" on bool in /var/www/html/wp-content/plugins/wordpress-seo/src/integrations/admin/admin-columns-cache-integration.php on line 112
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:47 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:00:51 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:21 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:22 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:23 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:26 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:30 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:34 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:38 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:42 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:46 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:50 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:54 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:01:58 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:02 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:06 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:10 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:14 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:18 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:22 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:26 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:30 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:34 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $slug in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $post_type in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 04:02:38 UTC] PHP Warning:  Undefined variable $post_parent in /var/www/html/wp-content/themes/eurostone/functions/AllowDuplicateSlugs.php on line 2
-[21-Sep-2023 08:36:12 UTC] PHP Warning:  require(/var/www/html/wp-content/themes/eurostone/module/archive-item.php): Failed to open stream: No such file or directory in /var/www/html/wp-content/themes/eurostone/search.php on line 40
-[21-Sep-2023 08:36:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/wp-content/themes/eurostone/module/archive-item.php' (include_path='.:/usr/local/lib/php') in /var/www/html/wp-content/themes/eurostone/search.php:40
-Stack trace:
-#0 /var/www/html/wp-includes/template-loader.php(106): include()
-#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
-#2 /var/www/html/index.php(17): require('/var/www/html/w...')
-#3 {main}
-  thrown in /var/www/html/wp-content/themes/eurostone/search.php on line 40
+  thrown in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 36
+[25-Sep-2023 17:51:40 UTC] PHP Warning:  Undefined variable $queryPost in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3
+[25-Sep-2023 17:51:40 UTC] PHP Warning:  Attempt to read property "max_num_pages" on null in D:\Xampp\htdocs\Docker\docker-eurostone\wp_data\wp-content\themes\eurostone\module\brand\is-child.php on line 3

@@ -25,4 +25,4 @@ include_once(get_stylesheet_directory() .  '/functions/yoast.php');
 include_once(get_stylesheet_directory() .  '/functions/product.php');
 include_once(get_stylesheet_directory() .  '/functions/smtp.php');
 include_once(get_stylesheet_directory() .  '/functions/content_crawler_gallery.php');
-include_once(get_stylesheet_directory() .  '/functions/AllowDuplicateSlugs.php');
+
