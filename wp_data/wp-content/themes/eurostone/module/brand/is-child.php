@@ -2,11 +2,9 @@
 $term = get_queried_object();
 $brand_bg = get_background_taxonomy($term->taxonomy, $term->term_id);
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; // Use 'pg' for your custom query pagination
-
 $args = array(
     'post_type'      => 'product',
     'post_status'    => 'publish',
-    'posts_per_page' => 3,
     'paged'          => $paged,
     'tax_query'      => array(
         array(
@@ -59,6 +57,3 @@ $queryPost = new WP_Query($args);
         </ul>
     </div>
 </section>
-<script>
-
-</script>

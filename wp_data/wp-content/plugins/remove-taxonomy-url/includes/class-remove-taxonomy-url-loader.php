@@ -3,11 +3,11 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       https://wordpress.org/
+ * @link       www.sungraizfaryad.com
  * @since      1.0.0
  *
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
- * @author     Akshay <akshay.shah5189@gmail.com>
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
+ * @author     Sungraiz Faryad <sungraiz@gmail.com>
  */
-class Remove_Taxonmy_Slug_Loader {
+class Remove_Taxonomy_Url_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

@@ -6,11 +6,11 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       https://wordpress.org/
+ * @link       www.sungraizfaryad.com
  * @since      1.0.0
  *
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
- * @author     Akshay <akshay.shah5189@gmail.com>
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
+ * @author     Sungraiz Faryad <sungraiz@gmail.com>
  */
-class Remove_Taxonmy_Slug_i18n {
+class Remove_Taxonomy_Url_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Remove_Taxonmy_Slug_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'remove-taxonmy-slug',
+			'remove-taxonomy-url',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

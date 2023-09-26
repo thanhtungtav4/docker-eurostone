@@ -314,4 +314,5 @@ function get_category_slug_by_name( $category_name, $taxonomy = 'category' ) {
 	};
 	add_filter( 'register_post_tag_taxonomy_args', 'my_tags_hierarchical' );
 
+
 	

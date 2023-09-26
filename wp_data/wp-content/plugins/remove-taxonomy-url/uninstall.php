@@ -19,10 +19,10 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       https://wordpress.org/
+ * @link       www.sungraizfaryad.com
  * @since      1.0.0
  *
- * @package    Remove_Taxonmy_Slug
+ * @package    Remove_Taxonomy_Url
  */
 
 // If uninstall not called from WordPress, then exit.

@@ -3,11 +3,11 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://wordpress.org/
+ * @link       www.sungraizfaryad.com
  * @since      1.0.0
  *
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Remove_Taxonmy_Slug
- * @subpackage Remove_Taxonmy_Slug/includes
- * @author     Akshay <akshay.shah5189@gmail.com>
+ * @package    Remove_Taxonomy_Url
+ * @subpackage Remove_Taxonomy_Url/includes
+ * @author     Sungraiz Faryad <sungraiz@gmail.com>
  */
-class Remove_Taxonmy_Slug_Deactivator {
+class Remove_Taxonomy_Url_Deactivator {
 
 	/**
 	 * Short Description. (use period)
@@ -30,7 +30,7 @@ class Remove_Taxonmy_Slug_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
-		delete_option( 'remove_taxnomy_slug');
+
 	}
 
 }
