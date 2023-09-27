@@ -27,12 +27,10 @@ jQuery(function ($) {
         newLink.className = 'page-numbers';
         newLink.href = '/page/' + pageNumber + '/';
         newLink.textContent = pageNumber;
-
         currentPage.parentNode.replaceChild(newLink, currentPage);
     }
     $(document).on('click', '.pagination a', function (e) {
         e.preventDefault();
-
         var $this = $(this);
         var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
         var href = $this.attr('href');
@@ -50,9 +48,8 @@ jQuery(function ($) {
                 terms: terms, // Send the term ID in the AJAX request
             },
             success: function (response) {
-                console.log(response);
-                $('#ajax-content').html(response);
                 window.scrollTo({top: 0, behavior: 'smooth'});
+                $('#ajax-content').html(response);
             },
         });
     });
