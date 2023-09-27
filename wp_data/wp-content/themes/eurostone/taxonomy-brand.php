@@ -20,6 +20,16 @@ get_footer();
 
 <script>
 jQuery(function ($) {
+    var currentPage = document.querySelector('.page-numbers.current');
+    if (currentPage) {
+        var pageNumber = currentPage.textContent;
+        var newLink = document.createElement('a');
+        newLink.className = 'page-numbers';
+        newLink.href = '/page/' + pageNumber + '/';
+        newLink.textContent = pageNumber;
+
+        currentPage.parentNode.replaceChild(newLink, currentPage);
+    }
     $(document).on('click', '.pagination a', function (e) {
         e.preventDefault();
 
@@ -29,7 +39,7 @@ jQuery(function ($) {
         var match = href.match(/\/page\/(\d+)\//);
         var page = match ? match[1] : 1; // Use the extracted page number or default to 1
         var terms = '<?php echo $term->term_id; ?>';
-
+        console.log(page);
         // Make the AJAX request
         $.ajax({
             type: 'GET',
@@ -40,18 +50,9 @@ jQuery(function ($) {
                 terms: terms, // Send the term ID in the AJAX request
             },
             success: function (response) {
+                console.log(response);
                 $('#ajax-content').html(response);
-
-                // Remove "aria-current" attribute from the old current page
-                $('.page-numbers[aria-current="page"]').removeAttr('aria-current');
-                // Remove the "inactive" class from all page numbers
-                $('.page-numbers').removeClass('inactive');
-
-                // Add "aria-current" attribute to the new current page
-                $this.addClass('current').attr('aria-current', 'page');
-
-                // Add the "inactive" class to the clicked page link to make it inactive
-                $this.addClass('inactive');
+                window.scrollTo({top: 0, behavior: 'smooth'});
             },
         });
     });

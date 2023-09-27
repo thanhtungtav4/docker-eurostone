@@ -8,7 +8,6 @@ function custom_pagination() {
         $args = array(
             'post_type'      => 'product',
             'post_status'    => 'publish',
-            'posts_per_page' => 3,
             'paged'          => $page, // Use the page number from the AJAX request
             'tax_query'      => array(
                 array(
@@ -18,9 +17,9 @@ function custom_pagination() {
                 ),
             ),
         );
-  
+
         $queryPost = new WP_Query($args);
-  
+
         // The Loop to display your posts
         if ($queryPost->have_posts()) :
             while ($queryPost->have_posts()) : $queryPost->the_post();
@@ -28,12 +27,11 @@ function custom_pagination() {
             endwhile;
             wp_reset_postdata();
         endif;
-  
+
         die(); // Terminate the AJAX request
     }
   }
-  
+
   add_action('wp_ajax_custom_pagination', 'custom_pagination');
   add_action('wp_ajax_nopriv_custom_pagination', 'custom_pagination');
-  
-  
+
