@@ -10,9 +10,13 @@
     <div class="inner">
       <h3 class="c-title03"><?php _e('TILING CATEGORY', 'eurostone'); ?></h3>
       <ul class="list-4cols">
-        <?php foreach($argsTax as $key => $item) : ?>
+        <?php
+        if ( !empty($argsTax) && ! is_wp_error( $argsTax )) :
+        foreach($argsTax as $key => $item) : ?>
           <?php require( get_stylesheet_directory() . '/module/item/taxItem.php' ); ?>
-        <?php endforeach; ?>
+        <?php endforeach;
+        endif;
+        ?>
       </ul>
     </div>
   </section>

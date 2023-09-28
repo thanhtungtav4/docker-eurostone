@@ -1434,6 +1434,7 @@ iframe {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #000936;
 }
 @media screen and (max-width: 1024px) {
   #idx_news .news__card .sec h4 {
@@ -1448,6 +1449,7 @@ iframe {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
+  color: #000936;
 }
 #idx_contact {
   background: #f5f5f5;
