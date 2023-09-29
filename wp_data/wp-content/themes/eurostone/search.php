@@ -4,72 +4,50 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package recruit
+ * @package xxxxx
  */
 
 get_header();
 ?>
-<div class="wrapper">
-  <div class="m-page">
-    <h2 class="m-page_title monster-font">CAINZ<span>Inside</span></h2>
-    <h3 class="m-page_subtitle monster-font">
-      <span class="txt-search">Search</span>
-    </h3>
-  </div>
-  <ul class="m-breadcrumbs">
-    <li><a href="<?php echo get_home_url(); ?>/">新卒採用 TOP</a></li>
-    <li><a href="<?php echo get_home_url(); ?>/inside/">CAINZ Inside</a></li>
-    <li><span><?php echo get_search_query() ?></span></li>
-  </ul>
-</div>
-<div class="inside_inner">
-  <div class="inside_state">
-    <span class="inside_state-title txt-search"><?php echo get_search_query() ?></span>
-  </div>
-  <div class="wrapper">
-    <article>
-      <div class="result">
-        <?php if ( have_posts() ) : ?>
-          <div class="result_return">
-          <a class="btn-return" href="<?php echo get_permalink( get_page_by_path( 'inside' ) ) ?>" tabindex="-1">すべての記事</a>
-          </div>
-          <ul class="result_list">
-            <?php
-              while ( have_posts() ) :
-                the_post();
-                require( get_stylesheet_directory() . '/module/archive-item.php' );
-              endwhile;
-            ?>
-          </ul>
-          <?php the_posts_pagination( array(
-              'prev_text' => __( '<svg width="16" height="10" viewBox="0 0 26 14" xmlns="http://www.w3.org/2000/svg">
-              <g stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd">
-              <path d="m18 1 6 6-6 6M24 7H0"></path>
-              </g>
-              </svg>', 'textdomain' ),
-              'next_text' => __( '<svg width="16" height="10" viewBox="0 0 26 14" xmlns="http://www.w3.org/2000/svg">
-              <g stroke="#fff" stroke-width="1.5" fill="none" fill-rule="evenodd">
-              <path d="m18 1 6 6-6 6M24 7H0"></path>
-              </g>
-              </svg>', 'textdomain' ),
-          ) ); ?>
-          <?php else : ?>
-            <div class="inside_main-content">
-            <h2 class="inside_main-title">検索結果は0件です。</h2>
-            <div class="inside_main-editer inside_item-content">
-              <p>申し訳ありませんが、検索キーワードに一致するものはありません。<br>いくつかの異なるキーワードで再度お試しください。</p>
-            </div>
-            </div>
-            <div class="result_return">
-              <a class="btn-return" href="<?php echo get_permalink( get_page_by_path( 'inside' ) ) ?>" tabindex="-1">すべての記事</a>
-            </div>
-        <?php endif; ?>
-      </div>
-    </article>
-    <?php
-      require (get_stylesheet_directory() . '/module/block_aside.php');
-    ?>
-  </div>
-</div>
+
+	<main id="primary" class="site-main">
+
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Search Results for: %s', 'xxxxx' ), '<span>' . get_search_query() . '</span>' );
+					?>
+				</h1>
+			</header><!-- .page-header -->
+
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+				/**
+				 * Run the loop for the search to output the results.
+				 * If you want to overload this in a child theme then include a file
+				 * called content-search.php and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', 'search' );
+
+			endwhile;
+
+			the_posts_navigation();
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
+		?>
+
+	</main><!-- #main -->
+
 <?php
+get_sidebar();
 get_footer();

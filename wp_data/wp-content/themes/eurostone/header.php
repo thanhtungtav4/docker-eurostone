@@ -33,8 +33,8 @@
         </div>
         <div class="m-header__boxright">
           <form action="/" method="get" class="m-header__search">
-            <input type="text" placeholder="tìm kiếm">
-            <button class="btn_search"></button>
+            <input type="text" id="search-input" name="q" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+            <button type="submit" class="btn_search" aria-label="Tìm kiếm"></button>
           </form>
           <div class="m-header__phone"><a href="tel:0903930126"><span>0903 930 126</span></a></div>
           <div class="m-header__mail"> <a href="mailto:info@eurostone.vn"><span>info@eurostone.vn</span></a></div>
