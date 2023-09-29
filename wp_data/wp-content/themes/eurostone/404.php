@@ -21,8 +21,8 @@ get_header();
     </section>
     <h1>Không tìm thấy trang</h1>
     <form action="/" method="get" class="m-header__search">
-      <input type="text" id="search-input" name="q" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
-      <button type="submit" class="btn_search" aria-label="Tìm kiếm"></button>
+      <input type="text" id="s" name="s" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+      <button type="submit" name="submit" class="btn_search" aria-label="Tìm kiếm"></button>
     </form>
     <div class="link-container">
       <a target="_blank" href="<?php echo get_home_url() ?>" class="more-link">Trang chủ</a>

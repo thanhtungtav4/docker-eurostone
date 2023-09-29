@@ -26,3 +26,13 @@ include_once(get_stylesheet_directory() .  '/functions/product.php');
 include_once(get_stylesheet_directory() .  '/functions/smtp.php');
 include_once(get_stylesheet_directory() .  '/functions/content_crawler_gallery.php');
 include_once(get_stylesheet_directory() .  '/functions/ajaxPagination.php');
+function searchfilter($query) {
+
+  if ($query->is_search && !is_admin() ) {
+      $query->set('post_type',array('product'));
+  }
+
+  return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
