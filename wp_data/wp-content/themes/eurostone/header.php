@@ -164,28 +164,31 @@
                     <div class="box-right">
                       <div class="tab_link">
                         <dl>
-                          <dt>Silestone Information</dt>
+                          <dt>Marble Information</dt>
                           <dd>
-                            <p> <a href="#">text text</a></p>
-                            <p> <a href="#">text text</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-cau-thang/'); ?>">Cầu thang Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/lat-nen/'); ?>">Lát nền Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/mat-ban/'); ?>">Mặt bàn Đá Marble</a></p>
                           </dd>
                         </dl>
                       </div>
                       <div class="tab_link">
                         <dl>
-                          <dt>Silestone Information</dt>
+                          <dt>Marble Information</dt>
                           <dd>
-                            <p> <a href="#">text text</a></p>
-                            <p> <a href="#">text text</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/noi-that/'); ?>">Nội thất Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-mat-tien/'); ?>">Ốp mặt tiền Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-tuong/'); ?>">Ốp tường Đá Marble</a></p>
                           </dd>
                         </dl>
                       </div>
                       <div class="tab_link">
                         <dl>
-                          <dt>Silestone Information</dt>
+                          <dt>Marble Information</dt>
                           <dd>
-                            <p> <a href="#">text text</a></p>
-                            <p> <a href="#">text text</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-phong-tam/'); ?>">Phòng tắm ốp Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-thang-may/'); ?>">Thang máy Đá Marble</a></p>
+                            <p> <a href="<?php echo home_url('/da-marble-cam-thach/op-vach-tivi/'); ?>">Vách tivi Đá Marble</a></p>
                           </dd>
                         </dl>
                       </div>
@@ -200,43 +203,107 @@
               <div class="inner">
                 <ul class="menu-slider">
                   <li class="items">
-                    <a href="#">
+                    <a href="<?php echo home_url('/ban-an-mat-da/'); ?>">
                       <figure> 
-                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img01.jpg" alt="Phòng bếp test test test test test">
-                        <figcaption>Phòng bếp test test test test test</figcaption>
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img01.jpg" alt="Bàn ăn mặt đá">
+                        <figcaption>Bàn ăn mặt đá</figcaption>
                       </figure>
-                      <p>text text text text test test test test test</p>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </a>
                   </li>
                   <li class="items">
-                    <a href="#">
+                    <a href="<?php echo home_url('/ban-da-lavabo/'); ?>">
                       <figure> 
-                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img02.jpg" alt="Phòng bếp">
-                        <figcaption>Phòng bếp</figcaption>
-                      </figure>
-                    </a>
-                  </li>
-                  <li class="items">
-                    <a href="#">
-                      <figure> 
-                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img03.jpg" alt="Phòng bếp">
-                        <figcaption>Phòng bếp</figcaption>
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img02.jpg" alt="Bàn đá lavabo">
+                        <figcaption>Bàn đá lavabo</figcaption>
                       </figure>
                     </a>
                   </li>
                   <li class="items">
-                    <a href="#">
+                    <a href="<?php echo home_url('/da-lat-nen/'); ?>">
                       <figure> 
-                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
-                        <figcaption>Phòng bếp</figcaption>
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img03.jpg" alt="Đá lát nền">
+                        <figcaption>Đá lát nền</figcaption>
                       </figure>
                     </a>
                   </li>
                   <li class="items">
-                    <a href="#">
+                    <a href="<?php echo home_url('/da-lat-san-vuon/'); ?>">
                       <figure> 
-                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Phòng bếp">
-                        <figcaption>Phòng bếp</figcaption>
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá lát sân vườn">
+                        <figcaption>Đá lát sân vườn</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-bep/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá Ốp Bếp">
+                        <figcaption>Đá Ốp Bếp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-cau-thang/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp cầu thang">
+                        <figcaption>Đá ốp cầu thang</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-cot/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp cột">
+                        <figcaption>Đá ốp cột</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-mat-tien/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp mặt tiền">
+                        <figcaption>Đá ốp mặt tiền</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-phong-tam/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp phòng tắm">
+                        <figcaption>Đá ốp phòng tắm</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/	da-op-tam-cap/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp tam cấp">
+                        <figcaption>Đá ốp tam cấp</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-thang-may/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp thang máy">
+                        <figcaption>Đá ốp thang máy</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-tuong/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp tường">
+                        <figcaption>Đá ốp tường</figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="items">
+                    <a href="<?php echo home_url('/da-op-vach-tivi/'); ?>">
+                      <figure> 
+                        <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/menu_img04.jpg" alt="Đá ốp vách tivi">
+                        <figcaption>Đá ốp vách tivi</figcaption>
                       </figure>
                     </a>
                   </li>
