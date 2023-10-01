@@ -435,7 +435,7 @@ iframe {
   gap: 20px;
 }
 .m-header__submenu .submenu--02 li {
-  width: calc(20% - 20px);
+  width: calc(25% - 20px);
 }
 .m-header__submenu .menu-slider {
   margin: 0 -15px;
